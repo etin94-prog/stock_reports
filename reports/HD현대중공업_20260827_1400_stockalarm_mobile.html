@@ -1,0 +1,1360 @@
+<!doctype html><html lang="ko"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HD현대중공업 StockAlarm 2026.08.27</title>
+<style>
+*{box-sizing:border-box;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth}
+body{margin:0;background:#eef2f7;color:#1e293b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;line-height:1.6}
+.bar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e2e8f0;padding:8px 10px}
+.bar .in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.bar h1{font-size:14px;margin:0;font-weight:800;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.anav{font-size:11px;padding:5px 9px;border-radius:8px;border:1px solid #e2e8f0;background:#f8fafc;color:#475569;font-weight:700;white-space:nowrap;text-decoration:none}
+.wrap{max-width:560px;margin:0 auto;padding:12px 10px 60px}
+.page{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:18px 16px;margin-bottom:14px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.phead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;border-bottom:2px solid #e2e8f0;padding-bottom:11px;margin-bottom:14px}
+.eyebrow{font-size:10.5px;font-weight:800;color:#2563eb;letter-spacing:.06em;margin-bottom:3px}
+.phead h2{font-size:17px;margin:0;font-weight:800;line-height:1.35}
+.badge{font-size:11px;font-weight:800;color:#ea580c;background:#fffbeb;border:1px solid #fde68a;border-radius:999px;padding:4px 11px;white-space:nowrap}
+.card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:13px;padding:12px 14px;margin-bottom:11px}
+.rows .rw{display:flex;justify-content:space-between;gap:10px;padding:6px 0;font-size:13px;border-bottom:1px solid #f1f5f9}
+.rows .rw:last-child{border-bottom:none}
+.rows .k{color:#64748b}.rows .v{font-weight:800;text-align:right}
+.note{border-radius:13px;padding:13px 15px;margin-bottom:11px;font-size:13px;border:1px solid}
+.note p{margin:0 0 6px}.note p:last-child{margin:0}
+.note .nt-t{font-weight:800;font-size:12.5px;margin-bottom:7px}
+.note.plain{background:#f8fafc;border-color:#e2e8f0}.note.plain .nt-t{color:#64748b}
+.note.info{background:#eff6ff;border-color:#bfdbfe}.note.info .nt-t{color:#2563eb}
+.note.warn{background:#fef2f2;border-color:#fecaca}.note.warn .nt-t{color:#dc2626}
+.note.yel{background:#fffbeb;border-color:#fde68a}.note.yel .nt-t{color:#ea580c}
+.note.ok{background:#ecfdf5;border-color:#a7f3d0}.note.ok .nt-t{color:#059669}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:11px}
+.kv{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px}
+.kv .k{font-size:11px;color:#64748b}.kv .v{font-size:17px;font-weight:800;margin:2px 0}.kv .s{font-size:10.5px;color:#94a3b8}
+.lv{border-radius:12px;padding:11px 12px;border:1px solid}
+.lv.lr,.lv.up{background:#fef2f2;border-color:#fecaca}
+.lv.ls,.lv.dn{background:#eff6ff;border-color:#bfdbfe}
+.lv.flat{background:#ecfdf5;border-color:#a7f3d0}
+.lv .k{font-size:11px;color:#64748b}
+.lv .p{font-size:21px;font-weight:800;margin:2px 0}
+.lv.lr .p,.lv.up .p{color:#dc2626}
+.lv.ls .p,.lv.dn .p{color:#2563eb}
+.lv.flat .p{color:#059669}
+.lv .d{font-size:11.5px;font-weight:700}
+.lv.lr .d,.lv.up .d{color:#dc2626}
+.lv.ls .d,.lv.dn .d{color:#2563eb}
+.lv.flat .d{color:#059669}
+.lv .s{font-size:10.5px;color:#94a3b8;margin-top:3px}
+.chart{border:1px solid #e2e8f0;border-radius:13px;padding:6px;margin-bottom:11px;overflow:hidden;background:#fff}
+.bul{display:flex;gap:10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:11px 13px;margin-bottom:9px;font-size:13px}
+.bul.warn{background:#fef2f2;border-color:#fecaca}
+.bul i{flex:none;width:7px;height:7px;border-radius:50%;background:#2563eb;margin-top:8px}
+.bul.warn i{background:#dc2626}
+.tbl table{width:100%;border-collapse:collapse;font-size:12.5px}
+.tbl th{color:#64748b;font-weight:600;font-size:11px;padding:9px 7px;text-align:right;border-bottom:1px solid #e2e8f0}
+.tbl th:first-child,.tbl td:first-child{text-align:left}
+.tbl td{padding:9px 7px;text-align:right;border-bottom:1px solid #f1f5f9;font-weight:600}
+.tbl tbody tr:last-child td{border-bottom:none}
+.rlink{display:block;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;margin-bottom:9px;text-decoration:none;color:#1e293b}
+.rlink:active{background:#eff6ff}
+.rlink .rt{font-size:13px;font-weight:700;margin-bottom:4px;color:#1e293b}
+.rlink .rm{font-size:11px;color:#64748b}
+.rlink .rp{font-size:11.5px;color:#475569;margin-top:5px;line-height:1.4}
+.pfoot{display:flex;justify-content:space-between;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;padding-top:10px;margin-top:4px}
+.mini{color:#2563eb;font-weight:700;text-decoration:none}
+
+.sec-head{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;
+  background:linear-gradient(90deg,#1e293b,#334155);color:#fff;border-radius:10px;margin-bottom:12px}
+.sec-head h2{margin:0;font-size:15px;font-weight:800}
+.sec-head .badge{background:rgba(255,255,255,.15);color:#fff;padding:3px 10px;border-radius:10px;font-size:11px}
+details summary{cursor:pointer;font-weight:700;font-size:12px;color:#7c3aed;padding:6px 0;user-select:none}
+details[open] summary::after{content:" ▲"}
+details summary::after{content:" ▼"}
+.strat-comment{background:#f8fafc;border-left:3px solid #6366f1;padding:6px 10px;border-radius:4px;margin-top:6px;font-size:11px;color:#475569;line-height:1.5}
+.strat-comment b{color:#1e293b}
+</style>
+</head><body>
+<div class="bar"><div class="in">
+<h1>HD현대중공업 <span style="color:#94a3b8;font-weight:600">329180</span>&nbsp;&nbsp;<span style="font-size:12px;background:#e2e8f0;color:#475569;padding:2px 8px;border-radius:10px;font-weight:600">KS</span></h1>
+<div style="display:flex;gap:5px;margin-top:8px"><a href="#sec1" style="flex:1;text-align:center;padding:8px 2px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;background:#f1f5f9;color:#334155;border:1px solid #e2e8f0">⚡ 액션보드</a><a href="#sec2" style="flex:1;text-align:center;padding:8px 2px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;background:#f1f5f9;color:#334155;border:1px solid #e2e8f0">📊 차트</a><a href="#sec3" style="flex:1;text-align:center;padding:8px 2px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;background:#f1f5f9;color:#334155;border:1px solid #e2e8f0">🔥 수급</a><a href="#sec4" style="flex:1;text-align:center;padding:8px 2px;border-radius:8px;font-size:12px;font-weight:700;text-decoration:none;background:#f1f5f9;color:#334155;border:1px solid #e2e8f0">🔔 이슈</a></div>
+</div></div>
+<div class="wrap">
+
+<!-- ★ SEC 1: 핵심 액션 보드 -->
+<section class="page" id="sec1">
+
+<div class="sec-head"><h2>⚡ 핵심 액션 보드</h2><span class="badge">14:00 기준</span></div>
+
+<!-- ── SEC1: 현재가 + 등급 ── -->
+<div style="background:#f0f9ff;border:1px solid #bae6fd;border-radius:8px;padding:6px 12px;margin-bottom:10px;font-size:11px"><span style="color:#0369a1;font-weight:700">📈 직전 알람(2.0시간 전 12:00) 대비</span> <span style="color:#2563eb;font-weight:700">-0.53%</span></div>
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:8px 12px;margin-bottom:10px;font-size:11px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2px"><div><span style="color:#64748b;font-weight:700">⚡ 당일 실시간 수급</span></div><div style="display:flex;gap:8px"><span style="color:#64748b;font-weight:700">외인 ─+0주</span><span style="color:#2563eb;font-weight:700">기관 ▼-466주</span><span style="color:#64748b;font-weight:700">개인 ─+0주</span></div></div></div>
+<div class="grid2" style="margin-bottom:10px">
+<div class="lv up" style="padding:14px 12px">
+<div class="k" style="font-size:11px">현재가 <span style="font-size:11px;background:#7c3aed;color:#fff;padding:2px 6px;border-radius:6px;font-weight:700">NXT</span> · KS</div>
+<div class="p" style="font-size:26px;font-weight:800">466,000원</div>
+<div class="d" style="font-size:15px">▲ 0.32%</div>
+<div class="s" style="color:#475569;font-weight:600;margin-top:4px">KRX 466,000원 (KRX 대비 <span style="color:#059669;font-weight:700">─0.00%</span>)</div>
+</div>
+<div class="kv" style="padding:10px 8px;font-size:11px">
+<div style="text-align:center;margin-bottom:6px">
+<span style="font-size:22px;font-weight:900;color:#dc2626">C-</span>
+<span style="font-size:11px;color:#64748b;margin-left:4px">44점</span>
+</div>
+<div style="display:grid;grid-template-columns:auto 1fr;gap:3px 6px;font-size:11px">
+<span style="color:#64748b">시가</span><span style="font-weight:700;text-align:right;color:#dc2626">469,000원</span>
+<span style="color:#dc2626">고가</span><span style="font-weight:700;color:#dc2626;text-align:right">473,000원</span>
+<span style="color:#2563eb">저가</span><span style="font-weight:700;color:#2563eb;text-align:right">461,000원</span>
+<span style="color:#64748b">당일 거래량</span><span style="font-weight:700;color:#1e293b;text-align:right">118,489주</span>
+</div>
+</div>
+</div>
+
+<!-- KOSPI/KOSDAQ 인라인 -->
+<div class="grid2" style="margin-bottom:10px">
+<div class="kv">
+<div class="k" style="font-size:10px;color:#64748b">KOSPI</div>
+<div class="v" style="font-size:14px;color:#dc2626">▲ 6,901.72</div>
+<div class="s">+1.37% · 등급 A</div>
+</div>
+<div class="kv">
+<div class="k" style="font-size:10px;color:#64748b">KOSDAQ</div>
+<div class="v" style="font-size:14px;color:#dc2626">▲ 836.03</div>
+<div class="s">+1.11% · 등급 A</div>
+</div>
+</div>
+
+
+
+<!-- 당일 내러티브 -->
+<div class="note warn" style="margin-bottom:10px"><div class="nt-t">🎙️ 당일 흐름 심층 시황 (HD현대중공업)</div><p style="font-size:11.5px;line-height:1.8">🎙️ <b>[장중 시황 해설]</b> <b>HD현대중공업</b>은(는) 글로벌 1위 조선 및 해양 플랜트·친환경 선박 엔진 선도 기업로, 간밤 미국 기술주 강세(나스닥 -0.76%) 및 나스닥 선물(+1.34%) 훈풍과 함께 전일 종가 대비 <b>+0.00% 보합권한 464,500원</b>으로 시초가를 형성하며 거래를 시작했습니다. 최근 <b>DS투자증권</b>에서는 <i>'압도적인 모멘텀. 전사적인 수익성도 확대 중...'</i> 리포트를 통해 긍정적 펀더멘털 성장성을 강조한 바 있습니다.<br style='margin-bottom:5px'>📢 <b>[대도무문 시황 브리핑]</b> <i>'오전 금리인상 이슈 나온 후 잠시 출렁거렸지만   다시 무난한 흐름 이어갑니다   물론 전자 닉스로 수급이 집중 된 만큼 상대...'</i> 등 글로벌 수급 및 섹터 모멘텀 환경이 전개되고 있습니다.<br style='margin-bottom:7px'>장중 09:03경 일중 저점 <b>461,000원</b>을 확인한 뒤 <b>매수 주체의 강한 저가 매수세</b>가 유입되며 09:42경 당일 최고가 <b>473,000원</b>까지 반등 탄력을 확대하는 등 일중 변동폭 <b>2.6%</b>의 우상향 반등 흐름을 연출했습니다.<br style='margin-bottom:7px'>💡 <b>[기술적 관점 및 전략]</b> 현재 체결강도 <b>64.9%</b>로 매수 호가가 우세한 상태이며, 종합 평가 <b>C-등급(44점)</b>으로 <b>'신중 접근'</b> 관점의 대응이 가장 적절합니다. 특히 18:00 이후 NXT 야간 거래에서 <b>466,000원</b>에 거래되며 장 마감 이후에도 활발한 가격 형성이 이어지고 있습니다.</p></div>
+
+<!-- 전략 -->
+<div class="card rows" style="margin-bottom:10px">
+<div class="rw"><span class="k">초단타</span><span class="v" style="font-size:12px;max-width:230px;text-align:right"><span style="color:#dc2626;font-weight:700;font-size:12px">5분선 하회 + MACD 음 — 하방 압력 지속 구간, 단기 반등 확인 전까지 신규 진입 자제 및 관망</span></span></div>
+<div class="rw"><span class="k">스윙(1~5일)</span><span class="v" style="font-size:12px;max-width:230px;text-align:right"><span style="color:#dc2626;font-weight:700;font-size:12px">역배열 하락 추세 구간 — 단기 바닥 확인 전까지 스윙 신규 매수 금지, 기존 보유자는 반등 시 비중 축소</span></span></div>
+<div class="rw"><span class="k">장기</span><span class="v" style="font-size:12px;max-width:230px;text-align:right"><span style="color:#475569;font-size:12px">성장 프리미엄 고평가(PER 29.7배 / PBR 5.23배) — 실적 가이던스 달성 여부 분기별 철저 검증 필요</span></span></div>
+</div>
+
+<div class="card" style="margin-bottom:10px">
+<div style="font-size:11px;font-weight:700;color:#1e293b;margin-bottom:6px">📋 투자자 매매전략</div>
+<div style="display:flex;gap:7px;padding:4px 0;border-bottom:1px solid #f1f5f9;font-size:12px"><span style="color:#64748b;flex:none;font-weight:700">·</span><span style="color:#334155">RSI 50 (중립권) — 추세 확인 후 진입</span></div><div style="display:flex;gap:7px;padding:4px 0;border-bottom:1px solid #f1f5f9;font-size:12px"><span style="color:#dc2626;flex:none;font-weight:700">▲</span><span style="color:#334155">역배열(종가<MA5<MA20) — 하방 압력, 매수 신중</span></div><div style="display:flex;gap:7px;padding:4px 0;border-bottom:1px solid #f1f5f9;font-size:12px"><span style="color:#64748b;flex:none;font-weight:700">·</span><span style="color:#334155">NXT 장외 진행 중 — 내일 시초가는 NXT 가격 참고</span></div>
+</div>
+
+<!-- 매수/리스크 포인트 -->
+<div class="grid2" style="margin-bottom:10px">
+<div>
+<div class="note ok" style="padding:7px 10px;margin-bottom:0">
+<div class="nt-t" style="font-size:11px">매수 포인트</div></div>
+<div style="display:flex;gap:6px;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="color:#dc2626;font-weight:700;flex:none">▲</span><span style="font-size:11.5px;color:#b91c1c;font-weight:600">특이 매수 시그널 없음 (추세 관망)</span></div>
+</div>
+<div>
+<div class="note warn" style="padding:7px 10px;margin-bottom:0">
+<div class="nt-t" style="font-size:11px">리스크 주의</div></div>
+<div style="display:flex;gap:6px;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="color:#2563eb;font-weight:700;flex:none">▼</span><span style="font-size:11.5px;color:#1d4ed8;font-weight:600">특이 리스크 시그널 없음 (안정 유지)</span></div>
+</div>
+</div>
+
+<!-- 재무 핵심 & 밸류에이션 평가 -->
+<div class="card rows" style="margin-bottom:10px">
+<div class="rw"><span class="k" style="font-weight:700;color:#1e293b">재무 핵심 </span><span class="v" style="color:#7c3aed;font-size:11px;font-weight:700">펀더멘털</span></div>
+<div class="rw"><span class="k">PER</span><span class="v"><span style="color:#94a3b8;font-size:10px;font-weight:400;margin-right:6px">(업종평균 28.5배)</span> <b style='color:#2563eb;font-weight:700'>29.68배</b> <span style='font-size:9px;color:#2563eb;font-weight:600'>▼[할증]</span></span></div><div class="rw"><span class="k">PBR</span><span class="v"><span style="color:#94a3b8;font-size:10px;font-weight:400;margin-right:6px">(업종평균 1.85배)</span> <b style='color:#1d4ed8;font-weight:800'>5.23배</b> 🔵 <span style='font-size:9px;color:#1d4ed8;font-weight:800'>[고PBR]</span></span></div><div class="rw"><span class="k">ROE</span><span class="v"><b style='color:#dc2626;font-weight:700'>18.80%</b> <span style='font-size:9px;color:#dc2626;font-weight:700'>▲[우수]</span> <span style="font-size:10px;color:#7c3aed;font-weight:700;background:#f5f3ff;padding:1px 5px;border-radius:4px;border:1px solid #ddd6fe">[KOSPI 상위 10% · 약 95등]</span></span></div><div class="rw"><span class="k">EPS</span><span class="v"><b>15,702원</b> <span style="font-size:10px;color:#7c3aed;font-weight:700;background:#f5f3ff;padding:1px 5px;border-radius:4px;border:1px solid #ddd6fe">[KOSPI 상위 5% · 약 47등]</span></span></div><div class="rw"><span class="k">BPS</span><span class="v"><b>89,148원</b> <span style="font-size:10px;color:#7c3aed;font-weight:700;background:#f5f3ff;padding:1px 5px;border-radius:4px;border:1px solid #ddd6fe">[KOSPI 상위 15% · 약 142등]</span></span></div>
+<div style="padding:6px 0 2px;font-size:11px;color:#475569;border-top:1px solid #f1f5f9;line-height:1.4">💡 <span style="color:#1e293b;font-weight:700">성장 프리미엄 구간 (PER 29.7배 / PBR 5.23배) — 모멘텀 및 이익성장률 주목</span></div>
+</div>
+
+<div class="pfoot"><span>HD현대중공업(329180) StockAlarm</span><span>Sec 1/4</span></div>
+</section>
+
+<!-- ★ SEC 2: 통합 차트 & 패턴 -->
+<section class="page" id="sec2">
+<div class="sec-head"><h2>📊 통합 차트 & 패턴</h2><span class="badge">3분봉</span></div>
+
+<div class="card" style="margin-bottom:10px"><div style="font-size:10.5px;font-weight:700;color:#64748b;margin-bottom:5px">일봉 차트 (최근 60일) · 10일선 <span style='color:#f59e0b'>■</span> 20일선 <span style='color:#7c3aed'>■</span> 60일선 <span style='color:#06b6d4'>■</span></div><svg viewBox="0 0 336 210" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block"><rect x="312.0" y="145.7" width="0.0" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="133.3" width="6.1" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="121.0" width="16.0" height="12.3" fill="#7c3aed" opacity="0.55" rx="1"/>
+<rect x="312.0" y="108.7" width="10.5" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="96.3" width="6.1" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="84.0" width="3.0" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="71.7" width="5.4" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="59.3" width="6.5" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="47.0" width="7.1" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="34.7" width="9.8" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="22.3" width="4.2" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<rect x="312.0" y="10.0" width="1.4" height="12.3" fill="#c4b5fd" opacity="0.55" rx="1"/>
+<text x="312" y="8" font-size="5.5" fill="#7c3aed">매물대</text>
+<polygon points="130.4,15.3 134.9,17.0 139.3,17.5 143.8,18.6 148.2,18.5 152.6,17.4 157.1,15.8 161.5,14.8 165.9,14.9 170.4,20.4 174.8,24.9 179.2,32.7 183.7,40.3 188.1,46.0 192.5,50.2 197.0,52.0 201.4,54.9 205.8,57.7 210.2,59.7 214.7,63.6 219.1,67.8 223.6,76.3 228.0,83.4 232.4,90.3 236.9,99.7 241.3,104.6 245.7,105.5 250.2,105.5 254.6,102.8 259.0,102.0 263.5,101.2 267.9,100.6 272.3,99.4 276.8,99.5 281.2,100.0 285.6,100.1 290.1,100.2 294.5,100.2 298.9,100.4 303.4,100.7 307.8,102.0 307.8,140.9 303.4,143.6 298.9,144.5 294.5,143.7 290.1,142.4 285.6,140.5 281.2,141.1 276.8,142.5 272.3,144.5 267.9,144.4 263.5,144.9 259.0,145.5 254.6,145.4 250.2,143.8 245.7,143.8 241.3,144.3 236.9,147.3 232.4,152.3 228.0,154.5 223.6,156.8 219.1,158.0 214.7,155.3 210.2,152.9 205.8,151.5 201.4,150.1 197.0,149.1 192.5,145.5 188.1,141.6 183.7,137.7 179.2,136.6 174.8,133.9 170.4,128.2 165.9,123.8 161.5,117.5 157.1,110.4 152.6,103.4 148.2,99.7 143.8,97.9 139.3,95.2 134.9,93.0 130.4,92.1" fill="#7c3aed" opacity="0.06"/>
+<polyline points="130.4,15.3 134.9,17.0 139.3,17.5 143.8,18.6 148.2,18.5 152.6,17.4 157.1,15.8 161.5,14.8 165.9,14.9 170.4,20.4 174.8,24.9 179.2,32.7 183.7,40.3 188.1,46.0 192.5,50.2 197.0,52.0 201.4,54.9 205.8,57.7 210.2,59.7 214.7,63.6 219.1,67.8 223.6,76.3 228.0,83.4 232.4,90.3 236.9,99.7 241.3,104.6 245.7,105.5 250.2,105.5 254.6,102.8 259.0,102.0 263.5,101.2 267.9,100.6 272.3,99.4 276.8,99.5 281.2,100.0 285.6,100.1 290.1,100.2 294.5,100.2 298.9,100.4 303.4,100.7 307.8,102.0" fill="none" stroke="#7c3aed" stroke-width="0.7" opacity="0.5" stroke-dasharray="3,2"/>
+<polyline points="130.4,92.1 134.9,93.0 139.3,95.2 143.8,97.9 148.2,99.7 152.6,103.4 157.1,110.4 161.5,117.5 165.9,123.8 170.4,128.2 174.8,133.9 179.2,136.6 183.7,137.7 188.1,141.6 192.5,145.5 197.0,149.1 201.4,150.1 205.8,151.5 210.2,152.9 214.7,155.3 219.1,158.0 223.6,156.8 228.0,154.5 232.4,152.3 236.9,147.3 241.3,144.3 245.7,143.8 250.2,143.8 254.6,145.4 259.0,145.5 263.5,144.9 267.9,144.4 272.3,144.5 276.8,142.5 281.2,141.1 285.6,140.5 290.1,142.4 294.5,143.7 298.9,144.5 303.4,143.6 307.8,140.9" fill="none" stroke="#7c3aed" stroke-width="0.7" opacity="0.5" stroke-dasharray="3,2"/>
+<line x1="44" y1="10.0" x2="310" y2="10.0" stroke="#f1f5f9" stroke-width="0.5"/>
+<text x="42" y="13.0" text-anchor="end" font-size="7" fill="#94a3b8">738,000</text>
+<line x1="44" y1="59.3" x2="310" y2="59.3" stroke="#f1f5f9" stroke-width="0.5"/>
+<text x="42" y="62.3" text-anchor="end" font-size="7" fill="#94a3b8">625,642</text>
+<line x1="44" y1="108.7" x2="310" y2="108.7" stroke="#f1f5f9" stroke-width="0.5"/>
+<text x="42" y="111.7" text-anchor="end" font-size="7" fill="#94a3b8">513,283</text>
+<line x1="44" y1="158.0" x2="310" y2="158.0" stroke="#f1f5f9" stroke-width="0.5"/>
+<text x="42" y="161.0" text-anchor="end" font-size="7" fill="#94a3b8">400,925</text>
+<text x="46.2" y="207" text-anchor="middle" font-size="6.5" fill="#94a3b8">06/02</text>
+<text x="99.4" y="207" text-anchor="middle" font-size="6.5" fill="#94a3b8">06/19</text>
+<text x="152.6" y="207" text-anchor="middle" font-size="6.5" fill="#94a3b8">07/07</text>
+<text x="205.8" y="207" text-anchor="middle" font-size="6.5" fill="#94a3b8">07/24</text>
+<text x="259.0" y="207" text-anchor="middle" font-size="6.5" fill="#94a3b8">08/11</text>
+<line x1="46.2" y1="25.8" x2="46.2" y2="50.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="44.5" y="35.9" width="3.4" height="2.6" fill="#2563eb" rx="0.4"/>
+<rect x="44.5" y="162.0" width="3.4" height="26.0" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="50.6" y1="29.3" x2="50.6" y2="48.2" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="49.0" y="33.7" width="3.4" height="14.5" fill="#2563eb" rx="0.4"/>
+<rect x="49.0" y="174.1" width="3.4" height="13.9" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="55.1" y1="35.9" x2="55.1" y2="50.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="53.4" y="42.5" width="3.4" height="6.6" fill="#dc2626" rx="0.4"/>
+<rect x="53.4" y="172.9" width="3.4" height="15.1" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="59.5" y1="47.3" x2="59.5" y2="63.6" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="57.8" y="53.0" width="3.4" height="8.3" fill="#2563eb" rx="0.4"/>
+<rect x="57.8" y="172.2" width="3.4" height="15.8" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="64.0" y1="56.1" x2="64.0" y2="68.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="62.3" y="59.6" width="3.4" height="5.7" fill="#2563eb" rx="0.4"/>
+<rect x="62.3" y="174.7" width="3.4" height="13.3" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="68.4" y1="47.3" x2="68.4" y2="66.6" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="66.7" y="52.6" width="3.4" height="12.3" fill="#dc2626" rx="0.4"/>
+<rect x="66.7" y="170.1" width="3.4" height="17.9" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="72.8" y1="44.7" x2="72.8" y2="66.6" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="71.1" y="50.4" width="3.4" height="3.5" fill="#dc2626" rx="0.4"/>
+<rect x="71.1" y="166.8" width="3.4" height="21.2" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="77.2" y1="36.3" x2="77.2" y2="51.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="75.6" y="41.2" width="3.4" height="7.5" fill="#2563eb" rx="0.4"/>
+<rect x="75.6" y="171.1" width="3.4" height="16.9" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="81.7" y1="18.3" x2="81.7" y2="39.4" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="80.0" y="20.5" width="3.4" height="15.8" fill="#dc2626" rx="0.4"/>
+<rect x="80.0" y="172.5" width="3.4" height="15.5" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="86.1" y1="18.3" x2="86.1" y2="31.1" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="84.4" y="24.5" width="3.4" height="3.1" fill="#2563eb" rx="0.4"/>
+<rect x="84.4" y="177.6" width="3.4" height="10.4" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="90.6" y1="10.0" x2="90.6" y2="29.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="88.9" y="23.6" width="3.4" height="2.2" fill="#dc2626" rx="0.4"/>
+<rect x="88.9" y="174.6" width="3.4" height="13.4" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="95.0" y1="15.3" x2="95.0" y2="35.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="93.3" y="24.1" width="3.4" height="9.7" fill="#2563eb" rx="0.4"/>
+<rect x="93.3" y="173.8" width="3.4" height="14.2" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="99.4" y1="33.7" x2="99.4" y2="48.6" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="97.7" y="33.7" width="3.4" height="7.5" fill="#2563eb" rx="0.4"/>
+<rect x="97.7" y="166.7" width="3.4" height="21.3" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="103.8" y1="38.1" x2="103.8" y2="57.2" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="102.2" y="41.2" width="3.4" height="13.6" fill="#2563eb" rx="0.4"/>
+<rect x="102.2" y="175.4" width="3.4" height="12.6" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="108.3" y1="46.9" x2="108.3" y2="75.9" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="106.6" y="50.8" width="3.4" height="25.0" fill="#2563eb" rx="0.4"/>
+<rect x="106.6" y="174.2" width="3.4" height="13.8" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="112.7" y1="69.3" x2="112.7" y2="80.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="111.0" y="72.8" width="3.4" height="3.5" fill="#2563eb" rx="0.4"/>
+<rect x="111.0" y="177.4" width="3.4" height="10.6" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="117.2" y1="63.1" x2="117.2" y2="78.9" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="115.5" y="71.5" width="3.4" height="7.0" fill="#2563eb" rx="0.4"/>
+<rect x="115.5" y="179.2" width="3.4" height="8.8" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="121.6" y1="78.5" x2="121.6" y2="93.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="119.9" y="80.3" width="3.4" height="6.1" fill="#2563eb" rx="0.4"/>
+<rect x="119.9" y="175.6" width="3.4" height="12.4" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="126.0" y1="70.6" x2="126.0" y2="93.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="124.3" y="74.1" width="3.4" height="11.0" fill="#dc2626" rx="0.4"/>
+<rect x="124.3" y="175.8" width="3.4" height="12.2" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="130.4" y1="60.5" x2="130.4" y2="81.1" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="128.8" y="70.2" width="3.4" height="4.0" fill="#2563eb" rx="0.4"/>
+<rect x="128.8" y="174.0" width="3.4" height="14.0" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="134.9" y1="60.9" x2="134.9" y2="76.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="133.2" y="64.0" width="3.4" height="6.1" fill="#dc2626" rx="0.4"/>
+<rect x="133.2" y="176.3" width="3.4" height="11.7" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="139.3" y1="64.0" x2="139.3" y2="79.4" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="137.6" y="66.2" width="3.4" height="8.8" fill="#2563eb" rx="0.4"/>
+<rect x="137.6" y="178.0" width="3.4" height="10.0" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="143.8" y1="74.5" x2="143.8" y2="87.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="142.1" y="75.9" width="3.4" height="4.8" fill="#2563eb" rx="0.4"/>
+<rect x="142.1" y="178.2" width="3.4" height="9.8" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="148.2" y1="68.0" x2="148.2" y2="87.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="146.5" y="77.2" width="3.4" height="1.0" fill="#2563eb" rx="0.4"/>
+<rect x="146.5" y="179.5" width="3.4" height="8.5" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="152.6" y1="86.4" x2="152.6" y2="104.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="150.9" y="89.0" width="3.4" height="2.6" fill="#2563eb" rx="0.4"/>
+<rect x="150.9" y="172.0" width="3.4" height="16.0" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="157.1" y1="93.9" x2="157.1" y2="112.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="155.4" y="95.2" width="3.4" height="11.9" fill="#2563eb" rx="0.4"/>
+<rect x="155.4" y="172.1" width="3.4" height="15.9" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="161.5" y1="100.0" x2="161.5" y2="116.5" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="159.8" y="106.2" width="3.4" height="5.3" fill="#2563eb" rx="0.4"/>
+<rect x="159.8" y="172.2" width="3.4" height="15.8" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="165.9" y1="104.0" x2="165.9" y2="114.5" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="164.2" y="110.1" width="3.4" height="2.6" fill="#2563eb" rx="0.4"/>
+<rect x="164.2" y="178.0" width="3.4" height="10.0" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="170.4" y1="106.6" x2="170.4" y2="121.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="168.7" y="111.0" width="3.4" height="9.0" fill="#2563eb" rx="0.4"/>
+<rect x="168.7" y="177.1" width="3.4" height="10.9" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="174.8" y1="120.4" x2="174.8" y2="135.1" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="173.1" y="120.6" width="3.4" height="8.8" fill="#2563eb" rx="0.4"/>
+<rect x="173.1" y="167.4" width="3.4" height="20.6" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="179.2" y1="120.6" x2="179.2" y2="133.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="177.5" y="125.3" width="3.4" height="2.0" fill="#2563eb" rx="0.4"/>
+<rect x="177.5" y="170.4" width="3.4" height="17.6" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="183.7" y1="119.3" x2="183.7" y2="130.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="182.0" y="121.5" width="3.4" height="3.7" fill="#dc2626" rx="0.4"/>
+<rect x="182.0" y="177.1" width="3.4" height="10.9" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="188.1" y1="123.5" x2="188.1" y2="138.6" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="186.4" y="124.4" width="3.4" height="12.7" fill="#2563eb" rx="0.4"/>
+<rect x="186.4" y="176.7" width="3.4" height="11.3" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="192.5" y1="135.4" x2="192.5" y2="142.2" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="190.8" y="135.8" width="3.4" height="3.7" fill="#dc2626" rx="0.4"/>
+<rect x="190.8" y="177.7" width="3.4" height="10.3" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="197.0" y1="125.7" x2="197.0" y2="134.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="195.3" y="130.1" width="3.4" height="3.3" fill="#dc2626" rx="0.4"/>
+<rect x="195.3" y="178.4" width="3.4" height="9.6" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="201.4" y1="113.6" x2="201.4" y2="130.1" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="199.7" y="115.4" width="3.4" height="14.7" fill="#dc2626" rx="0.4"/>
+<rect x="199.7" y="177.6" width="3.4" height="10.4" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="205.8" y1="111.4" x2="205.8" y2="122.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="204.1" y="118.2" width="3.4" height="2.6" fill="#2563eb" rx="0.4"/>
+<rect x="204.1" y="180.4" width="3.4" height="7.6" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="210.2" y1="113.6" x2="210.2" y2="125.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="208.6" y="118.7" width="3.4" height="1.8" fill="#2563eb" rx="0.4"/>
+<rect x="208.6" y="182.9" width="3.4" height="5.1" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="214.7" y1="125.0" x2="214.7" y2="138.4" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="213.0" y="125.0" width="3.4" height="11.0" fill="#2563eb" rx="0.4"/>
+<rect x="213.0" y="174.0" width="3.4" height="14.0" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="219.1" y1="132.1" x2="219.1" y2="153.4" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="217.4" y="134.0" width="3.4" height="9.4" fill="#2563eb" rx="0.4"/>
+<rect x="217.4" y="169.2" width="3.4" height="18.8" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="223.6" y1="129.9" x2="223.6" y2="147.2" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="221.9" y="137.3" width="3.4" height="9.9" fill="#dc2626" rx="0.4"/>
+<rect x="221.9" y="174.5" width="3.4" height="13.5" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="228.0" y1="121.5" x2="228.0" y2="135.6" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="226.3" y="122.8" width="3.4" height="7.0" fill="#dc2626" rx="0.4"/>
+<rect x="226.3" y="176.9" width="3.4" height="11.1" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="232.4" y1="122.8" x2="232.4" y2="130.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="230.7" y="127.0" width="3.4" height="1.0" fill="#2563eb" rx="0.4"/>
+<rect x="230.7" y="182.7" width="3.4" height="5.3" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="236.9" y1="121.1" x2="236.9" y2="128.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="235.2" y="122.0" width="3.4" height="5.9" fill="#dc2626" rx="0.4"/>
+<rect x="235.2" y="182.0" width="3.4" height="6.0" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="241.3" y1="108.8" x2="241.3" y2="119.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="239.6" y="110.5" width="3.4" height="5.7" fill="#dc2626" rx="0.4"/>
+<rect x="239.6" y="177.7" width="3.4" height="10.3" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="245.7" y1="104.4" x2="245.7" y2="117.1" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="244.0" y="110.1" width="3.4" height="1.3" fill="#2563eb" rx="0.4"/>
+<rect x="244.0" y="182.2" width="3.4" height="5.8" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="250.2" y1="107.9" x2="250.2" y2="119.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="248.5" y="111.0" width="3.4" height="1.0" fill="#2563eb" rx="0.4"/>
+<rect x="248.5" y="182.1" width="3.4" height="5.9" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="254.6" y1="96.1" x2="254.6" y2="112.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="252.9" y="100.4" width="3.4" height="11.0" fill="#dc2626" rx="0.4"/>
+<rect x="252.9" y="171.2" width="3.4" height="16.8" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="259.0" y1="96.1" x2="259.0" y2="113.6" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="257.3" y="98.3" width="3.4" height="14.9" fill="#2563eb" rx="0.4"/>
+<rect x="257.3" y="178.3" width="3.4" height="9.7" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="263.5" y1="112.3" x2="263.5" y2="122.6" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="261.8" y="112.3" width="3.4" height="4.0" fill="#2563eb" rx="0.4"/>
+<rect x="261.8" y="177.4" width="3.4" height="10.6" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="267.9" y1="109.7" x2="267.9" y2="117.1" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="266.2" y="113.6" width="3.4" height="2.6" fill="#2563eb" rx="0.4"/>
+<rect x="266.2" y="172.2" width="3.4" height="15.8" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="272.3" y1="107.0" x2="272.3" y2="114.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="270.6" y="110.1" width="3.4" height="1.0" fill="#dc2626" rx="0.4"/>
+<rect x="270.6" y="179.5" width="3.4" height="8.5" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="276.8" y1="111.4" x2="276.8" y2="121.5" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="275.1" y="111.9" width="3.4" height="7.2" fill="#2563eb" rx="0.4"/>
+<rect x="275.1" y="179.4" width="3.4" height="8.6" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="281.2" y1="122.0" x2="281.2" y2="131.4" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="279.5" y="124.6" width="3.4" height="1.3" fill="#2563eb" rx="0.4"/>
+<rect x="279.5" y="180.7" width="3.4" height="7.3" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="285.6" y1="123.3" x2="285.6" y2="126.4" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="283.9" y="124.2" width="3.4" height="1.1" fill="#2563eb" rx="0.4"/>
+<rect x="283.9" y="181.5" width="3.4" height="6.5" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="290.1" y1="129.4" x2="290.1" y2="135.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="288.4" y="129.4" width="3.4" height="5.7" fill="#2563eb" rx="0.4"/>
+<rect x="288.4" y="178.1" width="3.4" height="9.9" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="294.5" y1="130.3" x2="294.5" y2="137.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="292.8" y="134.0" width="3.4" height="1.0" fill="#dc2626" rx="0.4"/>
+<rect x="292.8" y="182.5" width="3.4" height="5.5" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="298.9" y1="129.9" x2="298.9" y2="140.4" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="297.2" y="130.1" width="3.4" height="5.7" fill="#dc2626" rx="0.4"/>
+<rect x="297.2" y="178.2" width="3.4" height="9.8" fill="#dc2626" opacity="0.55" rx="0.4"/>
+<line x1="303.4" y1="128.5" x2="303.4" y2="133.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="301.7" y="128.8" width="3.4" height="1.3" fill="#2563eb" rx="0.4"/>
+<rect x="301.7" y="181.7" width="3.4" height="6.3" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="307.8" y1="126.4" x2="307.8" y2="131.6" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="306.1" y="128.1" width="3.4" height="1.3" fill="#2563eb" rx="0.4"/>
+<rect x="306.1" y="183.3" width="3.4" height="4.7" fill="#2563eb" opacity="0.55" rx="0.4"/>
+<line x1="44" y1="162.0" x2="310" y2="162.0" stroke="#e2e8f0" stroke-width="0.6"/>
+<polyline points="86.1,45.6 90.6,44.1 95.0,42.6 99.4,42.5 103.8,41.8 108.3,42.9 112.7,45.3 117.2,48.1 121.6,51.8 126.0,57.2 130.4,61.9 134.9,65.9 139.3,70.0 143.8,74.0 148.2,76.3 152.6,77.9 157.1,81.0 161.5,84.2 165.9,86.9 170.4,91.5 174.8,97.0 179.2,103.3 183.7,108.0 188.1,113.6 192.5,119.4 197.0,123.2 201.4,124.1 205.8,125.0 210.2,125.8 214.7,127.4 219.1,128.8 223.6,129.8 228.0,129.9 232.4,129.0 236.9,127.6 241.3,125.6 245.7,125.2 250.2,124.3 254.6,122.3 259.0,120.1 263.5,117.3 267.9,115.2 272.3,114.0 276.8,113.1 281.2,113.5 285.6,115.0 290.1,117.4 294.5,119.6 298.9,122.5 303.4,124.2 307.8,125.5" fill="none" stroke="#f59e0b" stroke-width="0.9" opacity="0.8"/>
+<polyline points="130.4,53.7 134.9,55.0 139.3,56.3 143.8,58.2 148.2,59.1 152.6,60.4 157.1,63.1 161.5,66.2 165.9,69.4 170.4,74.3 174.8,79.4 179.2,84.6 183.7,89.0 188.1,93.8 192.5,97.8 197.0,100.6 201.4,102.5 205.8,104.6 210.2,106.3 214.7,109.4 219.1,112.9 223.6,116.6 228.0,119.0 232.4,121.3 236.9,123.5 241.3,124.4 245.7,124.7 250.2,124.7 254.6,124.1 259.0,123.7 263.5,123.1 267.9,122.5 272.3,121.9 276.8,121.0 281.2,120.5 285.6,120.3 290.1,121.3 294.5,122.0 298.9,122.4 303.4,122.1 307.8,121.4" fill="none" stroke="#7c3aed" stroke-width="0.9" opacity="0.8"/>
+<polyline points="307.8,96.0" fill="none" stroke="#06b6d4" stroke-width="0.9" opacity="0.8"/>
+<circle cx="126.0" cy="103.0" r="5" fill="#059669" opacity="0.9"/>
+<text x="126.0" y="106.0" text-anchor="middle" font-size="6" fill="white" font-weight="700">B</text>
+<circle cx="179.2" cy="143.8" r="5" fill="#059669" opacity="0.9"/>
+<text x="179.2" y="146.8" text-anchor="middle" font-size="6" fill="white" font-weight="700">B</text>
+<circle cx="201.4" cy="140.1" r="5" fill="#059669" opacity="0.9"/>
+<text x="201.4" y="143.1" text-anchor="middle" font-size="6" fill="white" font-weight="700">B</text>
+<circle cx="259.0" cy="86.1" r="5" fill="#dc2626" opacity="0.9"/>
+<text x="259.0" y="89.1" text-anchor="middle" font-size="6" fill="white" font-weight="700">S</text>
+<circle cx="303.4" cy="143.8" r="5" fill="#059669" opacity="0.9"/>
+<text x="303.4" y="146.8" text-anchor="middle" font-size="6" fill="white" font-weight="700">B</text>
+<text x="46" y="8" font-size="6.5" fill="#f59e0b">10일선</text>
+<text x="76" y="8" font-size="6.5" fill="#7c3aed">20일선/BB</text>
+<text x="118" y="8" font-size="6.5" fill="#06b6d4">60일선</text></svg><div class="strat-comment">💡 <b>일봉 전략:</b> 20일선·60일선 주요 이평선 지지력을 확인하며 중기 추세 추종 및 눌림목 분할 매수 대응</div></div>
+
+<div style="font-size:10.5px;font-weight:700;color:#64748b;margin:8px 0 4px">당일 차트 (3분봉) · <span style='color:#f59e0b'>■ 30분선</span> <span style='color:#7c3aed'>■ 60분선</span> <span style='color:#06b6d4'>■ 120분선</span></div>
+<div class="chart"><svg viewBox="0 0 336 310" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;border-radius:8px"><line x1="42" y1="8.0" x2="330" y2="8.0" stroke="#e2e8f0" stroke-width="0.5"/>
+<text x="40" y="11.0" text-anchor="end" fill="#64748b" font-size="7.5">473,000</text>
+<line x1="42" y1="51.0" x2="330" y2="51.0" stroke="#e2e8f0" stroke-width="0.5"/>
+<text x="40" y="54.0" text-anchor="end" fill="#64748b" font-size="7.5">470,000</text>
+<line x1="42" y1="94.0" x2="330" y2="94.0" stroke="#e2e8f0" stroke-width="0.5"/>
+<text x="40" y="97.0" text-anchor="end" fill="#64748b" font-size="7.5">467,000</text>
+<line x1="42" y1="137.0" x2="330" y2="137.0" stroke="#e2e8f0" stroke-width="0.5"/>
+<text x="40" y="140.0" text-anchor="end" fill="#64748b" font-size="7.5">464,000</text>
+<line x1="42" y1="180.0" x2="330" y2="180.0" stroke="#e2e8f0" stroke-width="0.5"/>
+<text x="40" y="183.0" text-anchor="end" fill="#64748b" font-size="7.5">461,000</text>
+<line x1="43.2" y1="129.8" x2="43.2" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="42.4" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="42.0" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="45.6" y1="129.8" x2="45.6" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="44.8" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="44.4" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="48.0" y1="129.8" x2="48.0" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="47.2" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="46.8" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="50.3" y1="129.8" x2="50.3" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="49.6" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="49.1" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="52.7" y1="129.8" x2="52.7" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="51.9" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="51.5" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="55.1" y1="129.8" x2="55.1" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="54.3" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="53.9" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="57.5" y1="129.8" x2="57.5" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="56.7" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="56.3" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="59.9" y1="129.8" x2="59.9" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="59.1" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="58.7" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="62.2" y1="129.8" x2="62.2" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="61.5" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="61.0" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="64.6" y1="129.8" x2="64.6" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="63.8" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="63.4" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="67.0" y1="129.8" x2="67.0" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="66.2" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="65.8" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="69.4" y1="129.8" x2="69.4" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="68.6" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="68.2" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="71.8" y1="129.8" x2="71.8" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="71.0" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="70.6" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="74.1" y1="129.8" x2="74.1" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="73.4" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="72.9" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="76.5" y1="129.8" x2="76.5" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="75.7" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="75.3" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="78.9" y1="129.8" x2="78.9" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="78.1" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="77.7" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="81.3" y1="129.8" x2="81.3" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="80.5" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="80.1" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="83.7" y1="129.8" x2="83.7" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="82.9" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="82.5" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="86.0" y1="129.8" x2="86.0" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="85.3" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="84.8" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="88.4" y1="129.8" x2="88.4" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="87.6" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="87.2" y="209.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="90.8" y1="36.7" x2="90.8" y2="165.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="90.0" y="65.3" width="1.5" height="21.5" fill="#2563eb" opacity="0.9"/>
+<rect x="89.6" y="184.0" width="2.0" height="25.0" fill="#2563eb" opacity="0.5"/>
+<line x1="93.2" y1="86.8" x2="93.2" y2="180.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="92.4" y="86.8" width="1.5" height="64.5" fill="#2563eb" opacity="0.9"/>
+<rect x="92.0" y="201.7" width="2.0" height="7.3" fill="#2563eb" opacity="0.5"/>
+<line x1="95.6" y1="122.7" x2="95.6" y2="151.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="94.8" y="129.8" width="1.5" height="21.5" fill="#dc2626" opacity="0.9"/>
+<rect x="94.4" y="204.1" width="2.0" height="4.9" fill="#dc2626" opacity="0.5"/>
+<line x1="97.9" y1="108.3" x2="97.9" y2="137.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="97.2" y="115.5" width="1.5" height="14.3" fill="#dc2626" opacity="0.9"/>
+<rect x="96.7" y="204.9" width="2.0" height="4.1" fill="#dc2626" opacity="0.5"/>
+<line x1="100.3" y1="94.0" x2="100.3" y2="122.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="99.5" y="101.2" width="1.5" height="14.3" fill="#dc2626" opacity="0.9"/>
+<rect x="99.1" y="206.3" width="2.0" height="2.7" fill="#dc2626" opacity="0.5"/>
+<line x1="102.7" y1="94.0" x2="102.7" y2="122.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="101.9" y="94.0" width="1.5" height="28.7" fill="#2563eb" opacity="0.9"/>
+<rect x="101.5" y="206.1" width="2.0" height="2.9" fill="#2563eb" opacity="0.5"/>
+<line x1="105.1" y1="115.5" x2="105.1" y2="129.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="104.3" y="122.7" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="103.9" y="206.5" width="2.0" height="2.5" fill="#2563eb" opacity="0.5"/>
+<line x1="107.5" y1="122.7" x2="107.5" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="106.7" y="129.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="106.3" y="206.2" width="2.0" height="2.8" fill="#dc2626" opacity="0.5"/>
+<line x1="109.8" y1="101.2" x2="109.8" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="109.1" y="122.7" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="108.6" y="204.2" width="2.0" height="4.8" fill="#dc2626" opacity="0.5"/>
+<line x1="112.2" y1="101.2" x2="112.2" y2="129.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="111.4" y="115.5" width="1.5" height="14.3" fill="#dc2626" opacity="0.9"/>
+<rect x="111.0" y="203.6" width="2.0" height="5.4" fill="#dc2626" opacity="0.5"/>
+<line x1="114.6" y1="86.8" x2="114.6" y2="122.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="113.8" y="94.0" width="1.5" height="21.5" fill="#dc2626" opacity="0.9"/>
+<rect x="113.4" y="202.5" width="2.0" height="6.5" fill="#dc2626" opacity="0.5"/>
+<line x1="117.0" y1="65.3" x2="117.0" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="116.2" y="72.5" width="1.5" height="21.5" fill="#dc2626" opacity="0.9"/>
+<rect x="115.8" y="202.9" width="2.0" height="6.1" fill="#dc2626" opacity="0.5"/>
+<line x1="119.4" y1="65.3" x2="119.4" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="118.6" y="72.5" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="118.2" y="205.1" width="2.0" height="3.9" fill="#dc2626" opacity="0.5"/>
+<line x1="121.7" y1="15.2" x2="121.7" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="121.0" y="29.5" width="1.5" height="43.0" fill="#dc2626" opacity="0.9"/>
+<rect x="120.5" y="192.6" width="2.0" height="16.4" fill="#dc2626" opacity="0.5"/>
+<line x1="124.1" y1="8.0" x2="124.1" y2="36.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="123.3" y="29.5" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="122.9" y="202.8" width="2.0" height="6.2" fill="#dc2626" opacity="0.5"/>
+<line x1="126.5" y1="29.5" x2="126.5" y2="43.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="125.7" y="36.7" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="125.3" y="206.8" width="2.0" height="2.2" fill="#2563eb" opacity="0.5"/>
+<line x1="128.9" y1="36.7" x2="128.9" y2="65.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="128.1" y="36.7" width="1.5" height="28.7" fill="#2563eb" opacity="0.9"/>
+<rect x="127.7" y="206.1" width="2.0" height="2.9" fill="#2563eb" opacity="0.5"/>
+<line x1="131.3" y1="58.2" x2="131.3" y2="122.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="130.5" y="65.3" width="1.5" height="50.2" fill="#2563eb" opacity="0.9"/>
+<rect x="130.1" y="205.3" width="2.0" height="3.7" fill="#2563eb" opacity="0.5"/>
+<line x1="133.6" y1="58.2" x2="133.6" y2="115.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="132.9" y="72.5" width="1.5" height="35.8" fill="#dc2626" opacity="0.9"/>
+<rect x="132.4" y="200.3" width="2.0" height="8.7" fill="#dc2626" opacity="0.5"/>
+<line x1="136.0" y1="36.7" x2="136.0" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="135.2" y="36.7" width="1.5" height="43.0" fill="#dc2626" opacity="0.9"/>
+<rect x="134.8" y="204.0" width="2.0" height="5.0" fill="#dc2626" opacity="0.5"/>
+<line x1="138.4" y1="36.7" x2="138.4" y2="101.2" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="137.6" y="36.7" width="1.5" height="64.5" fill="#2563eb" opacity="0.9"/>
+<rect x="137.2" y="204.1" width="2.0" height="4.9" fill="#2563eb" opacity="0.5"/>
+<line x1="140.8" y1="79.7" x2="140.8" y2="108.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="140.0" y="79.7" width="1.5" height="28.7" fill="#dc2626" opacity="0.9"/>
+<rect x="139.6" y="207.2" width="2.0" height="1.8" fill="#dc2626" opacity="0.5"/>
+<line x1="143.2" y1="51.0" x2="143.2" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="142.4" y="58.2" width="1.5" height="21.5" fill="#dc2626" opacity="0.9"/>
+<rect x="142.0" y="205.8" width="2.0" height="3.2" fill="#dc2626" opacity="0.5"/>
+<line x1="145.5" y1="58.2" x2="145.5" y2="94.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="144.8" y="58.2" width="1.5" height="21.5" fill="#2563eb" opacity="0.9"/>
+<rect x="144.3" y="205.4" width="2.0" height="3.6" fill="#2563eb" opacity="0.5"/>
+<line x1="147.9" y1="79.7" x2="147.9" y2="86.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="147.1" y="79.7" width="1.5" height="3.6" fill="#2563eb" opacity="0.9"/>
+<rect x="146.7" y="208.0" width="2.0" height="1.0" fill="#2563eb" opacity="0.5"/>
+<line x1="150.3" y1="65.3" x2="150.3" y2="94.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="149.5" y="79.7" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="149.1" y="207.3" width="2.0" height="1.7" fill="#2563eb" opacity="0.5"/>
+<line x1="152.7" y1="86.8" x2="152.7" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="151.9" y="94.0" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="151.5" y="207.5" width="2.0" height="1.5" fill="#dc2626" opacity="0.5"/>
+<line x1="155.1" y1="79.7" x2="155.1" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="154.3" y="86.8" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="153.9" y="208.5" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="157.4" y1="65.3" x2="157.4" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="156.7" y="79.7" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="156.2" y="206.8" width="2.0" height="2.2" fill="#dc2626" opacity="0.5"/>
+<line x1="159.8" y1="65.3" x2="159.8" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="159.0" y="72.5" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="158.6" y="208.1" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="162.2" y1="65.3" x2="162.2" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="161.4" y="65.3" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="161.0" y="208.2" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="164.6" y1="51.0" x2="164.6" y2="72.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="163.8" y="72.5" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="163.4" y="207.8" width="2.0" height="1.2" fill="#dc2626" opacity="0.5"/>
+<line x1="167.0" y1="58.2" x2="167.0" y2="72.5" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="166.2" y="65.3" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="165.8" y="208.1" width="2.0" height="1.0" fill="#2563eb" opacity="0.5"/>
+<line x1="169.3" y1="65.3" x2="169.3" y2="79.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="168.6" y="72.5" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="168.1" y="207.9" width="2.0" height="1.1" fill="#2563eb" opacity="0.5"/>
+<line x1="171.7" y1="72.5" x2="171.7" y2="94.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="170.9" y="86.8" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="170.5" y="207.9" width="2.0" height="1.1" fill="#2563eb" opacity="0.5"/>
+<line x1="174.1" y1="79.7" x2="174.1" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="173.3" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="172.9" y="207.9" width="2.0" height="1.1" fill="#dc2626" opacity="0.5"/>
+<line x1="176.5" y1="58.2" x2="176.5" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="175.7" y="72.5" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="175.3" y="207.5" width="2.0" height="1.5" fill="#dc2626" opacity="0.5"/>
+<line x1="178.9" y1="51.0" x2="178.9" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="178.1" y="51.0" width="1.5" height="21.5" fill="#dc2626" opacity="0.9"/>
+<rect x="177.7" y="208.3" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="181.2" y1="58.2" x2="181.2" y2="65.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="180.5" y="58.2" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="180.0" y="208.1" width="2.0" height="1.0" fill="#2563eb" opacity="0.5"/>
+<line x1="183.6" y1="58.2" x2="183.6" y2="72.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="182.8" y="58.2" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="182.4" y="208.3" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="186.0" y1="58.2" x2="186.0" y2="72.5" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="185.2" y="58.2" width="1.5" height="14.3" fill="#2563eb" opacity="0.9"/>
+<rect x="184.8" y="207.9" width="2.0" height="1.1" fill="#2563eb" opacity="0.5"/>
+<line x1="188.4" y1="58.2" x2="188.4" y2="72.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="187.6" y="65.3" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="187.2" y="208.3" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="190.8" y1="51.0" x2="190.8" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="190.0" y="65.3" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="189.6" y="207.7" width="2.0" height="1.3" fill="#dc2626" opacity="0.5"/>
+<line x1="193.1" y1="51.0" x2="193.1" y2="65.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="192.4" y="51.0" width="1.5" height="14.3" fill="#dc2626" opacity="0.9"/>
+<rect x="192.0" y="208.4" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="195.5" y1="51.0" x2="195.5" y2="58.2" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="194.7" y="51.0" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="194.3" y="207.9" width="2.0" height="1.1" fill="#dc2626" opacity="0.5"/>
+<line x1="197.9" y1="51.0" x2="197.9" y2="58.2" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="197.1" y="58.2" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="196.7" y="208.1" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="200.3" y1="51.0" x2="200.3" y2="79.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="199.5" y="51.0" width="1.5" height="28.7" fill="#2563eb" opacity="0.9"/>
+<rect x="199.1" y="207.1" width="2.0" height="1.9" fill="#2563eb" opacity="0.5"/>
+<line x1="202.7" y1="65.3" x2="202.7" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="201.9" y="79.7" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="201.5" y="207.2" width="2.0" height="1.8" fill="#dc2626" opacity="0.5"/>
+<line x1="205.0" y1="72.5" x2="205.0" y2="94.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="204.3" y="79.7" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="203.9" y="204.6" width="2.0" height="4.4" fill="#2563eb" opacity="0.5"/>
+<line x1="207.4" y1="79.7" x2="207.4" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="206.6" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="206.2" y="208.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="209.8" y1="58.2" x2="209.8" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="209.0" y="65.3" width="1.5" height="28.7" fill="#dc2626" opacity="0.9"/>
+<rect x="208.6" y="207.7" width="2.0" height="1.3" fill="#dc2626" opacity="0.5"/>
+<line x1="212.2" y1="58.2" x2="212.2" y2="72.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="211.4" y="72.5" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="211.0" y="208.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="214.6" y1="65.3" x2="214.6" y2="79.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="213.8" y="72.5" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="213.4" y="208.3" width="2.0" height="1.0" fill="#2563eb" opacity="0.5"/>
+<line x1="216.9" y1="72.5" x2="216.9" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="216.2" y="72.5" width="1.5" height="3.6" fill="#dc2626" opacity="0.9"/>
+<rect x="215.8" y="207.7" width="2.0" height="1.3" fill="#dc2626" opacity="0.5"/>
+<line x1="219.3" y1="72.5" x2="219.3" y2="86.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="218.5" y="79.7" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="218.1" y="208.0" width="2.0" height="1.0" fill="#2563eb" opacity="0.5"/>
+<line x1="221.7" y1="72.5" x2="221.7" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="220.9" y="72.5" width="1.5" height="14.3" fill="#dc2626" opacity="0.9"/>
+<rect x="220.5" y="207.5" width="2.0" height="1.5" fill="#dc2626" opacity="0.5"/>
+<line x1="224.1" y1="65.3" x2="224.1" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="223.3" y="72.5" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="222.9" y="207.7" width="2.0" height="1.3" fill="#dc2626" opacity="0.5"/>
+<line x1="226.5" y1="43.8" x2="226.5" y2="72.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="225.7" y="51.0" width="1.5" height="21.5" fill="#dc2626" opacity="0.9"/>
+<rect x="225.3" y="205.8" width="2.0" height="3.2" fill="#dc2626" opacity="0.5"/>
+<line x1="228.8" y1="43.8" x2="228.8" y2="72.5" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="228.1" y="51.0" width="1.5" height="14.3" fill="#2563eb" opacity="0.9"/>
+<rect x="227.7" y="208.0" width="2.0" height="1.0" fill="#2563eb" opacity="0.5"/>
+<line x1="231.2" y1="58.2" x2="231.2" y2="65.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="230.4" y="58.2" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="230.0" y="208.5" width="2.0" height="1.0" fill="#2563eb" opacity="0.5"/>
+<line x1="233.6" y1="58.2" x2="233.6" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="232.8" y="65.3" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="232.4" y="208.2" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="236.0" y1="65.3" x2="236.0" y2="72.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="235.2" y="72.5" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="234.8" y="208.5" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="238.4" y1="65.3" x2="238.4" y2="79.7" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="237.6" y="72.5" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="237.2" y="207.5" width="2.0" height="1.5" fill="#dc2626" opacity="0.5"/>
+<line x1="240.7" y1="72.5" x2="240.7" y2="79.7" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="240.0" y="72.5" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="239.6" y="208.4" width="2.0" height="1.0" fill="#2563eb" opacity="0.5"/>
+<line x1="243.1" y1="79.7" x2="243.1" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="242.4" y="79.7" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="241.9" y="208.4" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="245.5" y1="72.5" x2="245.5" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="244.7" y="79.7" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="244.3" y="207.7" width="2.0" height="1.3" fill="#dc2626" opacity="0.5"/>
+<line x1="247.9" y1="79.7" x2="247.9" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="247.1" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="246.7" y="207.5" width="2.0" height="1.5" fill="#dc2626" opacity="0.5"/>
+<line x1="250.3" y1="72.5" x2="250.3" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="249.5" y="79.7" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="249.1" y="208.1" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="252.6" y1="79.7" x2="252.6" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="251.9" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="251.5" y="208.4" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="255.0" y1="79.7" x2="255.0" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="254.3" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="253.8" y="208.5" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="257.4" y1="79.7" x2="257.4" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="256.6" y="79.7" width="1.5" height="3.6" fill="#dc2626" opacity="0.9"/>
+<rect x="256.2" y="208.2" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="259.8" y1="72.5" x2="259.8" y2="86.8" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="259.0" y="79.7" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="258.6" y="207.8" width="2.0" height="1.2" fill="#2563eb" opacity="0.5"/>
+<line x1="262.2" y1="79.7" x2="262.2" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="261.4" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="261.0" y="207.3" width="2.0" height="1.7" fill="#dc2626" opacity="0.5"/>
+<line x1="264.5" y1="79.7" x2="264.5" y2="86.8" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="263.8" y="79.7" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="263.4" y="208.3" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="266.9" y1="79.7" x2="266.9" y2="94.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="266.2" y="86.8" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="265.7" y="206.3" width="2.0" height="2.7" fill="#2563eb" opacity="0.5"/>
+<line x1="269.3" y1="72.5" x2="269.3" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="268.5" y="86.8" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="268.1" y="207.0" width="2.0" height="2.0" fill="#dc2626" opacity="0.5"/>
+<line x1="271.7" y1="79.7" x2="271.7" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="270.9" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="270.5" y="208.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="274.1" y1="79.7" x2="274.1" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="273.3" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="272.9" y="207.9" width="2.0" height="1.1" fill="#dc2626" opacity="0.5"/>
+<line x1="276.4" y1="72.5" x2="276.4" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="275.7" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="275.3" y="207.1" width="2.0" height="1.9" fill="#dc2626" opacity="0.5"/>
+<line x1="278.8" y1="72.5" x2="278.8" y2="94.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="278.1" y="86.8" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="277.6" y="207.9" width="2.0" height="1.1" fill="#2563eb" opacity="0.5"/>
+<line x1="281.2" y1="79.7" x2="281.2" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="280.4" y="86.8" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="280.0" y="208.0" width="2.0" height="1.0" fill="#dc2626" opacity="0.5"/>
+<line x1="283.6" y1="79.7" x2="283.6" y2="94.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="282.8" y="86.8" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="282.4" y="207.5" width="2.0" height="1.5" fill="#2563eb" opacity="0.5"/>
+<line x1="286.0" y1="86.8" x2="286.0" y2="101.2" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="285.2" y="86.8" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="284.8" y="207.4" width="2.0" height="1.6" fill="#dc2626" opacity="0.5"/>
+<line x1="288.3" y1="79.7" x2="288.3" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="287.6" y="94.0" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="287.2" y="207.6" width="2.0" height="1.4" fill="#dc2626" opacity="0.5"/>
+<line x1="290.7" y1="86.8" x2="290.7" y2="108.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="290.0" y="94.0" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="289.5" y="205.1" width="2.0" height="3.9" fill="#2563eb" opacity="0.5"/>
+<line x1="293.1" y1="94.0" x2="293.1" y2="108.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="292.3" y="101.2" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="291.9" y="207.3" width="2.0" height="1.7" fill="#dc2626" opacity="0.5"/>
+<line x1="295.5" y1="94.0" x2="295.5" y2="108.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="294.7" y="101.2" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="294.3" y="207.6" width="2.0" height="1.4" fill="#2563eb" opacity="0.5"/>
+<line x1="297.9" y1="79.7" x2="297.9" y2="108.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="297.1" y="86.8" width="1.5" height="21.5" fill="#dc2626" opacity="0.9"/>
+<rect x="296.7" y="204.8" width="2.0" height="4.2" fill="#dc2626" opacity="0.5"/>
+<line x1="300.2" y1="79.7" x2="300.2" y2="94.0" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="299.5" y="79.7" width="1.5" height="14.3" fill="#2563eb" opacity="0.9"/>
+<rect x="299.1" y="207.1" width="2.0" height="1.9" fill="#2563eb" opacity="0.5"/>
+<line x1="302.6" y1="79.7" x2="302.6" y2="94.0" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="301.9" y="94.0" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="301.4" y="206.3" width="2.0" height="2.7" fill="#dc2626" opacity="0.5"/>
+<line x1="305.0" y1="86.8" x2="305.0" y2="101.2" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="304.2" y="94.0" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="303.8" y="206.0" width="2.0" height="3.0" fill="#2563eb" opacity="0.5"/>
+<line x1="307.4" y1="86.8" x2="307.4" y2="108.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="306.6" y="94.0" width="1.5" height="7.2" fill="#dc2626" opacity="0.9"/>
+<rect x="306.2" y="207.1" width="2.0" height="1.9" fill="#dc2626" opacity="0.5"/>
+<line x1="309.8" y1="86.8" x2="309.8" y2="108.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="309.0" y="94.0" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="308.6" y="206.9" width="2.0" height="2.1" fill="#2563eb" opacity="0.5"/>
+<line x1="312.1" y1="94.0" x2="312.1" y2="108.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="311.4" y="108.3" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="311.0" y="207.0" width="2.0" height="2.0" fill="#dc2626" opacity="0.5"/>
+<line x1="314.5" y1="86.8" x2="314.5" y2="108.3" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="313.8" y="108.3" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="313.3" y="206.0" width="2.0" height="3.0" fill="#dc2626" opacity="0.5"/>
+<line x1="316.9" y1="101.2" x2="316.9" y2="115.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="316.1" y="108.3" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="315.7" y="207.6" width="2.0" height="1.4" fill="#dc2626" opacity="0.5"/>
+<line x1="319.3" y1="101.2" x2="319.3" y2="115.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="318.5" y="108.3" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="318.1" y="207.1" width="2.0" height="1.9" fill="#dc2626" opacity="0.5"/>
+<line x1="321.7" y1="94.0" x2="321.7" y2="115.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="320.9" y="101.2" width="1.5" height="14.3" fill="#dc2626" opacity="0.9"/>
+<rect x="320.5" y="206.5" width="2.0" height="2.5" fill="#dc2626" opacity="0.5"/>
+<line x1="324.0" y1="94.0" x2="324.0" y2="108.3" stroke="#2563eb" stroke-width="0.8"/>
+<rect x="323.3" y="101.2" width="1.5" height="7.2" fill="#2563eb" opacity="0.9"/>
+<rect x="322.9" y="207.4" width="2.0" height="1.6" fill="#2563eb" opacity="0.5"/>
+<line x1="326.4" y1="101.2" x2="326.4" y2="115.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="325.7" y="108.3" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="325.2" y="206.9" width="2.0" height="2.1" fill="#dc2626" opacity="0.5"/>
+<line x1="328.8" y1="94.0" x2="328.8" y2="115.5" stroke="#dc2626" stroke-width="0.8"/>
+<rect x="328.0" y="108.3" width="1.5" height="1.0" fill="#dc2626" opacity="0.9"/>
+<rect x="327.6" y="206.8" width="2.0" height="2.2" fill="#dc2626" opacity="0.5"/>
+<line x1="42" y1="184.0" x2="330" y2="184.0" stroke="#e2e8f0" stroke-width="0.6"/>
+<text x="41" y="192.0" text-anchor="end" font-size="6.5" fill="#64748b">VOL</text>
+<line x1="42" y1="108.3" x2="330" y2="108.3" stroke="#f59e0b" stroke-width="0.7" stroke-dasharray="3,2"/>
+<line x1="42" y1="216.0" x2="330" y2="216.0" stroke="#e2e8f0" stroke-width="0.6"/>
+<text x="41" y="224.0" text-anchor="end" font-size="6" fill="#64748b">Stoch</text>
+<line x1="42" y1="223.6" x2="330" y2="223.6" stroke="#f59e0b" stroke-width="0.4" stroke-dasharray="2,3" opacity="0.6"/>
+<text x="41" y="225.6" text-anchor="end" font-size="6" fill="#f59e0b">80</text>
+<line x1="42" y1="246.4" x2="330" y2="246.4" stroke="#f59e0b" stroke-width="0.4" stroke-dasharray="2,3" opacity="0.6"/>
+<text x="41" y="248.4" text-anchor="end" font-size="6" fill="#f59e0b">20</text>
+<polyline points="83.7,254.0 86.0,254.0 88.4,254.0 90.8,246.3 93.2,243.7 95.6,239.3 97.9,241.3 100.3,236.9 102.7,236.3 105.1,237.5 107.5,240.1 109.8,240.1 112.2,238.8 114.6,235.6 117.0,231.2 119.4,227.4 121.7,223.4 124.1,221.9 126.5,221.9 128.9,226.4 131.3,236.0 133.6,239.5 136.0,236.9 138.4,235.4 140.8,236.1 143.2,238.4 145.5,236.6 147.9,237.4 150.3,240.9 152.7,242.5 155.1,242.9 157.4,241.0 159.8,236.8 162.2,232.3 164.6,231.3 167.0,232.3 169.3,235.7 171.7,239.4 174.1,243.7 176.5,242.4 178.9,232.9 181.2,226.6 183.6,222.3 186.0,228.7 188.4,228.7 190.8,230.8 193.1,224.4 195.5,220.2 197.9,218.1 200.3,226.6 202.7,235.0 205.0,243.4 207.4,245.6 209.8,241.3 212.2,237.1 214.6,235.0 216.9,237.1 219.3,241.3 221.7,239.2 224.1,239.2 226.5,230.5 228.8,229.6 231.2,228.7 233.6,232.3 236.0,234.1 238.4,235.9 240.7,239.5 243.1,242.8 245.5,246.2 247.9,248.0 250.3,246.5 252.6,246.8 255.0,246.8 257.4,246.8 259.8,246.8 262.2,246.0 264.5,244.6 266.9,246.4 269.3,245.8 271.7,246.6 274.1,242.4 276.4,241.3 278.8,245.6 281.2,245.6 283.6,249.8 286.0,243.4 288.3,244.5 290.7,242.0 293.1,245.8 295.5,248.9 297.9,243.9 300.2,241.3 302.6,236.3 305.0,241.3 307.4,241.3 309.8,243.9 312.1,246.4 314.5,251.5 316.9,251.5 319.3,248.9 321.7,243.9 324.0,243.9 326.4,243.9 328.8,246.4" fill="none" stroke="#2563eb" stroke-width="0.9"/>
+<polyline points="83.7,254.0 86.0,254.0 88.4,254.0 90.8,251.4 93.2,248.0 95.6,243.1 97.9,241.5 100.3,239.2 102.7,238.2 105.1,236.9 107.5,238.0 109.8,239.2 112.2,239.6 114.6,238.2 117.0,235.2 119.4,231.4 121.7,227.3 124.1,224.2 126.5,222.4 128.9,223.4 131.3,228.1 133.6,234.0 136.0,237.4 138.4,237.2 140.8,236.1 143.2,236.6 145.5,237.0 147.9,237.5 150.3,238.3 152.7,240.3 155.1,242.1 157.4,242.2 159.8,240.3 162.2,236.7 164.6,233.5 167.0,232.0 169.3,233.1 171.7,235.8 174.1,239.6 176.5,241.8 178.9,239.6 181.2,233.9 183.6,227.3 186.0,225.9 188.4,226.6 190.8,229.4 193.1,228.0 195.5,225.1 197.9,220.9 200.3,221.6 202.7,226.6 205.0,235.0 207.4,241.3 209.8,243.4 212.2,241.3 214.6,237.8 216.9,236.4 219.3,237.8 221.7,239.2 224.1,239.9 226.5,236.3 228.8,233.1 231.2,229.6 233.6,230.2 236.0,231.7 238.4,234.1 240.7,236.5 243.1,239.4 245.5,242.8 247.9,245.7 250.3,246.9 252.6,247.1 255.0,246.7 257.4,246.8 259.8,246.8 262.2,246.5 264.5,245.8 266.9,245.7 269.3,245.6 271.7,246.3 274.1,244.9 276.4,243.4 278.8,243.1 281.2,244.1 283.6,247.0 286.0,246.3 288.3,245.9 290.7,243.3 293.1,244.1 295.5,245.6 297.9,246.2 300.2,244.7 302.6,240.5 305.0,239.6 307.4,239.6 309.8,242.2 312.1,243.9 314.5,247.2 316.9,249.8 319.3,250.6 321.7,248.1 324.0,245.6 326.4,243.9 328.8,244.7" fill="none" stroke="#dc2626" stroke-width="0.9" stroke-dasharray="2,2"/>
+<text x="44" y="224" font-size="6" fill="#2563eb">%K</text>
+<text x="56" y="224" font-size="6" fill="#dc2626">%D</text>
+<line x1="42" y1="258.0" x2="330" y2="258.0" stroke="#e2e8f0" stroke-width="0.6"/>
+<text x="41" y="266.0" text-anchor="end" font-size="6" fill="#64748b">MACD</text>
+<line x1="42" y1="277.0" x2="330" y2="277.0" stroke="#94a3b8" stroke-width="0.5" stroke-dasharray="2,2"/>
+<rect x="42.4" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="44.7" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="47.1" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="49.5" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="51.9" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="54.3" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="56.6" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="59.0" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="61.4" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="63.8" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="66.2" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="68.5" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="70.9" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="73.3" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="75.7" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="78.1" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="80.4" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="82.8" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="85.2" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="87.6" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="90.0" y="272.3" width="1.7" height="4.7" fill="#dc2626" opacity="0.7"/>
+<rect x="92.3" y="276.7" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="94.7" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="97.1" y="275.8" width="1.7" height="1.2" fill="#dc2626" opacity="0.7"/>
+<rect x="99.5" y="273.5" width="1.7" height="3.5" fill="#dc2626" opacity="0.7"/>
+<rect x="101.9" y="274.6" width="1.7" height="2.4" fill="#dc2626" opacity="0.7"/>
+<rect x="104.2" y="276.2" width="1.7" height="0.8" fill="#dc2626" opacity="0.7"/>
+<rect x="106.6" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="109.0" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="111.4" y="276.4" width="1.7" height="0.6" fill="#dc2626" opacity="0.7"/>
+<rect x="113.8" y="273.6" width="1.7" height="3.4" fill="#dc2626" opacity="0.7"/>
+<rect x="116.1" y="269.8" width="1.7" height="7.2" fill="#dc2626" opacity="0.7"/>
+<rect x="118.5" y="267.8" width="1.7" height="9.2" fill="#dc2626" opacity="0.7"/>
+<rect x="120.9" y="262.4" width="1.7" height="14.6" fill="#dc2626" opacity="0.7"/>
+<rect x="123.3" y="259.9" width="1.7" height="17.1" fill="#dc2626" opacity="0.7"/>
+<rect x="125.7" y="260.9" width="1.7" height="16.1" fill="#dc2626" opacity="0.7"/>
+<rect x="128.0" y="265.0" width="1.7" height="12.0" fill="#dc2626" opacity="0.7"/>
+<rect x="130.4" y="273.8" width="1.7" height="3.2" fill="#dc2626" opacity="0.7"/>
+<rect x="132.8" y="275.0" width="1.7" height="2.0" fill="#dc2626" opacity="0.7"/>
+<rect x="135.2" y="272.2" width="1.7" height="4.8" fill="#dc2626" opacity="0.7"/>
+<rect x="137.6" y="277.0" width="1.7" height="1.0" fill="#2563eb" opacity="0.7"/>
+<rect x="139.9" y="277.0" width="1.7" height="2.4" fill="#2563eb" opacity="0.7"/>
+<rect x="142.3" y="277.0" width="1.7" height="1.1" fill="#2563eb" opacity="0.7"/>
+<rect x="144.7" y="277.0" width="1.7" height="2.7" fill="#2563eb" opacity="0.7"/>
+<rect x="147.1" y="277.0" width="1.7" height="4.3" fill="#2563eb" opacity="0.7"/>
+<rect x="149.5" y="277.0" width="1.7" height="5.6" fill="#2563eb" opacity="0.7"/>
+<rect x="151.8" y="277.0" width="1.7" height="7.1" fill="#2563eb" opacity="0.7"/>
+<rect x="154.2" y="277.0" width="1.7" height="7.1" fill="#2563eb" opacity="0.7"/>
+<rect x="156.6" y="277.0" width="1.7" height="6.1" fill="#2563eb" opacity="0.7"/>
+<rect x="159.0" y="277.0" width="1.7" height="4.5" fill="#2563eb" opacity="0.7"/>
+<rect x="161.4" y="277.0" width="1.7" height="2.6" fill="#2563eb" opacity="0.7"/>
+<rect x="163.7" y="277.0" width="1.7" height="2.2" fill="#2563eb" opacity="0.7"/>
+<rect x="166.1" y="277.0" width="1.7" height="2.0" fill="#2563eb" opacity="0.7"/>
+<rect x="168.5" y="277.0" width="1.7" height="2.6" fill="#2563eb" opacity="0.7"/>
+<rect x="170.9" y="277.0" width="1.7" height="4.6" fill="#2563eb" opacity="0.7"/>
+<rect x="173.3" y="277.0" width="1.7" height="4.9" fill="#2563eb" opacity="0.7"/>
+<rect x="175.6" y="277.0" width="1.7" height="3.4" fill="#2563eb" opacity="0.7"/>
+<rect x="178.0" y="277.0" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="180.4" y="276.5" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="182.8" y="275.5" width="1.7" height="1.5" fill="#dc2626" opacity="0.7"/>
+<rect x="185.2" y="276.7" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="187.5" y="276.7" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="189.9" y="276.8" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="192.3" y="275.5" width="1.7" height="1.5" fill="#dc2626" opacity="0.7"/>
+<rect x="194.7" y="274.8" width="1.7" height="2.2" fill="#dc2626" opacity="0.7"/>
+<rect x="197.1" y="275.4" width="1.7" height="1.6" fill="#dc2626" opacity="0.7"/>
+<rect x="199.4" y="277.0" width="1.7" height="1.2" fill="#2563eb" opacity="0.7"/>
+<rect x="201.8" y="277.0" width="1.7" height="3.1" fill="#2563eb" opacity="0.7"/>
+<rect x="204.2" y="277.0" width="1.7" height="5.0" fill="#2563eb" opacity="0.7"/>
+<rect x="206.6" y="277.0" width="1.7" height="6.0" fill="#2563eb" opacity="0.7"/>
+<rect x="209.0" y="277.0" width="1.7" height="4.0" fill="#2563eb" opacity="0.7"/>
+<rect x="211.3" y="277.0" width="1.7" height="3.4" fill="#2563eb" opacity="0.7"/>
+<rect x="213.7" y="277.0" width="1.7" height="3.7" fill="#2563eb" opacity="0.7"/>
+<rect x="216.1" y="277.0" width="1.7" height="3.0" fill="#2563eb" opacity="0.7"/>
+<rect x="218.5" y="277.0" width="1.7" height="3.9" fill="#2563eb" opacity="0.7"/>
+<rect x="220.9" y="277.0" width="1.7" height="2.8" fill="#2563eb" opacity="0.7"/>
+<rect x="223.2" y="277.0" width="1.7" height="2.0" fill="#2563eb" opacity="0.7"/>
+<rect x="225.6" y="276.0" width="1.7" height="1.0" fill="#dc2626" opacity="0.7"/>
+<rect x="228.0" y="275.8" width="1.7" height="1.2" fill="#dc2626" opacity="0.7"/>
+<rect x="230.4" y="275.8" width="1.7" height="1.2" fill="#dc2626" opacity="0.7"/>
+<rect x="232.8" y="275.8" width="1.7" height="1.2" fill="#dc2626" opacity="0.7"/>
+<rect x="235.2" y="276.7" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="237.5" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="239.9" y="277.0" width="1.7" height="1.5" fill="#2563eb" opacity="0.7"/>
+<rect x="242.3" y="277.0" width="1.7" height="2.2" fill="#2563eb" opacity="0.7"/>
+<rect x="244.7" y="277.0" width="1.7" height="2.6" fill="#2563eb" opacity="0.7"/>
+<rect x="247.1" y="277.0" width="1.7" height="3.4" fill="#2563eb" opacity="0.7"/>
+<rect x="249.4" y="277.0" width="1.7" height="3.0" fill="#2563eb" opacity="0.7"/>
+<rect x="251.8" y="277.0" width="1.7" height="3.4" fill="#2563eb" opacity="0.7"/>
+<rect x="254.2" y="277.0" width="1.7" height="3.4" fill="#2563eb" opacity="0.7"/>
+<rect x="256.6" y="277.0" width="1.7" height="2.5" fill="#2563eb" opacity="0.7"/>
+<rect x="259.0" y="277.0" width="1.7" height="2.5" fill="#2563eb" opacity="0.7"/>
+<rect x="261.3" y="277.0" width="1.7" height="2.4" fill="#2563eb" opacity="0.7"/>
+<rect x="263.7" y="277.0" width="1.7" height="1.4" fill="#2563eb" opacity="0.7"/>
+<rect x="266.1" y="277.0" width="1.7" height="2.2" fill="#2563eb" opacity="0.7"/>
+<rect x="268.5" y="277.0" width="1.7" height="1.8" fill="#2563eb" opacity="0.7"/>
+<rect x="270.9" y="277.0" width="1.7" height="1.4" fill="#2563eb" opacity="0.7"/>
+<rect x="273.2" y="277.0" width="1.7" height="1.0" fill="#2563eb" opacity="0.7"/>
+<rect x="275.6" y="277.0" width="1.7" height="0.7" fill="#2563eb" opacity="0.7"/>
+<rect x="278.0" y="277.0" width="1.7" height="1.1" fill="#2563eb" opacity="0.7"/>
+<rect x="280.4" y="277.0" width="1.7" height="0.6" fill="#2563eb" opacity="0.7"/>
+<rect x="282.8" y="277.0" width="1.7" height="0.9" fill="#2563eb" opacity="0.7"/>
+<rect x="285.1" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="287.5" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="289.9" y="277.0" width="1.7" height="1.4" fill="#2563eb" opacity="0.7"/>
+<rect x="292.3" y="277.0" width="1.7" height="1.8" fill="#2563eb" opacity="0.7"/>
+<rect x="294.7" y="277.0" width="1.7" height="2.7" fill="#2563eb" opacity="0.7"/>
+<rect x="297.0" y="277.0" width="1.7" height="0.7" fill="#2563eb" opacity="0.7"/>
+<rect x="299.4" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="301.8" y="276.6" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="304.2" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="306.6" y="276.5" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="308.9" y="276.9" width="1.7" height="0.5" fill="#dc2626" opacity="0.7"/>
+<rect x="311.3" y="277.0" width="1.7" height="0.8" fill="#2563eb" opacity="0.7"/>
+<rect x="313.7" y="277.0" width="1.7" height="1.3" fill="#2563eb" opacity="0.7"/>
+<rect x="316.1" y="277.0" width="1.7" height="1.5" fill="#2563eb" opacity="0.7"/>
+<rect x="318.5" y="277.0" width="1.7" height="1.4" fill="#2563eb" opacity="0.7"/>
+<rect x="320.8" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="323.2" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="325.6" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<rect x="328.0" y="277.0" width="1.7" height="0.5" fill="#2563eb" opacity="0.7"/>
+<polyline points="43.2,277.0 45.6,277.0 48.0,277.0 50.3,277.0 52.7,277.0 55.1,277.0 57.5,277.0 59.9,277.0 62.2,277.0 64.6,277.0 67.0,277.0 69.4,277.0 71.8,277.0 74.1,277.0 76.5,277.0 78.9,277.0 81.3,277.0 83.7,277.0 86.0,277.0 88.4,277.0 90.8,271.2 93.2,275.4 95.6,275.8 97.9,274.2 100.3,271.1 102.7,271.6 105.1,273.0 107.5,274.2 109.8,274.2 112.2,273.2 114.6,269.6 117.0,263.9 119.4,259.6 121.7,250.5 124.1,243.8 126.5,240.8 128.9,241.8 131.3,249.8 133.6,250.6 136.0,246.6 138.4,252.6 140.8,254.6 143.2,253.5 145.5,255.9 147.9,258.5 150.3,261.2 152.7,264.5 155.1,266.2 157.4,266.7 159.8,266.3 162.2,265.1 164.6,265.2 167.0,265.5 169.3,266.8 171.7,269.9 174.1,271.4 176.5,270.7 178.9,267.3 181.2,266.7 183.6,265.4 186.0,266.5 188.4,266.4 190.8,266.5 193.1,264.8 195.5,263.5 197.9,263.7 200.3,266.9 202.7,269.5 205.0,272.6 207.4,275.1 209.8,274.1 212.2,274.4 214.6,275.6 216.9,275.6 219.3,277.6 221.7,277.1 224.1,276.8 226.5,273.6 228.8,273.1 231.2,272.8 233.6,272.5 236.0,273.4 238.4,274.1 240.7,275.7 243.1,276.9 245.5,277.9 247.9,279.6 250.3,279.9 252.6,281.1 255.0,282.0 257.4,281.7 259.8,282.4 262.2,282.9 264.5,282.2 266.9,283.5 269.3,283.5 271.7,283.5 274.1,283.4 276.4,283.2 278.8,284.0 281.2,283.5 283.6,284.1 286.0,283.4 288.3,283.8 290.7,285.1 293.1,285.9 295.5,287.5 297.9,285.6 300.2,285.1 302.6,284.6 305.0,285.0 307.4,284.3 309.8,284.7 312.1,285.8 314.5,286.6 316.9,287.2 319.3,287.5 321.7,286.6 324.0,286.8 326.4,286.8 328.8,286.7" fill="none" stroke="#2563eb" stroke-width="0.9"/>
+<polyline points="43.2,277.0 45.6,277.0 48.0,277.0 50.3,277.0 52.7,277.0 55.1,277.0 57.5,277.0 59.9,277.0 62.2,277.0 64.6,277.0 67.0,277.0 69.4,277.0 71.8,277.0 74.1,277.0 76.5,277.0 78.9,277.0 81.3,277.0 83.7,277.0 86.0,277.0 88.4,277.0 90.8,275.8 93.2,275.7 95.6,275.8 97.9,275.5 100.3,274.6 102.7,274.0 105.1,273.8 107.5,273.9 109.8,273.9 112.2,273.8 114.6,272.9 117.0,271.1 119.4,268.8 121.7,265.2 124.1,260.9 126.5,256.9 128.9,253.9 131.3,253.0 133.6,252.6 136.0,251.4 138.4,251.6 140.8,252.2 143.2,252.5 145.5,253.2 147.9,254.2 150.3,255.6 152.7,257.4 155.1,259.1 157.4,260.7 159.8,261.8 162.2,262.4 164.6,263.0 167.0,263.5 169.3,264.2 171.7,265.3 174.1,266.5 176.5,267.4 178.9,267.4 181.2,267.2 183.6,266.9 186.0,266.8 188.4,266.7 190.8,266.7 193.1,266.3 195.5,265.7 197.9,265.3 200.3,265.6 202.7,266.4 205.0,267.6 207.4,269.1 209.8,270.1 212.2,271.0 214.6,271.9 216.9,272.7 219.3,273.6 221.7,274.3 224.1,274.8 226.5,274.6 228.8,274.3 231.2,274.0 233.6,273.7 236.0,273.6 238.4,273.7 240.7,274.1 243.1,274.7 245.5,275.3 247.9,276.2 250.3,276.9 252.6,277.8 255.0,278.6 257.4,279.2 259.8,279.9 262.2,280.5 264.5,280.8 266.9,281.4 269.3,281.8 271.7,282.1 274.1,282.4 276.4,282.5 278.8,282.8 281.2,283.0 283.6,283.2 286.0,283.2 288.3,283.4 290.7,283.7 293.1,284.1 295.5,284.8 297.9,285.0 300.2,285.0 302.6,284.9 305.0,284.9 307.4,284.8 309.8,284.8 312.1,285.0 314.5,285.3 316.9,285.7 319.3,286.1 321.7,286.2 324.0,286.3 326.4,286.4 328.8,286.5" fill="none" stroke="#dc2626" stroke-width="0.9" stroke-dasharray="2,2"/>
+<text x="44" y="266" font-size="6" fill="#2563eb">MACD</text>
+<text x="64" y="266" font-size="6" fill="#dc2626">Signal</text>
+<polyline points="64.6,129.8 67.0,129.8 69.4,129.8 71.8,129.8 74.1,129.8 76.5,129.8 78.9,129.8 81.3,129.8 83.7,129.8 86.0,129.8 88.4,129.8 90.8,125.5 93.2,127.7 95.6,127.7 97.9,126.2 100.3,123.4 102.7,122.7 105.1,122.7 107.5,122.7 109.8,122.0 112.2,120.5 114.6,121.2 117.0,113.4 119.4,107.6 121.7,99.0 124.1,91.9 126.5,84.0 128.9,77.5 131.3,76.1 133.6,71.1 136.0,63.2 138.4,63.9 140.8,64.6 143.2,63.2 145.5,68.2 147.9,73.6 150.3,77.9 152.7,80.7 155.1,77.9 157.4,78.6 159.8,82.2 162.2,78.6 164.6,77.9 167.0,79.3 169.3,79.3 171.7,80.4 174.1,80.4 176.5,78.2 178.9,74.6 181.2,73.2 183.6,71.8 186.0,72.5 188.4,71.8 190.8,71.1 193.1,68.2 195.5,63.9 197.9,61.0 200.3,61.8 202.7,64.6 205.0,66.8 207.4,69.6 209.8,68.9 212.2,69.6 214.6,71.1 216.9,73.2 219.3,76.8 221.7,78.2 224.1,77.5 226.5,74.6 228.8,72.5 231.2,70.4 233.6,70.4 236.0,70.4 238.4,69.6 240.7,70.4 243.1,69.6 245.5,70.4 247.9,71.8 250.3,74.6 252.6,76.8 255.0,79.0 257.4,80.4 259.8,81.8 262.2,83.2 264.5,83.2 266.9,84.7 269.3,85.4 271.7,85.4 274.1,86.1 276.4,86.1 278.8,86.8 281.2,87.5 283.6,88.3 286.0,88.3 288.3,89.7 290.7,90.4 293.1,91.9 295.5,94.0 297.9,94.0 300.2,94.7 302.6,94.7 305.0,96.1 307.4,96.1 309.8,97.6 312.1,99.0 314.5,99.7 316.9,100.5 319.3,100.5 321.7,101.9 324.0,103.3 326.4,104.8 328.8,105.5" fill="none" stroke="#f59e0b" stroke-width="1.0" opacity="0.8"/>
+<polyline points="88.4,129.8 90.8,127.7 93.2,128.8 95.6,128.8 97.9,128.0 100.3,126.6 102.7,126.2 105.1,126.2 107.5,126.2 109.8,125.9 112.2,125.2 114.6,123.4 117.0,120.5 119.4,117.6 121.7,112.6 124.1,107.6 126.5,103.3 128.9,100.1 131.3,99.4 133.6,96.5 136.0,91.9 138.4,92.6 140.8,89.0 143.2,85.4 145.5,83.6 147.9,82.7 150.3,80.9 152.7,79.1 155.1,77.0 157.4,74.8 159.8,72.7 162.2,71.2 164.6,71.2 167.0,71.2 169.3,73.8 171.7,77.0 174.1,79.1 176.5,79.5 178.9,76.3 181.2,75.9 183.6,77.0 186.0,75.5 188.4,74.8 190.8,75.2 193.1,73.8 195.5,72.1 197.9,70.7 200.3,70.0 202.7,69.6 205.0,70.0 207.4,70.7 209.8,70.7 212.2,70.7 214.6,71.1 216.9,70.7 219.3,70.4 221.7,69.6 224.1,69.6 226.5,69.6 228.8,69.6 231.2,70.0 233.6,69.6 236.0,70.0 238.4,70.4 240.7,71.8 243.1,73.2 245.5,74.3 247.9,74.6 250.3,74.6 252.6,74.6 255.0,74.6 257.4,75.4 259.8,76.1 262.2,76.4 264.5,76.8 266.9,77.2 269.3,77.9 271.7,78.6 274.1,80.4 276.4,81.5 278.8,82.9 281.2,84.0 283.6,85.0 286.0,85.8 288.3,86.5 290.7,87.5 293.1,88.6 295.5,89.7 297.9,90.1 300.2,90.4 302.6,90.8 305.0,91.9 307.4,92.2 309.8,92.9 312.1,94.4 314.5,95.1 316.9,96.1 319.3,97.2 321.7,97.9 324.0,99.0 326.4,99.7 328.8,100.8" fill="none" stroke="#7c3aed" stroke-width="1.0" opacity="0.8"/>
+<polyline points="136.0,110.8 138.4,110.1 140.8,108.9 143.2,107.1 145.5,105.8 147.9,104.7 150.3,103.6 152.7,102.7 155.1,101.6 157.4,100.4 159.8,98.9 162.2,97.3 164.6,95.9 167.0,94.4 169.3,93.2 171.7,92.3 174.1,91.2 176.5,89.8 178.9,87.8 181.2,86.2 183.6,84.4 186.0,84.1 188.4,81.9 190.8,80.3 193.1,78.7 195.5,77.4 197.9,75.8 200.3,74.6 202.7,73.3 205.0,72.4 207.4,71.7 209.8,71.0 212.2,71.0 214.6,71.2 216.9,72.2 219.3,73.7 221.7,74.4 224.1,74.6 226.5,72.9 228.8,72.8 231.2,73.5 233.6,72.6 236.0,72.4 238.4,72.8 240.7,72.8 243.1,72.7 245.5,72.5 247.9,72.3 250.3,72.1 252.6,72.3 255.0,72.7 257.4,73.0 259.8,73.4 262.2,73.8 264.5,73.8 266.9,73.8 269.3,73.8 271.7,74.1 274.1,75.0 276.4,75.5 278.8,76.4 281.2,76.8 283.6,77.5 286.0,78.1 288.3,79.1 290.7,80.4 293.1,81.5 295.5,82.2 297.9,82.4 300.2,82.5 302.6,82.7 305.0,83.6 307.4,84.1 309.8,84.7 312.1,85.6 314.5,86.1 316.9,87.0 319.3,87.9 321.7,89.2 324.0,90.2 326.4,91.3 328.8,92.4" fill="none" stroke="#06b6d4" stroke-width="1.0" opacity="0.8"/>
+<line x1="44" y1="13" x2="53" y2="13" stroke="#f59e0b" stroke-width="1.2"/>
+<text x="55" y="16" font-size="6" fill="#f59e0b">30분선</text>
+<line x1="82" y1="13" x2="91" y2="13" stroke="#7c3aed" stroke-width="1.2"/>
+<text x="93" y="16" font-size="6" fill="#7c3aed">60분선</text>
+<line x1="120" y1="13" x2="129" y2="13" stroke="#06b6d4" stroke-width="1.2"/>
+<text x="131" y="16" font-size="6" fill="#06b6d4">120분선</text>
+<line x1="42.0" y1="8" x2="42.0" y2="296" stroke="#64748b" stroke-width="0.7" stroke-dasharray="3,3" opacity="0.6"/>
+<text x="42.0" y="309" fill="#64748b" font-size="6.5" text-anchor="middle">08:00</text>
+<line x1="89.6" y1="8" x2="89.6" y2="296" stroke="#dc2626" stroke-width="0.7" stroke-dasharray="3,3" opacity="0.6"/>
+<text x="89.6" y="309" fill="#64748b" font-size="6.5" text-anchor="middle">09:00</text>
+<text x="137.2" y="309" fill="#64748b" font-size="6.5" text-anchor="middle">10:00</text>
+<text x="232.4" y="309" fill="#64748b" font-size="6.5" text-anchor="middle">12:00</text>
+<text x="327.6" y="309" fill="#64748b" font-size="6.5" text-anchor="middle">14:00</text></svg></div>
+
+<div class="note plain" style="padding:8px 14px;margin-top:6px"><p style="font-size:11px;color:#64748b">당일 고가 473,000원 · 저가 461,000원 · 변동폭 2.6%</p></div>
+<div class="strat-comment" style="margin-bottom:10px">💡 <b>3분봉 전략:</b> 30분선 단기 이평선 지지와 스토캐스틱 과매도 골든크로스(★B) 시그널을 연계한 단기 매수 진입 유효</div>
+
+<div style="background:#fff;border-radius:10px;padding:10px 12px;margin:8px 0;border-left:3px solid #dc2626;"><div style="font-size:12px;font-weight:700;color:#1e293b;margin-bottom:6px">📊 클래식 차트 패턴 감지</div><table style="width:100%;border-collapse:collapse"><tbody><tr style="border-bottom:1px solid #f1f5f9"><td style="padding:6px 4px;font-size:11px;color:#475569">[일봉]</td><td style="padding:6px 4px;font-size:12px;font-weight:700;color:#1e293b">이중천장</td><td style="padding:6px 4px"><span style="background:#fee2e2;color:#991b1b;padding:1px 6px;border-radius:4px;font-size:10px;font-weight:600">하락반전</span></td><td style="padding:6px 4px"><span style="color:#dc2626;font-size:11px">●●●●●</span></td><td style="padding:6px 4px;font-size:11px;color:#475569;max-width:200px">이중 천장 — 넥라인(502,000원) 이탈. 하락 목표 ~462,000원.</td></tr></tbody></table></div>
+
+<div class="card" style="margin-bottom:11px">
+<div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:7px">구간별 체결강도 바 (08:00~20:00 풀타임)</div>
+<svg viewBox="0 0 336 100" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block"><text x="73" y="21.2" text-anchor="end" font-size="9" fill="#64748b">08:00</text>
+<rect x="76" y="10.0" width="125.0" height="16.0" fill="#ef4444" opacity="0.75" rx="2"/>
+<rect x="201.0" y="10.0" width="125.0" height="16.0" fill="#2563eb" opacity="0.6" rx="2"/>
+<text x="138.5" y="21.5" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="700">50%</text>
+<text x="73" y="41.2" text-anchor="end" font-size="9" fill="#64748b">09:00</text>
+<rect x="76" y="30.0" width="150.7" height="16.0" fill="#ef4444" opacity="0.75" rx="2"/>
+<rect x="226.7" y="30.0" width="99.3" height="16.0" fill="#2563eb" opacity="0.6" rx="2"/>
+<text x="151.3" y="41.5" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="700">60%</text>
+<text x="73" y="61.2" text-anchor="end" font-size="9" fill="#64748b">11:00</text>
+<rect x="76" y="50.0" width="169.5" height="16.0" fill="#ef4444" opacity="0.75" rx="2"/>
+<rect x="245.5" y="50.0" width="80.5" height="16.0" fill="#2563eb" opacity="0.6" rx="2"/>
+<text x="160.8" y="61.5" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="700">68%</text>
+<text x="73" y="81.2" text-anchor="end" font-size="9" fill="#64748b">13:00</text>
+<rect x="76" y="70.0" width="164.8" height="16.0" fill="#ef4444" opacity="0.75" rx="2"/>
+<rect x="240.8" y="70.0" width="85.2" height="16.0" fill="#2563eb" opacity="0.6" rx="2"/>
+<text x="158.4" y="81.5" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="700">66%</text></svg>
+<div class="strat-comment">💡 <b>체결강도 바 전략:</b> 체결강도 100% 상회 구간은 매수 세력의 집중 공격 구간으로, 지지 라인 형성 시 비중 확대 검토</div>
+</div>
+
+<div class="card" style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:11px;font-weight:700;color:#1e293b">08:00~09:00</span><span style="font-size:11px;font-weight:700;color:#64748b">+0.00%</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;font-size:10.5px"><div><span style="color:#64748b">체결강도</span> <span style="color:#64748b;font-weight:700">0%</span></div><div><span style="color:#64748b">거래량</span> <span>0</span></div><div><span style="color:#64748b">순매수</span> <span style="color:#2563eb">+0</span></div></div><div style="font-size:10.5px;color:#475569;margin-top:4px;line-height:1.5">체결강도 50% — 매수/매도 균형 / 구간 보합 — 관망 구간</div></div><div class="card" style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:11px;font-weight:700;color:#1e293b">09:00~11:00</span><span style="font-size:11px;font-weight:700;color:#2563eb">+0.11%</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;font-size:10.5px"><div><span style="color:#64748b">체결강도</span> <span style="color:#64748b;font-weight:700">0%</span></div><div><span style="color:#64748b">거래량</span> <span>72,978</span></div><div><span style="color:#64748b">순매수</span> <span style="color:#2563eb">+0</span></div></div><div style="font-size:10.5px;color:#475569;margin-top:4px;line-height:1.5">체결강도 60% — 매수/매도 균형 / 구간 보합 — 관망 구간</div></div><div class="card" style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:11px;font-weight:700;color:#1e293b">11:00~13:00</span><span style="font-size:11px;font-weight:700;color:#dc2626">-0.53%</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;font-size:10.5px"><div><span style="color:#64748b">체결강도</span> <span style="color:#64748b;font-weight:700">0%</span></div><div><span style="color:#64748b">거래량</span> <span>23,725</span></div><div><span style="color:#64748b">순매수</span> <span style="color:#2563eb">+0</span></div></div><div style="font-size:10.5px;color:#475569;margin-top:4px;line-height:1.5">체결강도 68% — 매수 압력 우세 / 구간 하락 — 매도세 우세</div></div><div class="card" style="margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:11px;font-weight:700;color:#1e293b">13:00~15:30</span><span style="font-size:11px;font-weight:700;color:#dc2626">-0.32%</span></div><div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:4px;font-size:10.5px"><div><span style="color:#64748b">체결강도</span> <span style="color:#64748b;font-weight:700">0%</span></div><div><span style="color:#64748b">거래량</span> <span>21,125</span></div><div><span style="color:#64748b">순매수</span> <span style="color:#2563eb">+0</span></div></div><div style="font-size:10.5px;color:#475569;margin-top:4px;line-height:1.5">체결강도 66% — 매수 압력 우세 / 구간 보합 — 관망 구간</div></div>
+
+<div class="pfoot"><span>HD현대중공업(329180) StockAlarm</span><span>Sec 2/4</span></div>
+</section>
+
+<!-- ★ SEC 3: 실시간 수급 -->
+<section class="page" id="sec3">
+<div class="sec-head"><h2>🔥 실시간 수급 & 체결강도</h2><span class="badge">30분봉 기준</span></div>
+
+<!-- 매크로 (컴팩트) -->
+<div class="card rows" style="margin-bottom:10px">
+<div class="rw"><span class="k" style="font-weight:700">매크로 지수</span><span class="v" style="color:#94a3b8;font-size:11px">14:00 기준</span></div>
+<div class="rw"><span class="k">KOSPI</span><span class="v" style="color:#dc2626">▲ 6,901.72 (+1.37%)</span></div>
+<div class="rw"><span class="k">KOSDAQ</span><span class="v" style="color:#dc2626">▲ 836.03 (+1.11%)</span></div>
+<div class="rw"><span class="k">K200 선물</span><span class="v"><span style="color:#94a3b8;font-size:11px">장외 시간</span></span></div>
+<div class="rw"><span class="k" style="font-size:10.5px;color:#7c3aed">나스닥선물(NQ)</span><span class="v" style="color:#dc2626">▲ 29,495 (+1.34%)</span></div>
+<div class="rw"><span class="k" style="font-size:11px">USD/KRW</span><span class="v" style="color:#2563eb">▼ 1380.61 (-0.73%)</span></div>
+<div class="rw"><span class="k">프로그램 차익</span><span class="v"><span style="color:#94a3b8;font-size:11px">─</span></span></div>
+<div class="rw"><span class="k">프로그램 비차익</span><span class="v"><span style="color:#94a3b8;font-size:11px">─</span></span></div>
+</div>
+
+<!-- 종목 수급 요약 -->
+<div class="card rows" style="margin-bottom:10px">
+<div class="rw"><span class="k" style="font-weight:700">종목 수급</span><span class="v" style="color:#94a3b8;font-size:11px">HD현대중공업</span></div>
+<div class="rw"><span class="k">외국인 보유율</span><span class="v" style="font-weight:700;color:#1e293b">14.00%</span></div>
+<div class="rw"><span class="k">시가총액</span><span class="v" style="font-weight:700;color:#1e293b">5,248억원</span></div>
+<div class="rw"><span class="k">당일 거래량</span><span class="v">118,489주 <span style="font-size:10px;color:#2563eb;font-weight:700">▼ 전일 대비 -26.6% 감소</span></span></div>
+<div class="rw"><span class="k" style="font-size:10.5px">1주일 평균거래량</span><span class="v" style="font-size:11px">194,089주</span></div>
+<div class="rw"><span class="k" style="font-size:10.5px">1개월 평균거래량</span><span class="v" style="font-size:11px">244,705주</span></div>
+</div>
+
+<!-- 당일 실시간 외국인·기관 수급 추이 차트 -->
+<div class="card" style="margin-bottom:11px">
+<div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:7px">⚡ 당일 실시간 외국인·기관·개인 수급 추이 (08:00~20:00)</div>
+<svg viewBox="0 0 336 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block"><line x1="46" y1="67.0" x2="324" y2="67.0" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="43" y="70.0" text-anchor="end" font-size="7.5" fill="#94a3b8">0</text>
+<text x="43" y="30.0" text-anchor="end" font-size="7.5" fill="#dc2626">+24,658</text>
+<text x="43" y="112.0" text-anchor="end" font-size="7.5" fill="#2563eb">-24,658</text>
+<polyline points="46.0,67.0 69.2,67.0 92.3,59.1 115.5,85.6 138.7,84.9 161.8,86.3 185.0,86.2 208.2,90.0 231.3,94.5 254.5,97.1 277.7,99.5 300.8,104.4 324.0,106.6" fill="none" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="2,2" opacity="0.6"/>
+<polyline points="46.0,67.0 69.2,67.0 92.3,70.5 115.5,58.9 138.7,59.1 161.8,58.6 185.0,58.6 208.2,57.0 231.3,55.0 254.5,53.8 277.7,52.8 300.8,50.6 324.0,49.7" fill="none" stroke="#7c3aed" stroke-width="1.8" opacity="0.85"/>
+<polyline points="46.0,67.0 69.2,67.0 92.3,71.5 115.5,56.6 138.7,56.9 161.8,56.2 185.0,56.2 208.2,54.1 231.3,51.5 254.5,50.1 277.7,48.7 300.8,46.0 324.0,44.7" fill="none" stroke="#dc2626" stroke-width="2.2" opacity="0.95"/>
+<text x="46.0" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">08:00</text>
+<text x="92.3" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">09:00</text>
+<text x="138.7" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">10:00</text>
+<text x="185.0" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">11:00</text>
+<text x="231.3" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">12:00</text>
+<text x="277.7" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">13:00</text>
+<text x="324.0" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">14:00</text>
+<line x1="46" y1="8" x2="58" y2="8" stroke="#dc2626" stroke-width="2"/>
+<text x="61" y="11" font-size="8" fill="#dc2626" font-weight="700">외국인(+13,870)</text>
+<line x1="141" y1="8" x2="153" y2="8" stroke="#7c3aed" stroke-width="2"/>
+<text x="156" y="11" font-size="8" fill="#7c3aed" font-weight="700">기관(+10,788)</text>
+<line x1="226" y1="8" x2="238" y2="8" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="2,2"/>
+<text x="241" y="11" font-size="8" fill="#64748b">개인</text></svg>
+<div class="strat-comment">💡 <b>실시간 수급 전략:</b> 외국인(빨강)과 기관(보라)의 동반 순매수 우상향 전환 시점을 당일 핵심 분할 매수 타이밍으로 포착</div>
+</div>
+
+<!-- 당일 시간대별 실시간 수급 현황 테이블 -->
+<div style="font-size:10px;color:#64748b;margin-bottom:4px">▶ 시간대별 실시간 수급 현황 (30분 단위) · 단위: 주</div>
+<div style="overflow-x:auto;margin-bottom:12px">
+<table style="width:100%;border-collapse:collapse;font-size:11px">
+<thead><tr style="background:#f1f5f9;color:#475569">
+<th style="padding:4px 6px;text-align:left">시간</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">외국인</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">기관</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">개인</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">체결강도</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">거래량</th>
+<th style="padding:4px 4px;text-align:center;font-size:10px">주체</th>
+</tr></thead>
+<tbody><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">08:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:600">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:600">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:700">50%</td><td style="padding:4px 4px;text-align:right;font-size:10px">0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#64748b">관망</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">08:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:600">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:600">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:700">50%</td><td style="padding:4px 4px;text-align:right;font-size:10px">0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#64748b">관망</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">09:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-2,780</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-2,162</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+4,942</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:700">39%</td><td style="padding:4px 4px;text-align:right;font-size:10px">29,231</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#2563eb;font-weight:700">양매도</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">09:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+9,284</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#7c3aed;font-weight:600">+7,221</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">-16,505</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:700">86%</td><td style="padding:4px 4px;text-align:right;font-size:10px">28,877</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#dc2626;font-weight:700">양매수</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">10:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-217</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-169</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+386</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:700">48%</td><td style="padding:4px 4px;text-align:right;font-size:10px">10,101</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#2563eb;font-weight:700">양매도</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">10:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+461</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#7c3aed;font-weight:600">+358</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">-819</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:700">61%</td><td style="padding:4px 4px;text-align:right;font-size:10px">4,769</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#dc2626;font-weight:700">양매수</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">11:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-29</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-22</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+51</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:700">50%</td><td style="padding:4px 4px;text-align:right;font-size:10px">6,901</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#2563eb;font-weight:700">양매도</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">11:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+1,322</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#7c3aed;font-weight:600">+1,028</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">-2,350</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:700">75%</td><td style="padding:4px 4px;text-align:right;font-size:10px">5,988</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#dc2626;font-weight:700">양매수</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">12:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+1,605</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#7c3aed;font-weight:600">+1,248</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">-2,853</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:700">93%</td><td style="padding:4px 4px;text-align:right;font-size:10px">4,138</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#dc2626;font-weight:700">양매수</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">12:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+902</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#7c3aed;font-weight:600">+702</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">-1,604</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:700">65%</td><td style="padding:4px 4px;text-align:right;font-size:10px">6,698</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#dc2626;font-weight:700">양매수</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">13:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+838</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#7c3aed;font-weight:600">+652</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">-1,490</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:700">59%</td><td style="padding:4px 4px;text-align:right;font-size:10px">9,986</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#dc2626;font-weight:700">양매수</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">13:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+1,719</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#7c3aed;font-weight:600">+1,337</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">-3,056</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:700">69%</td><td style="padding:4px 4px;text-align:right;font-size:10px">10,100</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#dc2626;font-weight:700">양매수</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">14:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+765</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#7c3aed;font-weight:600">+595</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">-1,360</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:700">100%</td><td style="padding:4px 4px;text-align:right;font-size:10px">1,700</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#dc2626;font-weight:700">양매수</span></td></tr></tbody>
+</table>
+</div>
+
+<!-- 세부 기관 수급 추이 차트 -->
+<div class="card" style="margin-bottom:11px">
+<div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:7px">🏦 세부 기관(연기금·투신·금투·사모) 수급 추이 (08:00~20:00)</div>
+<svg viewBox="0 0 336 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block"><line x1="46" y1="67.0" x2="324" y2="67.0" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2"/>
+<text x="43" y="70.0" text-anchor="end" font-size="7.5" fill="#94a3b8">0</text>
+<text x="43" y="30.0" text-anchor="end" font-size="7.5" fill="#dc2626">+4,622</text>
+<text x="43" y="112.0" text-anchor="end" font-size="7.5" fill="#2563eb">-4,622</text>
+<polyline points="46.0,67.0 69.2,67.0 92.3,74.9 115.5,48.4 138.7,49.0 161.8,47.7 185.0,47.8 208.2,44.0 231.3,39.5 254.5,36.9 277.7,34.5 300.8,29.6 324.0,27.4" fill="none" stroke="#0891b2" stroke-width="1.6" opacity="0.85"/>
+<polyline points="46.0,67.0 69.2,67.0 92.3,73.3 115.5,52.1 138.7,52.6 161.8,51.6 185.0,51.6 208.2,48.6 231.3,45.0 254.5,42.9 277.7,41.0 300.8,37.1 324.0,35.3" fill="none" stroke="#2563eb" stroke-width="2.0" opacity="0.9"/>
+<polyline points="46.0,67.0 69.2,67.0 92.3,72.3 115.5,54.6 138.7,55.0 161.8,54.1 185.0,54.2 208.2,51.7 231.3,48.6 254.5,46.9 277.7,45.3 300.8,42.1 324.0,40.6" fill="none" stroke="#ea580c" stroke-width="2.2" opacity="0.95"/>
+<polyline points="46.0,67.0 69.2,67.0 92.3,71.2 115.5,57.1 138.7,57.4 161.8,56.7 185.0,56.8 208.2,54.7 231.3,52.3 254.5,50.9 277.7,49.7 300.8,47.0 324.0,45.9" fill="none" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="3,2" opacity="0.85"/>
+<text x="46.0" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">08:00</text>
+<text x="92.3" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">09:00</text>
+<text x="138.7" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">10:00</text>
+<text x="185.0" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">11:00</text>
+<text x="231.3" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">12:00</text>
+<text x="277.7" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">13:00</text>
+<text x="324.0" y="128" text-anchor="middle" font-size="7.5" fill="#94a3b8">14:00</text>
+<line x1="46" y1="8" x2="56" y2="8" stroke="#ea580c" stroke-width="2"/>
+<text x="58" y="11" font-size="8" fill="#ea580c" font-weight="700">연기금(+3,081)</text>
+<line x1="124" y1="8" x2="134" y2="8" stroke="#2563eb" stroke-width="2"/>
+<text x="136" y="11" font-size="8" fill="#2563eb" font-weight="700">투신(+3,698)</text>
+<line x1="194" y1="8" x2="204" y2="8" stroke="#0891b2" stroke-width="1.8"/>
+<text x="206" y="11" font-size="8" fill="#0891b2">금투(+4,622)</text>
+<line x1="261" y1="8" x2="271" y2="8" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="2,2"/>
+<text x="273" y="11" font-size="8" fill="#9333ea">사모</text></svg>
+<div class="strat-comment">💡 <b>세부 기관 전략:</b> 연기금(주황)과 투신(파랑)의 연속 순매수는 강력한 주가 하방 경직성 및 추세 상승 보증 수급</div>
+</div>
+
+<!-- 세부 기관 시간대별 수급 테이블 -->
+<div style="font-size:10px;color:#64748b;margin-bottom:4px">▶ 시간대별 세부 기관 수급 현황 (30분 단위) · 단위: 주</div>
+<div style="overflow-x:auto;margin-bottom:12px">
+<table style="width:100%;border-collapse:collapse;font-size:11px">
+<thead><tr style="background:#f1f5f9;color:#475569">
+<th style="padding:4px 6px;text-align:left">시간</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">금투</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">투신</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">연기금</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">사모</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">보험</th>
+<th style="padding:4px 4px;text-align:center;font-size:10px">동향</th>
+</tr></thead>
+<tbody><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">08:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:600">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#64748b">중립</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">08:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b;font-weight:600">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#64748b">중립</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">09:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-756</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-648</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-432</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-324</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#64748b">중립</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">09:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+2,527</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+2,166</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+1,444</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+1,083</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#ea580c;font-weight:700">연기금+투신</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">10:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-59</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-50</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-33</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-25</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#64748b">중립</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">10:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+125</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+107</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+71</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+53</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#ea580c;font-weight:700">연기금+투신</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">11:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-7</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-6</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb;font-weight:600">-4</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#2563eb">-3</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#64748b">중립</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">11:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+359</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+308</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+205</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+154</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#ea580c;font-weight:700">연기금+투신</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">12:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+436</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+374</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+249</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+187</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#ea580c;font-weight:700">연기금+투신</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">12:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+245</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+210</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+140</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+105</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#ea580c;font-weight:700">연기금+투신</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">13:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+228</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+195</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+130</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+97</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#ea580c;font-weight:700">연기금+투신</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">13:30</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+467</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+401</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+267</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+200</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#ea580c;font-weight:700">연기금+투신</span></td></tr><tr><td style="padding:4px 6px;color:#64748b;font-size:10px">14:00</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+208</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+178</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626;font-weight:600">+119</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#dc2626">+89</td><td style="padding:4px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:4px 4px;text-align:center;font-size:9.5px"><span style="color:#ea580c;font-weight:700">연기금+투신</span></td></tr></tbody>
+</table>
+</div>
+
+<div class="note plain" style="margin-bottom:10px">
+<div class="nt-t">수급 종합 판단</div>
+<p>수급 혼조세 — 뚜렷한 주체 부재</p>
+</div>
+
+<!-- 당일 가격·거래량 흐름 -->
+<div class="card" style="margin-bottom:11px">
+<div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:7px">당일 가격 흐름 (종가 + 거래량)</div>
+<svg viewBox="0 0 336 100" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block"><rect x="44.0" y="82.0" width="20.8" height="0.0" fill="#ef4444" opacity="0.25" rx="1"/>
+<rect x="65.8" y="82.0" width="20.8" height="0.0" fill="#ef4444" opacity="0.25" rx="1"/>
+<rect x="87.7" y="61.3" width="20.8" height="20.7" fill="#2563eb" opacity="0.25" rx="1"/>
+<rect x="109.5" y="61.5" width="20.8" height="20.5" fill="#ef4444" opacity="0.25" rx="1"/>
+<rect x="131.4" y="74.8" width="20.8" height="7.2" fill="#2563eb" opacity="0.25" rx="1"/>
+<rect x="153.2" y="78.6" width="20.8" height="3.4" fill="#ef4444" opacity="0.25" rx="1"/>
+<rect x="175.1" y="77.1" width="20.8" height="4.9" fill="#2563eb" opacity="0.25" rx="1"/>
+<rect x="196.9" y="77.8" width="20.8" height="4.2" fill="#ef4444" opacity="0.25" rx="1"/>
+<rect x="218.8" y="79.1" width="20.8" height="2.9" fill="#2563eb" opacity="0.25" rx="1"/>
+<rect x="240.6" y="77.3" width="20.8" height="4.7" fill="#2563eb" opacity="0.25" rx="1"/>
+<rect x="262.5" y="74.9" width="20.8" height="7.1" fill="#2563eb" opacity="0.25" rx="1"/>
+<rect x="284.3" y="74.8" width="20.8" height="7.2" fill="#2563eb" opacity="0.25" rx="1"/>
+<rect x="306.2" y="80.8" width="20.8" height="1.2" fill="#ef4444" opacity="0.25" rx="1"/>
+<polyline points="44.0,57.3 67.7,57.3 91.3,49.7 115.0,8.0 138.7,27.0 162.3,19.4 186.0,34.5 209.7,23.2 233.3,34.5 257.0,38.3 280.7,38.3 304.3,45.9 328.0,45.9" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+<polygon points="44,57.28 44.0,57.3 67.7,57.3 91.3,49.7 115.0,8.0 138.7,27.0 162.3,19.4 186.0,34.5 209.7,23.2 233.3,34.5 257.0,38.3 280.7,38.3 304.3,45.9 328.0,45.9 328,57.28" fill="#2563eb" opacity="0.07"/>
+<text x="41" y="11.0" text-anchor="end" font-size="7.5" fill="#dc2626">471,000</text>
+<text x="41" y="60.3" text-anchor="end" font-size="7.5" fill="#2563eb">464,500</text>
+<text x="41" y="48.9" text-anchor="end" font-size="7.5" fill="#64748b">466,000</text>
+<text x="54.9" y="98" text-anchor="middle" font-size="7.5" fill="#94a3b8">08:00</text>
+<text x="98.6" y="98" text-anchor="middle" font-size="7.5" fill="#94a3b8">09:00</text>
+<text x="142.3" y="98" text-anchor="middle" font-size="7.5" fill="#94a3b8">10:00</text>
+<text x="186.0" y="98" text-anchor="middle" font-size="7.5" fill="#94a3b8">11:00</text>
+<text x="229.7" y="98" text-anchor="middle" font-size="7.5" fill="#94a3b8">12:00</text>
+<text x="273.4" y="98" text-anchor="middle" font-size="7.5" fill="#94a3b8">13:00</text>
+<text x="317.1" y="98" text-anchor="middle" font-size="7.5" fill="#94a3b8">14:00</text></svg>
+<div class="strat-comment">💡 <b>가격·거래량 전략:</b> 거래량이 급증하며 지지선을 방어한 구간은 바닥 신호로 인식하며 추세 반등 타깃 설정</div>
+</div>
+
+<!-- 순매수 누적 -->
+<div class="card" style="margin-bottom:11px">
+<div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:5px">투자자 순매수 누적 추이 (30분·체결량 기반)</div>
+<svg viewBox="0 0 336 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block"><line x1="40" y1="38.0" x2="328" y2="38.0" stroke="#f1f5f9" stroke-width="0.4" stroke-dasharray=""/>
+<line x1="40" y1="62.0" x2="328" y2="62.0" stroke="#e2e8f0" stroke-width="0.8" stroke-dasharray="4,2"/>
+<line x1="40" y1="86.0" x2="328" y2="86.0" stroke="#f1f5f9" stroke-width="0.4" stroke-dasharray=""/>
+<text x="38" y="65.0" text-anchor="end" font-size="7" fill="#94a3b8">0</text>
+<rect x="41.8" y="62.0" width="18.6" height="1.0" fill="#dc2626" opacity="0.72" rx="1"/>
+<rect x="63.9" y="62.0" width="18.6" height="1.0" fill="#dc2626" opacity="0.72" rx="1"/>
+<rect x="86.1" y="62.0" width="18.6" height="14.4" fill="#2563eb" opacity="0.72" rx="1"/>
+<rect x="108.2" y="14.0" width="18.6" height="48.0" fill="#dc2626" opacity="0.72" rx="1"/>
+<text x="117.5" y="16.0" text-anchor="middle" font-size="10" fill="#f59e0b">★</text>
+<rect x="130.4" y="62.0" width="18.6" height="1.1" fill="#2563eb" opacity="0.72" rx="1"/>
+<rect x="152.5" y="59.6" width="18.6" height="2.4" fill="#dc2626" opacity="0.72" rx="1"/>
+<rect x="174.7" y="62.0" width="18.6" height="1.0" fill="#2563eb" opacity="0.72" rx="1"/>
+<rect x="196.8" y="55.2" width="18.6" height="6.8" fill="#dc2626" opacity="0.72" rx="1"/>
+<rect x="219.0" y="53.7" width="18.6" height="8.3" fill="#dc2626" opacity="0.72" rx="1"/>
+<rect x="241.2" y="57.3" width="18.6" height="4.7" fill="#dc2626" opacity="0.72" rx="1"/>
+<rect x="263.3" y="57.7" width="18.6" height="4.3" fill="#dc2626" opacity="0.72" rx="1"/>
+<rect x="285.5" y="53.1" width="18.6" height="8.9" fill="#dc2626" opacity="0.72" rx="1"/>
+<rect x="307.6" y="58.0" width="18.6" height="4.0" fill="#dc2626" opacity="0.72" rx="1"/>
+<polyline points="51.1,94.0 73.2,94.0 95.4,110.0 117.5,56.5 139.7,57.7 161.8,55.1 184.0,55.2 206.2,47.6 228.3,38.4 250.5,33.2 272.6,28.3 294.8,18.4 316.9,14.0" fill="none" stroke="#7c3aed" stroke-width="1.3" opacity="0.9"/>
+<circle cx="316.9" cy="14.0" r="2.5" fill="#dc2626" opacity="0.9"/>
+<text x="51.1" y="127" text-anchor="middle" font-size="7.5" fill="#64748b">08:00</text>
+<text x="95.4" y="127" text-anchor="middle" font-size="7.5" fill="#64748b">09:00</text>
+<text x="139.7" y="127" text-anchor="middle" font-size="7.5" fill="#64748b">10:00</text>
+<text x="184.0" y="127" text-anchor="middle" font-size="7.5" fill="#64748b">11:00</text>
+<text x="228.3" y="127" text-anchor="middle" font-size="7.5" fill="#64748b">12:00</text>
+<text x="272.6" y="127" text-anchor="middle" font-size="7.5" fill="#64748b">13:00</text>
+<text x="316.9" y="127" text-anchor="middle" font-size="7.5" fill="#64748b">14:00</text>
+<text x="330" y="17.0" font-size="7" fill="#dc2626">30K</text>
+<text x="40" y="9" font-size="7" fill="#dc2626">■순매수</text>
+<text x="76" y="9" font-size="7" fill="#2563eb">■순매도</text>
+<text x="112" y="9" font-size="7" fill="#7c3aed">─누적</text>
+<text x="136" y="9" font-size="7" fill="#f59e0b">★이상</text></svg>
+<div class="strat-comment">💡 <b>순매수 누적 전략:</b> 누적 곡선의 지속적 우상향 유지 시 장마감 및 NXT 야간장까지 오버나잇(스윙) 홀딩 유리</div>
+</div>
+<div class="note ok" style="margin-bottom:10px"><div class="nt-t">순매수 누적 해석</div><p style="font-size:12px">순매수 우위(+30,829주)+강도65% — 상승 모멘텀</p><div style="margin-top:6px"><span style="display:inline-block;margin:2px 4px 2px 0;background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:2px 7px;font-size:10.5px;color:#ea580c;font-weight:700">누적순매수 +30,829주</span><span style="display:inline-block;margin:2px 4px 2px 0;background:#fff7ed;border:1px solid #fed7aa;border-radius:6px;padding:2px 7px;font-size:10.5px;color:#ea580c;font-weight:700">평균체결강도 65% — 매수우위</span></div></div>
+
+<!-- 체결강도 시계열 -->
+<div class="card" style="margin-bottom:11px">
+<div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:7px">체결강도 시계열 (08:00~20:00)</div>
+<svg viewBox="0 0 336 130" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block"><line x1="28" y1="60.0" x2="328" y2="60.0" stroke="#64748b" stroke-width="0.7" stroke-dasharray="3,2"/>
+<text x="25" y="63.0" text-anchor="end" font-size="7.5" fill="#94a3b8">50</text>
+<line x1="28" y1="79.2" x2="328" y2="79.2" stroke="#f1f5f9" stroke-width="0.5"/>
+<line x1="28" y1="40.8" x2="328" y2="40.8" stroke="#f1f5f9" stroke-width="0.5"/>
+<rect x="28.0" y="60.0" width="21.1" height="48.0" fill="#94a3b8" opacity="0.85" rx="1"/>
+<rect x="28.0" y="108.0" width="21.1" height="0.0" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="39.0" y="126" text-anchor="middle" font-size="7.5" fill="#64748b">08:00</text>
+<text x="39.0" y="70.0" text-anchor="middle" font-size="7.5" fill="#fff">50</text>
+<rect x="51.1" y="60.0" width="21.1" height="48.0" fill="#94a3b8" opacity="0.85" rx="1"/>
+<rect x="51.1" y="108.0" width="21.1" height="0.0" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="62.1" y="70.0" text-anchor="middle" font-size="7.5" fill="#fff">50</text>
+<rect x="74.2" y="70.1" width="21.1" height="37.9" fill="#2563eb" opacity="0.85" rx="1"/>
+<rect x="74.2" y="86.9" width="21.1" height="21.1" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="85.2" y="126" text-anchor="middle" font-size="7.5" fill="#64748b">09:00</text>
+<text x="85.2" y="80.1" text-anchor="middle" font-size="7.5" fill="#fff">39</text>
+<rect x="97.2" y="25.7" width="21.1" height="82.3" fill="#ef4444" opacity="0.85" rx="1"/>
+<rect x="97.2" y="87.1" width="21.1" height="20.9" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="108.3" y="35.7" text-anchor="middle" font-size="7.5" fill="#fff">86</text>
+<rect x="120.3" y="62.3" width="21.1" height="45.7" fill="#94a3b8" opacity="0.85" rx="1"/>
+<rect x="120.3" y="100.7" width="21.1" height="7.3" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="131.3" y="126" text-anchor="middle" font-size="7.5" fill="#64748b">10:00</text>
+<text x="131.3" y="72.3" text-anchor="middle" font-size="7.5" fill="#fff">48</text>
+<rect x="143.4" y="49.7" width="21.1" height="58.3" fill="#ef4444" opacity="0.85" rx="1"/>
+<rect x="143.4" y="104.6" width="21.1" height="3.4" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="154.4" y="59.7" text-anchor="middle" font-size="7.5" fill="#fff">61</text>
+<rect x="166.5" y="60.5" width="21.1" height="47.5" fill="#94a3b8" opacity="0.85" rx="1"/>
+<rect x="166.5" y="103.0" width="21.1" height="5.0" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="177.5" y="126" text-anchor="middle" font-size="7.5" fill="#64748b">11:00</text>
+<text x="177.5" y="70.5" text-anchor="middle" font-size="7.5" fill="#fff">50</text>
+<rect x="189.5" y="36.4" width="21.1" height="71.6" fill="#ef4444" opacity="0.85" rx="1"/>
+<rect x="189.5" y="103.7" width="21.1" height="4.3" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="200.6" y="46.4" text-anchor="middle" font-size="7.5" fill="#fff">75</text>
+<rect x="212.6" y="18.6" width="21.1" height="89.4" fill="#ef4444" opacity="0.85" rx="1"/>
+<rect x="212.6" y="105.0" width="21.1" height="3.0" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="223.7" y="126" text-anchor="middle" font-size="7.5" fill="#64748b">12:00</text>
+<text x="223.7" y="28.6" text-anchor="middle" font-size="7.5" fill="#fff">93</text>
+<rect x="235.7" y="45.6" width="21.1" height="62.4" fill="#ef4444" opacity="0.85" rx="1"/>
+<rect x="235.7" y="103.2" width="21.1" height="4.8" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="246.7" y="55.6" text-anchor="middle" font-size="7.5" fill="#fff">65</text>
+<rect x="258.8" y="51.0" width="21.1" height="57.0" fill="#ef4444" opacity="0.85" rx="1"/>
+<rect x="258.8" y="100.8" width="21.1" height="7.2" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="269.8" y="126" text-anchor="middle" font-size="7.5" fill="#64748b">13:00</text>
+<text x="269.8" y="61.0" text-anchor="middle" font-size="7.5" fill="#fff">59</text>
+<rect x="281.8" y="41.8" width="21.1" height="66.2" fill="#ef4444" opacity="0.85" rx="1"/>
+<rect x="281.8" y="100.7" width="21.1" height="7.3" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="292.9" y="51.8" text-anchor="middle" font-size="7.5" fill="#fff">69</text>
+<rect x="304.9" y="12.0" width="21.1" height="96.0" fill="#ef4444" opacity="0.85" rx="1"/>
+<rect x="304.9" y="106.8" width="21.1" height="1.2" fill="#7c3aed" opacity="0.22" rx="1"/>
+<text x="316.0" y="126" text-anchor="middle" font-size="7.5" fill="#64748b">14:00</text>
+<text x="316.0" y="22.0" text-anchor="middle" font-size="7.5" fill="#fff">100</text></svg>
+<div class="strat-comment">💡 <b>체결강도 시계열 전략:</b> 50% 기준선 하회 시 추격 매수 자제, 50% 돌파 반등 시점에 적극 분할 매수 진입</div>
+</div>
+<div class="note ok" style="margin-bottom:10px">
+<div class="nt-t">체결강도 추세 (평균 65%)</div>
+<p>체결강도 상승 추세 — 최근 76% (평균 65% 대비 +11%p)</p>
+</div>
+
+<!-- 거래량 이상 탐지 -->
+<div class="card" style="margin-bottom:11px">
+<div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:5px">프로그램 매매 추정 — 거래량 이상 탐지 <span style="font-size:9.5px;color:#94a3b8">★=평균 1.8배↑</span></div>
+<svg viewBox="0 0 336 80" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block"><line x1="40" y1="45.2" x2="328" y2="45.2" stroke="#94a3b8" stroke-width="0.7" stroke-dasharray="3,2"/>
+<text x="38" y="48.2" text-anchor="end" font-size="7" fill="#94a3b8">평균</text>
+<line x1="40" y1="28.3" x2="328" y2="28.3" stroke="#f59e0b" stroke-width="0.6" stroke-dasharray="2,2"/>
+<text x="38" y="31.3" text-anchor="end" font-size="7" fill="#f59e0b">2x</text>
+<rect x="41.8" y="62.0" width="18.6" height="1.0" fill="#64748b" opacity="0.5" rx="1"/>
+<rect x="63.9" y="62.0" width="18.6" height="1.0" fill="#64748b" opacity="0.5" rx="1"/>
+<rect x="86.1" y="8.0" width="18.6" height="54.0" fill="#f59e0b" opacity="0.9" rx="1"/>
+<text x="95.4" y="4.0" text-anchor="middle" font-size="8" fill="#f59e0b">★</text>
+<rect x="108.2" y="8.7" width="18.6" height="53.3" fill="#f59e0b" opacity="0.9" rx="1"/>
+<text x="117.5" y="4.7" text-anchor="middle" font-size="8" fill="#f59e0b">★</text>
+<rect x="130.4" y="43.3" width="18.6" height="18.7" fill="#64748b" opacity="0.5" rx="1"/>
+<rect x="152.5" y="53.2" width="18.6" height="8.8" fill="#dc2626" opacity="0.5" rx="1"/>
+<rect x="174.7" y="49.3" width="18.6" height="12.7" fill="#64748b" opacity="0.5" rx="1"/>
+<rect x="196.8" y="50.9" width="18.6" height="11.1" fill="#dc2626" opacity="0.5" rx="1"/>
+<rect x="219.0" y="54.4" width="18.6" height="7.6" fill="#dc2626" opacity="0.5" rx="1"/>
+<rect x="241.2" y="49.6" width="18.6" height="12.4" fill="#dc2626" opacity="0.5" rx="1"/>
+<rect x="263.3" y="43.6" width="18.6" height="18.4" fill="#dc2626" opacity="0.5" rx="1"/>
+<rect x="285.5" y="43.3" width="18.6" height="18.7" fill="#dc2626" opacity="0.5" rx="1"/>
+<rect x="307.6" y="58.9" width="18.6" height="3.1" fill="#dc2626" opacity="0.5" rx="1"/>
+<text x="51.1" y="78" text-anchor="middle" font-size="7.5" fill="#94a3b8">08:00</text>
+<text x="95.4" y="78" text-anchor="middle" font-size="7.5" fill="#94a3b8">09:00</text>
+<text x="139.7" y="78" text-anchor="middle" font-size="7.5" fill="#94a3b8">10:00</text>
+<text x="184.0" y="78" text-anchor="middle" font-size="7.5" fill="#94a3b8">11:00</text>
+<text x="228.3" y="78" text-anchor="middle" font-size="7.5" fill="#94a3b8">12:00</text>
+<text x="272.6" y="78" text-anchor="middle" font-size="7.5" fill="#94a3b8">13:00</text>
+<text x="316.9" y="78" text-anchor="middle" font-size="7.5" fill="#94a3b8">14:00</text></svg>
+<div class="strat-comment">💡 <b>이상거래량 전략:</b> 평균 대비 1.8배 이상 급증한 이상 캔들(★) 발생 구간은 메이저 수급의 방향성 전환 변곡점</div>
+</div>
+
+<!-- 30분 수급 테이블 -->
+<div style="font-size:10px;color:#64748b;margin-bottom:4px">▶ 08:00~20:00 30분 단위 당일 실시간 수급 현황 · ★=이상거래량</div>
+<div style="overflow-x:auto;margin-bottom:12px">
+<table style="width:100%;border-collapse:collapse;font-size:11px">
+<thead><tr style="background:#f1f5f9;color:#475569">
+<th style="padding:4px 6px;text-align:left">시간</th>
+<th style="padding:4px 5px;text-align:right">강도</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">등락</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">거래량</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">순매수</th>
+<th style="padding:4px 4px;text-align:right;font-size:10px">─</th>
+<th style="padding:4px 4px;text-align:right;font-size:9.5px">특이</th>
+</tr></thead>
+<tbody style="color:#334155"><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">08:00</td><td style="padding:3px 5px;text-align:right;color:#64748b;font-weight:700">50%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#2563eb">+0.0%</td><td style="padding:3px 4px;text-align:right;font-size:10px">0</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">08:30</td><td style="padding:3px 5px;text-align:right;color:#64748b;font-weight:700">50%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#2563eb">+0.0%</td><td style="padding:3px 4px;text-align:right;font-size:10px">0</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#64748b">+0</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">09:00</td><td style="padding:3px 5px;text-align:right;color:#2563eb;font-weight:700">39%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+0.2%</td><td style="padding:3px 4px;text-align:right;font-size:10px">29,231</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#2563eb">-6,179</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px">★</td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">09:30</td><td style="padding:3px 5px;text-align:right;color:#dc2626;font-weight:700">86%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+1.4%</td><td style="padding:3px 4px;text-align:right;font-size:10px">28,877</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+20,633</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px">★</td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">10:00</td><td style="padding:3px 5px;text-align:right;color:#64748b;font-weight:700">48%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+0.9%</td><td style="padding:3px 4px;text-align:right;font-size:10px">10,101</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#2563eb">-483</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">10:30</td><td style="padding:3px 5px;text-align:right;color:#dc2626;font-weight:700">61%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+1.1%</td><td style="padding:3px 4px;text-align:right;font-size:10px">4,769</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+1,025</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">11:00</td><td style="padding:3px 5px;text-align:right;color:#64748b;font-weight:700">50%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+0.6%</td><td style="padding:3px 4px;text-align:right;font-size:10px">6,901</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#2563eb">-65</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">11:30</td><td style="padding:3px 5px;text-align:right;color:#dc2626;font-weight:700">75%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+1.0%</td><td style="padding:3px 4px;text-align:right;font-size:10px">5,988</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+2,938</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">12:00</td><td style="padding:3px 5px;text-align:right;color:#dc2626;font-weight:700">93%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+0.6%</td><td style="padding:3px 4px;text-align:right;font-size:10px">4,138</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+3,568</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">12:30</td><td style="padding:3px 5px;text-align:right;color:#dc2626;font-weight:700">65%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+0.5%</td><td style="padding:3px 4px;text-align:right;font-size:10px">6,698</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+2,006</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">13:00</td><td style="padding:3px 5px;text-align:right;color:#dc2626;font-weight:700">59%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+0.5%</td><td style="padding:3px 4px;text-align:right;font-size:10px">9,986</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+1,864</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">13:30</td><td style="padding:3px 5px;text-align:right;color:#dc2626;font-weight:700">69%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+0.3%</td><td style="padding:3px 4px;text-align:right;font-size:10px">10,100</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+3,822</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr><tr><td style="padding:3px 6px;color:#64748b;font-size:10px">14:00</td><td style="padding:3px 5px;text-align:right;color:#dc2626;font-weight:700">100%</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+0.3%</td><td style="padding:3px 4px;text-align:right;font-size:10px">1,700</td><td style="padding:3px 4px;text-align:right;font-size:10px;color:#dc2626">+1,700</td><td style="padding:3px 4px;text-align:right;font-size:10px">─</td><td style="padding:3px 4px;text-align:center;font-size:10px"></td></tr></tbody>
+</table>
+</div>
+
+<!-- 기술적 지표 -->
+<div class="card rows" style="margin-top:8px">
+<div class="rw"><span class="k" style="font-weight:700">기술적 지표 종합</span><span class="v" style="color:#94a3b8;font-size:11px">당일 기준</span></div>
+</div>
+<div class="note plain"><p>기술적 지표 계산 중</p></div>
+<div class="note warn" style="margin-bottom:10px">
+<div class="nt-t">기술적 종합 (C-등급 44점)</div>
+<p>기술적 지표 혼조/약세: 추세 반전 확인 후 진입 권장.</p>
+</div>
+
+
+
+<div class="pfoot"><span>HD현대중공업(329180) StockAlarm</span><span>Sec 3/4</span></div>
+</section>
+
+<!-- ★ SEC 4: 당일 이슈 -->
+<section class="page" id="sec4">
+<div class="sec-head"><h2>🔔 당일 실시간 이슈</h2><span class="badge">2026.08.27</span></div>
+
+<!-- 뉴스 -->
+<div class="card rows" style="margin-bottom:10px">
+<div class="rw"><span class="k" style="font-weight:700;color:#1e293b">당일 뉴스</span><span class="v" style="color:#94a3b8;font-size:11px">최신순</span></div>
+</div>
+<a href="#" target="_blank" class="rlink"><div style="font-size:10px;color:#94a3b8;margin-bottom:2px">202608271300<span style="background:#94a3b8;color:#fff;font-size:9px;font-weight:700;padding:1px 5px;border-radius:4px;margin-left:4px">⚪ 참고</span></div><div class="rt">HD현대중공업, 페루 정부와 손잡고 중남미 조선 인력 양성 나선다</div></a>
+<div class="note yel" style="margin-bottom:10px">
+<div class="nt-t">뉴스 영향 분석</div>
+<p>혼조 뉴스 — 방향성 확인 필요 (미국 반도체 섹터 동향 병행 모니터링)</p>
+</div>
+
+<!-- 공시 -->
+<div class="card rows" style="margin-top:12px;margin-bottom:6px">
+<div class="rw"><span class="k" style="font-weight:700;color:#7c3aed">실시간 공시</span><span class="v" style="color:#94a3b8;font-size:11px">DART·Naver</span></div>
+</div>
+<a href="https://m.stock.naver.com/domestic/stock/329180/disclosure/111882794" target="_blank" class="rlink"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:#7c3aed;font-weight:700">KOSCOM</span><span style="font-size:10px;color:#94a3b8">08-24 06:50</span></div><div class="rt">에이치디현대중공업(주) 단일판매ㆍ공급계약체결</div></a><a href="https://m.stock.naver.com/domestic/stock/329180/disclosure/110470768" target="_blank" class="rlink"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:#7c3aed;font-weight:700">KOSCOM</span><span style="font-size:10px;color:#94a3b8">08-21 06:50</span></div><div class="rt">에이치디현대중공업(주) 조회공시 요구(풍문 또는 보도)에 대한 답변(미확정)</div></a><a href="https://m.stock.naver.com/domestic/stock/329180/disclosure/110340437" target="_blank" class="rlink"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:#7c3aed;font-weight:700">KOSCOM</span><span style="font-size:10px;color:#94a3b8">08-21 06:50</span></div><div class="rt">에이치디현대중공업(주) 조회공시 요구(풍문 또는 보도)</div></a><a href="https://m.stock.naver.com/domestic/stock/329180/disclosure/100041781" target="_blank" class="rlink"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:#7c3aed;font-weight:700">KOSCOM</span><span style="font-size:10px;color:#94a3b8">08-11 06:51</span></div><div class="rt">에이치디현대중공업(주) 중간(분기)배당락 기준가격 안내</div></a><a href="https://m.stock.naver.com/domestic/stock/329180/disclosure/99108534" target="_blank" class="rlink"><div style="display:flex;justify-content:space-between;margin-bottom:3px"><span style="font-size:10px;color:#7c3aed;font-weight:700">KOSCOM</span><span style="font-size:10px;color:#94a3b8">08-10 06:50</span></div><div class="rt">에이치디현대중공업(주) 단일판매ㆍ공급계약체결</div></a>
+
+<!-- TG 인사이트 -->
+<div class="card rows" style="margin-top:12px;margin-bottom:6px">
+<div class="rw"><span class="k" style="font-weight:700;color:#1e293b">Telegram 인사이트</span><span class="v" style="color:#94a3b8;font-size:11px">최근 7일 검색</span></div>
+</div>
+<div class="note plain"><div class="nt-t">TG 언급 없음</div><p>관련 텔레그램 언급이 없습니다.</p></div>
+<div class="note plain" style="margin-bottom:10px">
+<div class="nt-t">TG 영향 분석</div>
+<p>텔레그램 특이 언급 없음</p>
+</div>
+
+<div class="card rows" style="margin-top:12px;margin-bottom:6px"><div class="rw"><span class="k" style="font-weight:700;color:#0284c7">텔레그램 시황 브리핑 (대도무문·SHM스토리)</span><span class="v" style="color:#94a3b8;font-size:11px">글로벌·국내 매크로</span></div></div><div class="rlink" style="border-left:3px solid #0284c7;padding:7px 10px;margin-bottom:6px;background:#f0f9ff;border-radius:6px"><div style="font-size:10px;color:#0284c7;font-weight:700;margin-bottom:3px">📢 대도무문 08/27 01:55</div><div style="font-size:11px;line-height:1.5;color:#0f172a">오전 금리인상 이슈 나온 후 잠시 출렁거렸지만 
+
+다시 무난한 흐름 이어갑니다 
+
+물론 전자 닉스로 수급이 집중 된 만큼 상대적으로 양극화는 있지만 
+
+코스닥이 불필요하게 밀리는 현상은 자주 안나오는 부분이고요 ~ 
+
+오늘은 반도체 -&gt; 2차전지 순환매까지 잘 나와주고 있습니다 
+
+
+앞으로 가장 중요한 포인트는 
+
+내가 ...</div></div><div class="rlink" style="border-left:3px solid #0284c7;padding:7px 10px;margin-bottom:6px;background:#f0f9ff;border-radius:6px"><div style="font-size:10px;color:#0284c7;font-weight:700;margin-bottom:3px">📢 대도무문 08/27 01:04</div><div style="font-size:11px;line-height:1.5;color:#0f172a">https://www.pressian.com/pages/articles/2026082709540920032?utm_source=naver&amp;utm_medium=search
+[속보] 한은, 기준금리 두달 연속 인상…2.75%→3%
+
+
+잠시 출렁거림 있었는데 금리인상이 돌발적인 상황은 아니라서 큰 영향은 없겠습니다...</div></div><div class="rlink" style="border-left:3px solid #0284c7;padding:7px 10px;margin-bottom:6px;background:#f0f9ff;border-radius:6px"><div style="font-size:10px;color:#0284c7;font-weight:700;margin-bottom:3px">📢 대도무문 08/27 00:06</div><div style="font-size:11px;line-height:1.5;color:#0f172a">엔비디아 실적 소화하며 상승 출발 입니다 
+
+외인 기관 전기전자 대형주로 수급 집중 
+
+반도체 / 전력인프라 쪽으로 쏠림이 좀 있으니 참고하시고 ~
+
+지수간 양극화 -&gt; 완화 여부가 관건 입니다...</div></div>
+
+
+
+<!-- 애널리스트 리포트 (accordion) -->
+<details style="margin-bottom:10px">
+<summary>📋 애널리스트 리포트 (5건)</summary>
+<div style="margin-top:6px">
+<a href="https://m.stock.naver.com/domestic/stock/329180/research" target="_blank" class="rlink" style="display:block;margin-bottom:8px;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #7c3aed;border-radius:6px;text-decoration:none"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><span style="font-size:11px;color:#7c3aed;font-weight:700">🏢 DS투자증권</span><span style="font-size:10px;color:#64748b">2026-07-30</span></div><div class="rt" style="font-size:12px;font-weight:700;color:#1e293b;margin-bottom:4px">압도적인 모멘텀. 전사적인 수익성도 확대 중</div><div style="font-size:10.5px;color:#475569;background:#f1f5f9;padding:4px 6px;border-radius:4px;line-height:1.4">💡 <b>핵심 요약:</b> 2Q26 Re: 다시 한번 두드러진 상선과 엔진의 수익성26년 2분기 매출액 6.3조원(이하 YoY +65.7%), 영업이익 1조원(+139.8%, OPM 16.4%)을 기록하며</div></a><a href="https://m.stock.naver.com/domestic/stock/329180/research" target="_blank" class="rlink" style="display:block;margin-bottom:8px;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #7c3aed;border-radius:6px;text-decoration:none"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><span style="font-size:11px;color:#7c3aed;font-weight:700">🏢 유안타증권</span><span style="font-size:10px;color:#64748b">2026-07-30</span></div><div class="rt" style="font-size:12px;font-weight:700;color:#1e293b;margin-bottom:4px">2Q26 Re: 가던 길, 마저 갑니다</div><div style="font-size:10.5px;color:#475569;background:#f1f5f9;padding:4px 6px;border-radius:4px;line-height:1.4">💡 <b>핵심 요약:</b> 2Q26 매출 6.3조, 영업이익 1조매출과 영업이익 모두 컨센서스 부합. 긍정적 환율효과 +300억 qoq 반영되었으며, 강재가의 qoq 변동 제한적. 2Q26 기준 선종별 매출</div></a><a href="https://m.stock.naver.com/domestic/stock/329180/research" target="_blank" class="rlink" style="display:block;margin-bottom:8px;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #7c3aed;border-radius:6px;text-decoration:none"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><span style="font-size:11px;color:#7c3aed;font-weight:700">🏢 유진투자증권</span><span style="font-size:10px;color:#64748b">2026-07-30</span></div><div class="rt" style="font-size:12px;font-weight:700;color:#1e293b;margin-bottom:4px">이제는 그냥 조선사가 아니다</div><div style="font-size:10.5px;color:#475569;background:#f1f5f9;padding:4px 6px;border-radius:4px;line-height:1.4">💡 <b>핵심 요약:</b> &quot; 2Q26 매출액은 6조 3,322억원(+52.7%yoy), 영업이익은 1조 399억원(+120.6%yoy, OPM 16.4%)을 기록. 조업일수 증가와 생산성 향상, 고선가 선</div></a><a href="https://m.stock.naver.com/domestic/stock/329180/research" target="_blank" class="rlink" style="display:block;margin-bottom:8px;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #7c3aed;border-radius:6px;text-decoration:none"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><span style="font-size:11px;color:#7c3aed;font-weight:700">🏢 iM증권</span><span style="font-size:10px;color:#64748b">2026-07-30</span></div><div class="rt" style="font-size:12px;font-weight:700;color:#1e293b;margin-bottom:4px">2Q26: 역시 최고의 조선사</div><div style="font-size:10.5px;color:#475569;background:#f1f5f9;padding:4px 6px;border-radius:4px;line-height:1.4">💡 <b>핵심 요약:</b> 2분기 매출 6조 3,322억원/영업이익 1조,399억원HD현대중공업의 2026년 2분기 매출은 6조 3,322억원/영업이익은 1조 399억원으로 컨센서스(6조 3,044억원/9,</div></a><a href="https://m.stock.naver.com/domestic/stock/329180/research" target="_blank" class="rlink" style="display:block;margin-bottom:8px;padding:8px 10px;background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #7c3aed;border-radius:6px;text-decoration:none"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:3px"><span style="font-size:11px;color:#7c3aed;font-weight:700">🏢 키움증권</span><span style="font-size:10px;color:#64748b">2026-07-30</span></div><div class="rt" style="font-size:12px;font-weight:700;color:#1e293b;margin-bottom:4px">견고한 본업과 차근차근 준비하는 미래 사업</div><div style="font-size:10.5px;color:#475569;background:#f1f5f9;padding:4px 6px;border-radius:4px;line-height:1.4">💡 <b>핵심 요약:</b> 2분기 영업이익 1조 399억원, 컨센서스 상회2분기 매출액 6조 3,322억원(yoy +52.7%), 영업이익 1조 399억원(yoy +120.6%, OPM 16.4%)로 시장</div></a>
+</div>
+</details>
+
+<!-- 섹터 피어 (accordion) -->
+
+
+<!-- 최종 판정 -->
+<div class="note warn" style="margin-bottom:12px">
+<div class="nt-t">최종 판정 — 신중 접근 (44/100점 · C-등급)</div>
+<p style="font-size:12px;line-height:1.7;margin:6px 0"><b>[종합 판정 사유 및 실전 가이드]</b><br>
+단기 하방 압력이 존재하므로 무리한 물타기를 자제하고 손절선 준수 및 관망을 권장합니다.</p>
+<div style="font-size:11px;color:#64748b;border-top:1px solid rgba(0,0,0,0.06);padding-top:6px;margin-top:6px">
+• <b>기술 지표:</b> C-등급(44점) 산출 사유 — 단기 이평선 하회 및 하방 압력 지속에 따른 신중 접근<br>
+• <b>수급 주체:</b> 수급 혼조세 — 뚜렷한 주체 부재<br>
+• <b>매크로/뉴스:</b> 혼조 뉴스 — 방향성 확인 필요 (미국 반도체 섹터 동향 병행 모니터링)<br>
+• <b>시황/TG:</b> 텔레그램 특이 언급 없음
+</div>
+</div>
+
+<div class="pfoot"><span>HD현대중공업(329180) StockAlarm</span><span>Sec 4/4</span></div>
+</section>
+
+</div><!-- wrap -->
+</body></html>

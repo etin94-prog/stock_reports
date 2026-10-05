@@ -1,0 +1,440 @@
+<!doctype html><html lang="ko"><head>
+<meta charset="utf-8"><meta property="og:type" content="website"><meta property="og:title" content="키움증권 펀더멘털 리포트"><meta property="og:description" content="StockAgent 리포트"><meta property="og:locale" content="ko_KR"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="키움증권 펀더멘털 리포트"><meta name="twitter:description" content="StockAgent 리포트">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>키움증권 펀더멘털 리포트</title>
+<style>
+*{box-sizing:border-box;-webkit-text-size-adjust:100%}
+body{margin:0;background:#eef2f7;color:#1e293b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;line-height:1.6}
+.bar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 12px}
+.bar .in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.bar h1{font-size:15px;margin:0;font-weight:800;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.btn{font-size:12.5px;padding:7px 12px;border-radius:9px;border:1px solid #e2e8f0;background:#f8fafc;color:#334155;cursor:pointer;font-weight:700}
+.btn.pri{background:#ea580c;color:#fff;border-color:#ea580c}
+.btn:active{transform:translateY(1px)}
+.wrap{max-width:560px;margin:0 auto;padding:14px 10px 60px}
+.page{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:18px 16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.phead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;border-bottom:2px solid #e2e8f0;padding-bottom:11px;margin-bottom:14px}
+.eyebrow{font-size:10.5px;font-weight:800;color:#ea580c;letter-spacing:.06em;margin-bottom:3px}
+.phead h2{font-size:17px;margin:0;font-weight:800;line-height:1.35}
+.badge{font-size:11px;font-weight:800;border-radius:999px;padding:4px 11px;white-space:nowrap;border:1px solid}
+.card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:13px;padding:12px 14px;margin-bottom:11px}
+.rows .rw{display:flex;justify-content:space-between;gap:10px;padding:6px 0;font-size:13px}
+.rows .k{color:#64748b} .rows .v{font-weight:800;text-align:right}
+.note{border-radius:13px;padding:13px 15px;margin-bottom:11px;font-size:13px;border:1px solid}
+.note p{margin:0 0 6px} .note p:last-child{margin:0}
+.note .nt-t{font-weight:800;font-size:12.5px;margin-bottom:7px}
+.note.plain{background:#f8fafc;border-color:#e2e8f0} .note.plain .nt-t{color:#64748b}
+.note.info{background:#eff6ff;border-color:#bfdbfe} .note.info .nt-t{color:#2563eb}
+.note.warn{background:#fef2f2;border-color:#fecaca} .note.warn .nt-t{color:#dc2626}
+.note.yel{background:#fffbeb;border-color:#fde68a} .note.yel .nt-t{color:#ea580c}
+.note.ok{background:#ecfdf5;border-color:#a7f3d0} .note.ok .nt-t{color:#059669}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:11px}
+.kv{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px}
+.kv .k{font-size:11px;color:#64748b} .kv .v{font-size:17px;font-weight:800;margin:2px 0;color:#ea580c}
+.tbl{padding:4px 6px} table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{color:#64748b;font-weight:600;font-size:11px;padding:9px 7px;text-align:right;border-bottom:1px solid #e2e8f0}
+th:first-child,td:first-child{text-align:left}
+td{padding:9px 7px;text-align:right;border-bottom:1px solid #f1f5f9;font-weight:600}
+tbody tr:last-child td{border-bottom:none}
+.bul{display:flex;gap:10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:11px 13px;margin-bottom:9px;font-size:13px}
+.bul.warn{background:#fef2f2;border-color:#fecaca}
+.bul i{flex:none;width:7px;height:7px;border-radius:50%;background:#ea580c;margin-top:8px}
+.bul.warn i{background:#dc2626}
+.chart{border:1px solid #e2e8f0;border-radius:13px;padding:6px;margin-bottom:11px;overflow:hidden}
+.chart svg{width:100%;height:auto;display:block}
+.pfoot{display:flex;justify-content:space-between;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;padding-top:10px;margin-top:4px}
+.mini{color:#ea580c;font-weight:700;text-decoration:none}
+@media print{.bar{display:none} body{background:#fff} .page{break-after:page;box-shadow:none;border:none}}
+@keyframes pulse-r{0%,100%{opacity:1}50%{opacity:.7}}
+</style></head><body>
+<div class="bar"><div class="in">
+  <h1>키움증권 <span style="color:#94a3b8;font-weight:600">039490</span>&nbsp;&nbsp;<span style="font-size:13px;background:#ea580c22;color:#ea580c;padding:3px 10px;border-radius:12px;font-weight:700">C+ 47점</span></h1>
+  <button class="btn" onclick="window.print()">인쇄/PDF</button>
+</div></div>
+<div class="wrap">
+<section class="page" id="pg1">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 1/7</div>
+  <h2>기업 개요 & 투자 포인트</h2>
+</div><span class="badge" style="background:#ea580c22;border-color:#ea580c;color:#ea580c">섹터·피어·전략</span></div>
+
+<div style="font-size:10.5px;color:#94a3b8;margin-bottom:8px">기준일: 2026년 10월 02일 · 섹터: 증권</div>
+<div class="kpi-row"><div class="kpi-item"><div class="kpi-label">매출액 (2026.06)</div><div class="kpi-value">-</div></div><div class="kpi-item"><div class="kpi-label">영업이익 (2026.06)</div><div class="kpi-value">7,889억</div></div><div class="kpi-item"><div class="kpi-label">순이익 (2026.06)</div><div class="kpi-value">-</div></div><div class="kpi-item"><div class="kpi-label">자본총계</div><div class="kpi-value">7.6조</div></div></div>
+<div class="note plain" style="margin-bottom:10px"><div class="nt-t">🏰 비즈니스 모델 & 경쟁 우위</div><p style="font-size:12.5px;margin:0">키움증권은 모바일트레이딩시스템(MTS)에 대화형 AI 검색을 도입하고 향후 챗봇 기능까지 고도화할 계획이라고 보도됐다. 다만 한국소비자원 민원상담이 대형 증권사 중 가장 많았다는 자료와 레버리지 ETF 논란 등은 서비스 경쟁력에 부담이 될 수 있는 부분으로 제시됐다.</p></div>
+<div class="card rows" style="margin-bottom:10px"><div style="font-size:12px;font-weight:800;color:#334155;margin-bottom:6px">🏭 섹터 유사 종목 (증권)</div><div class="rw"><span class="k">미래에셋증권</span><span class="v" style="font-size:11px;color:#475569">006800</span></div><div class="rw"><span class="k">한국금융지주</span><span class="v" style="font-size:11px;color:#475569">071050</span></div><div class="rw"><span class="k">NH투자증권</span><span class="v" style="font-size:11px;color:#475569">005940</span></div><div class="rw"><span class="k">삼성증권</span><span class="v" style="font-size:11px;color:#475569">016360</span></div></div>
+<div class="note ok" style="margin-top:8px"><div class="nt-t">💡 핵심 투자 포인트</div></div>
+<div class="bul"><i style="background:#059669"></i><div style="font-size:12.5px">2026년 2분기 영업이익 7,889억원으로 1분기 6,212억원 대비 27.0% 증가했고, 애널리스트 리포트는 분기별 사상 최대 실적, 어닝 서프라이즈, 트레이딩과 해외주식 부문 선방을 언급했다.</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:12.5px">유안타증권 리포트는 개인투자자 회전율 회복에 따라 주가 상승을 언급했다.</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:12.5px">키움증권이 모바일트레이딩시스템(MTS)에 대화형 통합 AI 검색을 선보이고, 향후 업무·투자 챗봇 기능까지 고도화할 계획이라고 보도됐다.</div></div>
+<div class="card rows" style="margin-top:8px"><div class="rw"><span class="k">투자의견</span><span class="v" style="color:#ea580c">중립</span></div></div>
+
+<div class="pfoot">
+  <span>키움증권(039490) 펀더멘털 리포트</span>
+  <span>Page 1 / 7</span>
+</div>
+</section>
+<section class="page" id="pg2">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 2/7</div>
+  <h2>종합 개요</h2>
+</div><span class="badge" style="background:#ea580c22;border-color:#ea580c;color:#ea580c">펀더멘털 점수</span></div>
+
+<div style="background:#0891b2;color:#fff;border:2px solid #164e63;border-radius:12px;padding:13px 15px;margin-bottom:12px;"><div style="font-size:13px;font-weight:900;margin-bottom:6px">⭐ 오늘 주목 뉴스 발생</div><div style="font-size:11.5px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.2)"><span style="opacity:.7;font-size:10px">[2026-10-02]</span> "나 떨고 있니"…박현주·김남구까지, '국감 무풍지대' 증권가 긴장</div><div style="font-size:11.5px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.2)"><span style="opacity:.7;font-size:10px">[2026-10-02]</span> 7000 탈환한 코스피, 美 고용지표·삼전실적 변수</div><div style="font-size:11.5px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.2)"><span style="opacity:.7;font-size:10px">[2026-10-02]</span> [비즈&] 하나금융, 청라에 새 둥지…금융·IT 인력 집결 外</div></div><div style="font-size:10.5px;color:#94a3b8;margin-bottom:4px">기준일: 2026년 10월 02일 · Telegram (90일 이내, 15건)</div>
+<div style="display:flex;align-items:baseline;gap:8px;margin-bottom:8px"><span style="font-size:24px;font-weight:900;color:#1e293b">259,000원</span><span style="font-size:13px;font-weight:700;color:#1d4ed8">-0.58%</span><span style="font-size:11px;color:#94a3b8">전일대비</span></div>
+<div style="display:flex;gap:6px;margin-bottom:12px"><div style="flex:1;text-align:center;padding:8px 4px;background:#6b728011;border:1.5px solid #6b728044;border-radius:10px"><div style="font-size:10px;color:#64748b;margin-bottom:2px">KOSPI 매크로</div><div style="font-size:20px;font-weight:900;color:#6b7280">B-</div><div style="font-size:11px;color:#6b7280;font-weight:700">67/100</div></div><div style="flex:1;text-align:center;padding:8px 4px;background:#ea580c11;border:1.5px solid #ea580c44;border-radius:10px"><div style="font-size:10px;color:#64748b;margin-bottom:2px">증권</div><div style="font-size:20px;font-weight:900;color:#ea580c">C+</div><div style="font-size:11px;color:#ea580c;font-weight:700">39/100</div></div><div style="flex:1;text-align:center;padding:8px 4px;background:#ea580c11;border:1.5px solid #ea580c44;border-radius:10px"><div style="font-size:10px;color:#64748b;margin-bottom:2px">종목 펀더멘털</div><div style="font-size:20px;font-weight:900;color:#ea580c">C+</div><div style="font-size:11px;color:#ea580c;font-weight:700">46/100</div></div></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px"><div><div style="font-size:10px;color:#64748b">현재주가</div><div style="font-size:18px;font-weight:900;color:#1e293b">259,000원</div></div><div><div style="font-size:10px;color:#64748b">전일대비</div><div style="font-size:15px;font-weight:700;color:#1d4ed8">-1,500 (-0.58%)</div></div></div><div style="background:#fffbeb;border:1.5px solid #fde68a;border-radius:10px;padding:12px 14px;margin-bottom:12px"><div style="font-size:11px;color:#64748b;margin-bottom:4px">■ 매매 판정</div><div style="font-size:16px;font-weight:900;color:#f59e0b">관망 / 신규 매수 자제</div><div style="font-size:11.5px;color:#475569;margin-top:6px;padding:6px 8px;background:#f8fafc;border-radius:6px">애널리스트 컨센서스 목표주가 429,647원 (10/01 기준 네이버)</div></div><div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:10px 12px;font-size:12.5px"><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #f1f5f9"><span style="color:#64748b">단기(1~4주)</span><span style="font-weight:700">모멘텀 부재 — 현금 보유 선호</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #f1f5f9"><span style="color:#64748b">중기(1~3개월)</span><span style="font-weight:700">실적 개선 신호 확인 전까지 비중 축소 유지</span></div><div style="display:flex;justify-content:space-between;padding:5px 0"><span style="color:#64748b">장기(6~12개월)</span><span style="font-weight:700">장기 구조적 개선 여부 분기 단위 재확인</span></div></div>
+<div class="chart" style="margin:10px 0"><svg viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;background:#1e3a5f20;border-radius:6px"><polyline points="0,10 5,18 10,32 16,17 21,26 27,38 32,21 37,27 43,38 48,40 54,41 59,33 65,45 70,44 75,64 81,76 86,74 92,48 97,63 103,55 108,49 113,51 119,60 124,45 130,44 135,44 141,46 146,43 151,56 157,69 162,62 168,67 173,68 178,61 184,60 189,59 195,60 200,60 206,57 211,63 216,67 222,65 227,64 233,64 238,63 244,62 249,60 254,64 260,67 265,68 271,70 276,72 282,70 287,72 292,70 298,76 303,77 309,80 314,73 320,74" fill="none" stroke="#1d4ed8" stroke-width="2"/><text x="316" y="14" text-anchor="end" font-size="13" fill="#1d4ed8" font-weight="bold">259,000원 (-25.1%)</text></svg></div>
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:13px;padding:12px 14px;margin-bottom:11px">
+<div style="font-size:12px;font-weight:800;color:#334155;margin-bottom:6px">📊 펀더멘털 점수 상세</div>
+<div style="padding:5px 0 8px;font-size:11.5px;color:#64748b">📍 코스피 대형주 (자산 108.3조)</div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">이익모멘텀</span><span style="font-size:12px;font-weight:800;color:#ea580c">19/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#ea580c;width:95%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">영업이익 YoY(2분기) +93% · QoQ(Q2 vs Q1 2026, 3개월) +27% (2026년 2분기(3개월, 네이버) 7,890억원)</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">FCF창출력</span><span style="font-size:12px;font-weight:800;color:#ea580c">4/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#ea580c;width:20%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">영업현금흐름 (2026 반기 누적) -71,433억원 (같은 기간 매출 없음 — 비율 생략) — 순이익(11,150억) 흑자에도 운전자본 확대 -46,004억 (매출채권·재고 증가 추정)</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">재무구조</span><span style="font-size:12px;font-weight:800;color:#ea580c">10/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#ea580c;width:50%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">[금융업] 자기자본비율 7.0% (자본 75,808억 / 총자산 1,083,413억) — 예수부채 포함 구조적 부채비율 1329%는 업종 특성</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">수익성·성장</span><span style="font-size:12px;font-weight:800;color:#ea580c">0/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#ea580c;width:0%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">마진 미산출</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">해자·확장성</span><span style="font-size:12px;font-weight:800;color:#ea580c">7/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#ea580c;width:35%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">애널 리포트 12건 커버리지</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">정보모멘텀</span><span style="font-size:12px;font-weight:800;color:#ea580c">16/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#ea580c;width:80%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">뉴스 25건 · 애널 12건 · Telegram 15건 · PDF 0건</div></div>
+</div>
+<div class="card rows" style="margin-top:8px">
+  <div class="rw"><span class="k">공시</span><span class="v">30건</span></div>
+  <div class="rw"><span class="k">뉴스</span><span class="v">25건</span></div>
+  <div class="rw"><span class="k">애널 리포트</span><span class="v">12건</span></div>
+</div>
+<div class="pfoot">
+  <span>키움증권(039490) 펀더멘털 리포트</span>
+  <span>Page 2 / 7</span>
+</div>
+</section>
+<section class="page" id="pg-context">
+<div class="phead"><div>
+  <div class="eyebrow">CONTEXT · 2026-10-02 · 누적 4회 분석</div>
+  <h2>키움증권 현황 & 전략</h2>
+</div><span class="badge" style="background:#64748b22;border-color:#64748b;color:#64748b">C+ 47점</span></div>
+
+<style>
+.kb-tabs{display:flex;gap:5px;margin-bottom:11px}
+.kb-tab-btn{flex:1;padding:7px 4px;border:1.5px solid #e2e8f0;border-radius:8px;background:#f8fafc;
+  font-size:11.5px;font-weight:700;cursor:pointer;color:#64748b;text-align:center}
+.kb-tab-btn.active{background:#1e293b;color:#fff;border-color:#1e293b}
+</style>
+
+<div class="kb-tabs">
+  <div class="kb-tab-btn active"  onclick="kbTab('sit',this)">현재 상황</div>
+  <div class="kb-tab-btn" onclick="kbTab('ch',this)">채널·리포트</div>
+  <div class="kb-tab-btn" onclick="kbTab('str',this)">투자 전략</div>
+</div>
+
+
+<div id="kb-tab-sit" class="kb-tab-content" style="display:block">
+  
+
+  <!-- 점수·의견 -->
+  <div style="display:flex;gap:8px;margin-bottom:10px">
+    <div style="flex:1;background:#f8fafc;border:1.5px solid #64748b44;border-radius:10px;
+         padding:10px 6px;text-align:center">
+      <div style="font-size:9.5px;color:#94a3b8;margin-bottom:3px">펀더멘털</div>
+      <div style="font-size:24px;font-weight:900;color:#64748b">C+</div>
+      <div style="font-size:11px;color:#64748b">47점</div>
+    </div>
+    <div style="flex:2;background:#f8fafc;border:1.5px solid #64748b44;border-radius:10px;padding:10px 12px">
+      <div style="font-size:9.5px;color:#94a3b8;margin-bottom:3px">투자 의견 · 누적 4회 분석</div>
+      <div style="font-size:18px;font-weight:900;color:#64748b">중립</div>
+      <div style="font-size:10.5px;color:#64748b;margin-top:5px;line-height:1.5">
+        키움증권 최근 실적 (2026년 2분기(3개월, DART)) 기준 매출 미수집, 영업이익 7,889억원. 강점: 영업이익 전년 동기 (2분기 기준) +93.2% — 이익 개선 사이클 진입. 주요 리스크: 마이너스 영...
+      </div>
+    </div>
+  </div>
+
+  <!-- 의견 추이 -->
+  <div style="margin-bottom:10px">
+    <div style="font-size:11px;font-weight:700;color:#475569;margin-bottom:4px">📈 의견 추이 (최근 4회)</div>
+    <div style="display:flex;gap:4px;align-items:flex-start;margin:6px 0"><div style="text-align:center;flex:1"><div style="font-size:9px;color:#94a3b8;margin-bottom:2px">09-18</div><div style="background:#64748b22;border:1.5px solid #64748b;border-radius:6px;padding:3px 2px;font-size:10px;font-weight:800;color:#64748b">중립</div><div style="font-size:9px;color:#64748b;margin-top:2px">48점</div></div><div style="text-align:center;flex:1"><div style="font-size:9px;color:#94a3b8;margin-bottom:2px">09-25</div><div style="background:#64748b22;border:1.5px solid #64748b;border-radius:6px;padding:3px 2px;font-size:10px;font-weight:800;color:#64748b">중립</div><div style="font-size:9px;color:#64748b;margin-top:2px">46점</div></div><div style="text-align:center;flex:1"><div style="font-size:9px;color:#94a3b8;margin-bottom:2px">10-01</div><div style="background:#64748b22;border:1.5px solid #64748b;border-radius:6px;padding:3px 2px;font-size:10px;font-weight:800;color:#64748b">중립</div><div style="font-size:9px;color:#64748b;margin-top:2px">47점</div></div><div style="text-align:center;flex:1"><div style="font-size:9px;color:#94a3b8;margin-bottom:2px">10-02</div><div style="background:#64748b22;border:1.5px solid #64748b;border-radius:6px;padding:3px 2px;font-size:10px;font-weight:800;color:#64748b">중립</div><div style="font-size:9px;color:#64748b;margin-top:2px">47점</div></div></div>
+  </div>
+
+  <!-- 현재 투자 포인트 -->
+  <div style="margin-bottom:9px">
+    <div style="font-size:11px;font-weight:700;color:#059669;margin-bottom:4px">✅ 현재 핵심 강점</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#059669;margin-right:4px">✅</span>2026년 2분기 영업이익 7,889억원으로 1분기 6,212억원 대비 27.0% 증가했고, 애널리스트 리포트는 분기별 사상 최대 실적, 어닝 서프라이즈, 트레이딩과 해외주식 부문 선방을 언급했다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#059669;margin-right:4px">✅</span>유안타증권 리포트는 개인투자자 회전율 회복에 따라 주가 상승을 언급했다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#059669;margin-right:4px">✅</span>키움증권이 모바일트레이딩시스템(MTS)에 대화형 통합 AI 검색을 선보이고, 향후 업무·투자 챗봇 기능까지 고도화할 계획이라고 보도됐다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#059669;margin-right:4px">✅</span>증권업종에 대해 하나증권이 Overweight 의견을 제시했고, 텔레그램 자료에는 키움증권에 대한 BUY 의견과 목표주가 570,000원이 기재되어 있다.</div>
+  </div>
+
+  <!-- 현재 리스크 -->
+  <div style="margin-bottom:9px">
+    <div style="font-size:11px;font-weight:700;color:#dc2626;margin-bottom:4px">⚠️ 주요 리스크</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#dc2626;margin-right:4px">⚠️</span>2026년 반기 누적 영업현금흐름이 -71,433억원으로 적자를 기록했다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#dc2626;margin-right:4px">⚠️</span>한국소비자원 민원상담 접수 건수에서 키움증권이 93건으로 국내 대형 증권사 중 가장 많았고, 부당행위 28건, 계약불이행 20건, 서비스품질 불만 16건이었다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#dc2626;margin-right:4px">⚠️</span>단일종목 레버리지 ETF 논란과 관련해 국정감사 증인 신청, 소비자 민원 급증, 정치권 공방이 이어지고 있다는 뉴스가 있다.</div>
+  </div>
+
+  <!-- 경쟁 해자 -->
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:9px 11px;margin-bottom:9px">
+    <div style="font-size:11px;font-weight:700;color:#0f766e;margin-bottom:4px">🏰 경쟁 우위 (해자)</div>
+    <div style="font-size:11px;color:#1e293b;line-height:1.6">키움증권은 모바일트레이딩시스템(MTS)에 대화형 AI 검색을 도입하고 향후 챗봇 기능까지 고도화할 계획이라고 보도됐다. 다만 한국소비자원 민원상담이 대형 증권사 중 가장 많았다는 자료와 레버리지 ETF 논란 등은 서비스 경쟁력에 부담이 될 수 있는 부분으로 제시됐다.</div>
+  </div>
+
+  <!-- 누적 포인트 -->
+  <div style="margin-bottom:9px">
+    <div style="font-size:11px;font-weight:700;color:#2563eb;margin-bottom:4px">📌 누적 투자 포인트</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>컨센서스 목표주가 429,647원 (09/30 기준 네이버) · 최근 리포트 11건 목표가 370,000~600,000원</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>2026년 2분기 영업이익 7,889억원으로 1분기 6,212억원 대비 27.0% 증가했고, 애널리스트 리포트는 분기별 사상 최대 실적, 어닝 서프라이즈, 트레이딩과 해외주식 부문 선방을 언급했다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>유안타증권 리포트는 개인투자자 회전율 회복에 따라 주가 상승을 언급했다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>키움증권이 모바일트레이딩시스템(MTS)에 대화형 통합 AI 검색을 선보이고, 향후 업무·투자 챗봇 기능까지 고도화할 계획이라고 보도됐다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>증권업종에 대해 하나증권이 Overweight 의견을 제시했고, 텔레그램 자료에는 키움증권에 대한 BUY 의견과 목표주가 570,000원이 기재되어 있다.</div>
+  </div>
+
+  <!-- 최근 뉴스·공시 -->
+  <div style="margin-bottom:6px">
+    <div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:4px">📰 최근 뉴스</div>
+    <div style="font-size:9.5px;color:#94a3b8;padding:4px 0 2px">누적 298건 · 2026-09-15 ~ 2026-10-02</div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 매일경제</span><br><a href="https://n.news.naver.com/mnews/article/009/0005743276" style="color:#334155;text-decoration:none">[단독]레버리지ETF 탓? 증시호황 속 몸집불린 대형 증권사··· 소비자...</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 시사저널</span><br><a href="https://n.news.naver.com/mnews/article/586/0000139365" style="color:#334155;text-decoration:none">&quot;나 떨고 있니&quot;…박현주·김남구까지, &#x27;국감 무풍지대&#x27; 증권가 긴장</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 뉴스1</span><br><a href="https://n.news.naver.com/mnews/article/421/0009205621" style="color:#334155;text-decoration:none">美 반도체 훈풍에도 &#x27;주춤&#x27;…삼전 1%↓·SK하닉 보합권[핫종목]</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 머니투데이</span><br><a href="https://n.news.naver.com/mnews/article/008/0005421702" style="color:#334155;text-decoration:none">7000 탈환한 코스피, 美 고용지표·삼전실적 변수</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 아이뉴스24</span><br><a href="https://n.news.naver.com/mnews/article/031/0001063196" style="color:#334155;text-decoration:none">美 채권·파킹형 ETF 피신한 개미, 4분기 돌아올까</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 시사저널</span><br><a href="https://n.news.naver.com/mnews/article/586/0000139347" style="color:#334155;text-decoration:none">&#x27;현장 경영&#x27; 전통 무너뜨린 한국투자 3세의 고속 승진…첩첩산중 승계...</a></div>
+  </div>
+  <div>
+    <div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:4px">📑 최근 공시</div>
+    <div style="font-size:9.5px;color:#94a3b8;padding:4px 0 2px">누적 65건 · 2026-02-25 ~ 2026-10-02</div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 국민연금공단</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000438" style="color:#334155;text-decoration:none">주식등의대량보유상황보고서(약식)</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 키움증권</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000231" style="color:#334155;text-decoration:none">증권발행실적보고서</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 키움증권</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000223" style="color:#334155;text-decoration:none">증권발행실적보고서</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 키움증권</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000217" style="color:#334155;text-decoration:none">증권발행실적보고서</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 키움증권</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000205" style="color:#334155;text-decoration:none">투자설명서(일괄신고)</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 키움증권</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261002000201" style="color:#334155;text-decoration:none">투자설명서(일괄신고)</a></div>
+  </div>
+</div>
+
+<div id="kb-tab-ch" class="kb-tab-content" style="display:none">
+
+  <!-- 컨센서스 -->
+  <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #86efac;border-left:4px solid #16a34a;border-radius:7px;padding:9px 12px;margin-bottom:10px"><div style="font-size:10px;color:#166534;font-weight:700;margin-bottom:2px">📊 컨센서스 목표가 (0개 증권사)</div><div style="font-size:14px;font-weight:800;color:#15803d">429,647원</div><div style="font-size:10px;color:#166534;margin-top:2px">투자의견: <b>매수 (3.94/5)</b></div></div>
+
+  <!-- Telegram -->
+  <div style="background:#eff6ff;border-left:3px solid #2563eb;border-radius:6px;
+       padding:8px 10px;margin-bottom:10px">
+    <div style="font-size:11px;font-weight:800;color:#1d4ed8">
+      💬 Telegram 15건 · PDF 0건
+    </div>
+  </div>
+  <div style="font-size:11px;font-weight:700;color:#475569;margin:0 0 5px">💬 채널 메시지 (12건)</div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-10-01</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[시장] **증권(Overweight): 9월 Monthly Check**
+
+[📌 종목 및 투자의견]
+
+키움증권(039490) | BUY | 현재가 262,500원 | 목표주가 570,000원
+삼성증권(016360)</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-09-27</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[시장] **증권(Overweight): Digital Finance Conference 주요 내용 및 시사점**
+
+[산업분석 요약]
+
+**투자의견**: Overweight
+
+**발행사**: 하나증권 | **발행일*</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-09-16</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[기업] **[현대차증권 리서치센터] 미 증시, 금리 상승 여파로 위험자산 투매 이어지며 하락**
+
+[국내 시장 동향 요약]
+
+📌 기간: 2026년 9월 16일
+
+[국내증시 현황]
+KOSPI 6,627.26 (-0.</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-09-22</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[기업] **[현대차증권 리서치센터] 미 증시, 미-이란 대면 협상에도 차익실현 매물 출현되며 혼조**
+
+[국내시장 동향 및 주요 뉴스 요약]
+
+국내 증시는 혼조 마감. KOSPI는 7,017.91(+0.15%), </div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">Issue Tracker - 언급량 </span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">🔈 **#언급량급증_이슈**
+[9/18, 장 시작 전 생각: 금리 상승과 증시 체력, 키움 한지영]
+
+- 다우 +0.6%, S&amp;P500 +1.1%, 나스닥 +1.7%
+- 마이크론 +5.5%, 엔비디아 +2.5%, 인</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">재야의 고수들</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[9/18, 장 시작 전 생각: 금리 상승과 증시 체력, 키움 한지영]
+
+- 다우 +0.6%, S&amp;P500 +1.1%, 나스닥 +1.7%
+- 마이크론 +5.5%, 엔비디아 +2.5%, 인텔 +7.7%
+- 미 10년물</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">키움증권 리서치센터</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[9/18, 장 시작 전 생각: 금리 상승과 증시 체력, 키움 한지영]
+
+- 다우 +0.6%, S&amp;P500 +1.1%, 나스닥 +1.7%
+- 마이크론 +5.5%, 엔비디아 +2.5%, 인텔 +7.7%
+- 미 10년물</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">키움증권 임수진 엔터/레저/미디어</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[키움증권 임수진 엔터/레저/미디어]
+2026-09-18(금) Daily News
+
+[엔터]
+DDP, K팝 메카로 거듭난다…엔터기업에 용적률 200% 부여
+https://tinyurl.com/2bakh2hu
+
+일레븐</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">소중한추억.</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">**[데이터도그(****DDOG.US****)]**
+제목: 사스포칼립스는 기우였나
+작성자: 김승혁, 조호준 (키움증권 리서치센터)
+
+**[견조한 실적]**
+· FY26 Q2 매출액은 전년 동기 대비 35.6% 증가한</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">서화백의 AI놀이🚀</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">🔻 **부정 뉘앙스 리포트** · 9/17(목)
+오늘 발간분 중 AI 분석 뉘앙스 -50 이하 신규 6건
+
+1. 제일기획(030000) · 신한투자증권 · **-100** · 눈높이 하향에도 배당수익률 6.5%
+ └</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">주식 리서치 모음(에틴)😍</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">📊 **📊 키움증권 알람 — 09/17 15:30**
+263,000  ▼-1.50%
+등급: B+(71점) | 매수 고려
+
+👉 [**🌐 실시간 모바일 리포트 바로보기**](https://etin94-prog.githu</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">석학들의 마켓 (인)사이트</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">**1.📚 Top 리포트**(09-17 18:00 기준)
+
+** ────── ▼ 클릭 후 확인 ──────**
+
+🏆. 셀트리온, 더욱 강하게 밟는 가속성장페달, 2027년
+DS투자증권(2026-09-16) [[링크]</div></div>
+
+  <!-- 애널리스트 리포트 -->
+  <div style="background:#f0fdf4;border-left:3px solid #059669;border-radius:6px;
+       padding:8px 10px;margin:12px 0 8px">
+    <div style="font-size:11px;font-weight:800;color:#15803d">
+      📊 애널리스트 리포트 12건
+    </div>
+  </div>
+  <div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-09-10</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">개인투자자 회전율 회복에 따라 주가 상승</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-07-31</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">2Q26 Review: 분기별 사상 최대 실적, Top picks 유지</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-07-31</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">2Q26 Re - 트레이딩과 해외주식 부문이 예상대비 선방</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-07-31</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">2026년 2분기 컨퍼런스 콜 요약</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-07-31</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">전 부문 실적 약진함에 따라 어닝 서프라이즈 달성</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-07-31</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">올해 주주환원을 얼마나 할지 감도 안 옴</div></div>
+
+  <!-- 거래원 + 프로그램 매매 -->
+  
+  
+
+  <!-- 누적 리스크 -->
+  <div style="margin-top:12px">
+    <div style="font-size:11px;font-weight:700;color:#7c3aed;margin-bottom:4px">🔍 누적 리스크 목록</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#7c3aed;margin-right:4px">🔍</span>2026년 반기 누적 영업현금흐름이 -71,433억원으로 적자를 기록했다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#7c3aed;margin-right:4px">🔍</span>한국소비자원 민원상담 접수 건수에서 키움증권이 93건으로 국내 대형 증권사 중 가장 많았고, 부당행위 28건, 계약불이행 20건, 서비스품질 불만 16건이었다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#7c3aed;margin-right:4px">🔍</span>단일종목 레버리지 ETF 논란과 관련해 국정감사 증인 신청, 소비자 민원 급증, 정치권 공방이 이어지고 있다는 뉴스가 있다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#7c3aed;margin-right:4px">🔍</span>배우 유해진을 모델로 한 광고캠페인 종료를 두고 영화 &#x27;암살자(들)&#x27; 역사왜곡 논란 여파라는 업계 분석이 제기됐다.</div>
+  </div>
+</div>
+
+<div id="kb-tab-str" class="kb-tab-content" style="display:none">
+
+  <!-- 종합 판정 -->
+  <div style="background:#f8fafc;border:2px solid #64748b44;border-radius:11px;
+       padding:11px 14px;margin-bottom:11px;display:flex;justify-content:space-between;align-items:center">
+    <div style="font-size:12.5px;font-weight:800;color:#1e293b">종합 판정</div>
+    <div style="font-size:17px;font-weight:900;color:#64748b">중립</div>
+  </div>
+
+  <div style="background:#eff6ff;border:1.5px solid #2563eb44;border-radius:9px;padding:10px 12px;margin-bottom:7px"><div style="font-size:10px;color:#2563eb;font-weight:800;margin-bottom:3px">단기 전략 (1~4주)</div><div style="font-size:12.5px;font-weight:700;color:#1e293b;line-height:1.5">키움증권 최근 실적 (2026년 2분기(3개월, DART)) 기준 매출 미수집, 영업이익 7,889억원. 강...</div></div>
+  <div style="background:#f5f3ff;border:1.5px solid #7c3aed44;border-radius:9px;padding:10px 12px;margin-bottom:7px"><div style="font-size:10px;color:#7c3aed;font-weight:800;margin-bottom:3px">중기 전략 (1~3개월)</div><div style="font-size:12.5px;font-weight:700;color:#1e293b;line-height:1.5">목표주가 도달 시 일부 익절 / 홀딩</div></div>
+  <div style="background:#f0fdf4;border:1.5px solid #05966944;border-radius:9px;padding:10px 12px;margin-bottom:7px"><div style="font-size:10px;color:#059669;font-weight:800;margin-bottom:3px">장기 전략 (6개월~)</div><div style="font-size:12.5px;font-weight:700;color:#1e293b;line-height:1.5">펀더멘털 개선 사이클 — 중장기 홀딩 유리</div></div>
+
+  <!-- 다음 체크포인트 -->
+  <div style="margin-top:10px;margin-bottom:10px">
+    <div style="font-size:11px;font-weight:700;color:#0891b2;margin-bottom:4px">📋 다음 체크포인트</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#0891b2;margin-right:4px">📋</span>2026년 3분기 영업이익과 당기순이익이 2분기 대비 어떻게 변하는지 확인</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#0891b2;margin-right:4px">📋</span>2026년 반기 누적 영업현금흐름 -71,433억원 이후 현금흐름이 개선되는지 확인</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#0891b2;margin-right:4px">📋</span>단일종목 레버리지 ETF 관련 국정감사 증인 채택과 논의 결과 확인</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#0891b2;margin-right:4px">📋</span>한국소비자원 민원상담 건수와 유형이 이후에도 증가하는지 확인</div>
+  </div>
+
+  <!-- 분석 이력 -->
+  <div>
+    <div style="font-size:11px;font-weight:700;color:#475569;margin-bottom:5px">📊 분석 이력 (4회)</div>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:11px"><tr style="background:#f1f5f9"><th style="padding:4px 5px;text-align:left">날짜</th><th>의견</th><th>점수</th><th></th><th>변경 사유</th></tr><tr><td style="color:#64748b;font-size:10.5px">2026-10-02</td><td style="color:#64748b;font-weight:700;font-size:11px">중립</td><td style="font-size:11px">47</td><td style="color:#f59e0b;font-size:11px"></td><td style="font-size:10px;color:#94a3b8"></td></tr><tr><td style="color:#64748b;font-size:10.5px">2026-10-01</td><td style="color:#64748b;font-weight:700;font-size:11px">중립</td><td style="font-size:11px">47</td><td style="color:#f59e0b;font-size:11px"></td><td style="font-size:10px;color:#94a3b8"></td></tr><tr><td style="color:#64748b;font-size:10.5px">2026-09-25</td><td style="color:#64748b;font-weight:700;font-size:11px">중립</td><td style="font-size:11px">46</td><td style="color:#f59e0b;font-size:11px"></td><td style="font-size:10px;color:#94a3b8"></td></tr><tr><td style="color:#64748b;font-size:10.5px">2026-09-18</td><td style="color:#64748b;font-weight:700;font-size:11px">중립</td><td style="font-size:11px">48</td><td style="color:#f59e0b;font-size:11px"></td><td style="font-size:10px;color:#94a3b8"></td></tr></table></div>
+  </div>
+</div>
+
+<script>
+function kbTab(id,btn){
+  document.querySelectorAll('.kb-tab-content').forEach(function(el){el.style.display='none'});
+  document.querySelectorAll('.kb-tab-btn').forEach(function(b){b.classList.remove('active')});
+  document.getElementById('kb-tab-'+id).style.display='block';
+  btn.classList.add('active');
+}
+</script>
+
+<div class="pfoot">
+  <span>키움증권(039490) 배경 지식 & 투자 전략</span>
+  <span>Context Page</span>
+</div>
+</section>
+<section class="page" id="pg3">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 3/7</div>
+  <h2>재무제표 핵심</h2>
+</div><span class="badge" style="background:#ea580c22;border-color:#ea580c;color:#ea580c">억원 기준</span></div>
+
+<div style="font-size:11.5px;color:#64748b;margin-bottom:4px">📈 일봉 캔들차트 (최근 40일)</div><svg viewBox="0 0 340 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:160px;background:#f8fafc;border-radius:8px"><line x1="4.2" y1="37.4" x2="4.2" y2="54.9" stroke="#dc2626" stroke-width="1"/><rect x="1.7" y="45.7" width="5.1" height="1.8" fill="#dc2626"/><rect x="1.7" y="146.5" width="5.1" height="11.5" fill="#dc2626" opacity="0.4"/><line x1="12.8" y1="47.5" x2="12.8" y2="63.1" stroke="#dc2626" stroke-width="1"/><rect x="10.2" y="49.4" width="5.1" height="2.8" fill="#dc2626"/><rect x="10.2" y="147.5" width="5.1" height="10.5" fill="#dc2626" opacity="0.4"/><line x1="21.2" y1="47.5" x2="21.2" y2="77.9" stroke="#1d4ed8" stroke-width="1"/><rect x="18.7" y="54.0" width="5.1" height="19.3" fill="#1d4ed8"/><rect x="18.7" y="146.1" width="5.1" height="11.9" fill="#1d4ed8" opacity="0.4"/><line x1="29.8" y1="29.1" x2="29.8" y2="72.3" stroke="#dc2626" stroke-width="1"/><rect x="27.2" y="36.5" width="5.1" height="32.2" fill="#dc2626"/><rect x="27.2" y="148.3" width="5.1" height="9.7" fill="#dc2626" opacity="0.4"/><line x1="38.2" y1="26.4" x2="38.2" y2="45.7" stroke="#dc2626" stroke-width="1"/><rect x="35.7" y="31.9" width="5.1" height="9.2" fill="#dc2626"/><rect x="35.7" y="152.7" width="5.1" height="5.3" fill="#dc2626" opacity="0.4"/><line x1="46.8" y1="20.9" x2="46.8" y2="35.6" stroke="#1d4ed8" stroke-width="1"/><rect x="44.2" y="31.9" width="5.1" height="1.8" fill="#1d4ed8"/><rect x="44.2" y="152.4" width="5.1" height="5.6" fill="#1d4ed8" opacity="0.4"/><line x1="55.2" y1="8.0" x2="55.2" y2="42.0" stroke="#1d4ed8" stroke-width="1"/><rect x="52.7" y="21.8" width="5.1" height="15.6" fill="#1d4ed8"/><rect x="52.7" y="149.0" width="5.1" height="9.0" fill="#1d4ed8" opacity="0.4"/><line x1="63.8" y1="28.2" x2="63.8" y2="43.8" stroke="#dc2626" stroke-width="1"/><rect x="61.2" y="31.0" width="5.1" height="1.5" fill="#dc2626"/><rect x="61.2" y="153.2" width="5.1" height="4.8" fill="#dc2626" opacity="0.4"/><line x1="72.2" y1="27.3" x2="72.2" y2="70.5" stroke="#1d4ed8" stroke-width="1"/><rect x="69.7" y="29.1" width="5.1" height="33.1" fill="#1d4ed8"/><rect x="69.7" y="144.7" width="5.1" height="13.3" fill="#1d4ed8" opacity="0.4"/><line x1="80.8" y1="76.9" x2="80.8" y2="102.7" stroke="#1d4ed8" stroke-width="1"/><rect x="78.2" y="82.4" width="5.1" height="12.9" fill="#1d4ed8"/><rect x="78.2" y="130.0" width="5.1" height="28.0" fill="#1d4ed8" opacity="0.4"/><line x1="89.2" y1="72.3" x2="89.2" y2="93.5" stroke="#dc2626" stroke-width="1"/><rect x="86.7" y="76.9" width="5.1" height="11.9" fill="#dc2626"/><rect x="86.7" y="147.8" width="5.1" height="10.2" fill="#dc2626" opacity="0.4"/><line x1="97.8" y1="77.9" x2="97.8" y2="99.0" stroke="#1d4ed8" stroke-width="1"/><rect x="95.2" y="84.3" width="5.1" height="6.4" fill="#1d4ed8"/><rect x="95.2" y="150.8" width="5.1" height="7.2" fill="#1d4ed8" opacity="0.4"/><line x1="106.2" y1="87.0" x2="106.2" y2="100.8" stroke="#dc2626" stroke-width="1"/><rect x="103.7" y="91.6" width="5.1" height="1.5" fill="#dc2626"/><rect x="103.7" y="151.6" width="5.1" height="6.4" fill="#dc2626" opacity="0.4"/><line x1="114.8" y1="76.0" x2="114.8" y2="107.3" stroke="#dc2626" stroke-width="1"/><rect x="112.2" y="76.0" width="5.1" height="22.1" fill="#dc2626"/><rect x="112.2" y="148.4" width="5.1" height="9.6" fill="#dc2626" opacity="0.4"/><line x1="123.2" y1="69.6" x2="123.2" y2="82.4" stroke="#dc2626" stroke-width="1"/><rect x="120.7" y="71.4" width="5.1" height="4.6" fill="#dc2626"/><rect x="120.7" y="153.8" width="5.1" height="4.2" fill="#dc2626" opacity="0.4"/><line x1="131.8" y1="50.3" x2="131.8" y2="78.8" stroke="#1d4ed8" stroke-width="1"/><rect x="129.2" y="61.3" width="5.1" height="8.3" fill="#1d4ed8"/><rect x="129.2" y="152.0" width="5.1" height="6.0" fill="#1d4ed8" opacity="0.4"/><line x1="140.2" y1="69.6" x2="140.2" y2="78.8" stroke="#dc2626" stroke-width="1"/><rect x="137.7" y="71.4" width="5.1" height="2.8" fill="#dc2626"/><rect x="137.7" y="152.7" width="5.1" height="5.3" fill="#dc2626" opacity="0.4"/><line x1="148.8" y1="66.8" x2="148.8" y2="88.9" stroke="#dc2626" stroke-width="1"/><rect x="146.2" y="73.3" width="5.1" height="1.8" fill="#dc2626"/><rect x="146.2" y="149.3" width="5.1" height="8.7" fill="#dc2626" opacity="0.4"/><line x1="157.2" y1="60.4" x2="157.2" y2="81.5" stroke="#dc2626" stroke-width="1"/><rect x="154.7" y="65.0" width="5.1" height="6.4" fill="#dc2626"/><rect x="154.7" y="152.6" width="5.1" height="5.4" fill="#dc2626" opacity="0.4"/><line x1="165.8" y1="69.6" x2="165.8" y2="87.0" stroke="#1d4ed8" stroke-width="1"/><rect x="163.2" y="76.9" width="5.1" height="2.8" fill="#1d4ed8"/><rect x="163.2" y="150.3" width="5.1" height="7.7" fill="#1d4ed8" opacity="0.4"/><line x1="174.2" y1="77.9" x2="174.2" y2="99.0" stroke="#1d4ed8" stroke-width="1"/><rect x="171.7" y="79.7" width="5.1" height="10.1" fill="#1d4ed8"/><rect x="171.7" y="148.8" width="5.1" height="9.2" fill="#1d4ed8" opacity="0.4"/><line x1="182.8" y1="76.0" x2="182.8" y2="90.7" stroke="#dc2626" stroke-width="1"/><rect x="180.2" y="86.1" width="5.1" height="1.8" fill="#dc2626"/><rect x="180.2" y="153.9" width="5.1" height="4.1" fill="#dc2626" opacity="0.4"/><line x1="191.2" y1="76.0" x2="191.2" y2="88.9" stroke="#1d4ed8" stroke-width="1"/><rect x="188.7" y="80.6" width="5.1" height="1.8" fill="#1d4ed8"/><rect x="188.7" y="154.1" width="5.1" height="3.9" fill="#1d4ed8" opacity="0.4"/><line x1="199.8" y1="69.6" x2="199.8" y2="82.4" stroke="#1d4ed8" stroke-width="1"/><rect x="197.2" y="77.9" width="5.1" height="3.7" fill="#1d4ed8"/><rect x="197.2" y="154.1" width="5.1" height="3.9" fill="#1d4ed8" opacity="0.4"/><line x1="208.2" y1="74.2" x2="208.2" y2="85.2" stroke="#dc2626" stroke-width="1"/><rect x="205.7" y="80.6" width="5.1" height="1.5" fill="#dc2626"/><rect x="205.7" y="154.1" width="5.1" height="3.9" fill="#dc2626" opacity="0.4"/><line x1="216.8" y1="70.5" x2="216.8" y2="89.8" stroke="#dc2626" stroke-width="1"/><rect x="214.2" y="78.8" width="5.1" height="5.5" fill="#dc2626"/><rect x="214.2" y="145.7" width="5.1" height="12.3" fill="#dc2626" opacity="0.4"/><line x1="225.2" y1="70.5" x2="225.2" y2="90.7" stroke="#dc2626" stroke-width="1"/><rect x="222.7" y="72.3" width="5.1" height="14.7" fill="#dc2626"/><rect x="222.7" y="153.5" width="5.1" height="4.5" fill="#dc2626" opacity="0.4"/><line x1="233.8" y1="71.4" x2="233.8" y2="82.4" stroke="#1d4ed8" stroke-width="1"/><rect x="231.2" y="71.4" width="5.1" height="10.1" fill="#1d4ed8"/><rect x="231.2" y="153.7" width="5.1" height="4.3" fill="#1d4ed8" opacity="0.4"/><line x1="242.2" y1="78.8" x2="242.2" y2="97.2" stroke="#1d4ed8" stroke-width="1"/><rect x="239.7" y="79.7" width="5.1" height="9.2" fill="#1d4ed8"/><rect x="239.7" y="150.6" width="5.1" height="7.4" fill="#1d4ed8" opacity="0.4"/><line x1="250.8" y1="88.0" x2="250.8" y2="98.1" stroke="#1d4ed8" stroke-width="1"/><rect x="248.2" y="88.9" width="5.1" height="2.8" fill="#1d4ed8"/><rect x="248.2" y="154.5" width="5.1" height="3.5" fill="#1d4ed8" opacity="0.4"/><line x1="259.2" y1="85.2" x2="259.2" y2="101.8" stroke="#1d4ed8" stroke-width="1"/><rect x="256.7" y="86.1" width="5.1" height="10.1" fill="#1d4ed8"/><rect x="256.7" y="149.7" width="5.1" height="8.3" fill="#1d4ed8" opacity="0.4"/><line x1="267.8" y1="90.7" x2="267.8" y2="103.6" stroke="#1d4ed8" stroke-width="1"/><rect x="265.2" y="92.6" width="5.1" height="10.1" fill="#1d4ed8"/><rect x="265.2" y="153.8" width="5.1" height="4.2" fill="#1d4ed8" opacity="0.4"/><line x1="276.2" y1="96.2" x2="276.2" y2="104.5" stroke="#dc2626" stroke-width="1"/><rect x="273.7" y="96.2" width="5.1" height="5.5" fill="#dc2626"/><rect x="273.7" y="155.0" width="5.1" height="3.0" fill="#dc2626" opacity="0.4"/><line x1="284.8" y1="82.4" x2="284.8" y2="107.3" stroke="#1d4ed8" stroke-width="1"/><rect x="282.2" y="90.7" width="5.1" height="11.0" fill="#1d4ed8"/><rect x="282.2" y="151.1" width="5.1" height="6.9" fill="#1d4ed8" opacity="0.4"/><line x1="293.2" y1="88.9" x2="293.2" y2="102.7" stroke="#dc2626" stroke-width="1"/><rect x="290.7" y="96.2" width="5.1" height="1.8" fill="#dc2626"/><rect x="290.7" y="153.0" width="5.1" height="5.0" fill="#dc2626" opacity="0.4"/><line x1="301.8" y1="96.2" x2="301.8" y2="116.5" stroke="#1d4ed8" stroke-width="1"/><rect x="299.2" y="97.2" width="5.1" height="14.7" fill="#1d4ed8"/><rect x="299.2" y="150.4" width="5.1" height="7.6" fill="#1d4ed8" opacity="0.4"/><line x1="310.2" y1="110.9" x2="310.2" y2="125.6" stroke="#1d4ed8" stroke-width="1"/><rect x="307.7" y="111.9" width="5.1" height="3.7" fill="#1d4ed8"/><rect x="307.7" y="151.0" width="5.1" height="7.0" fill="#1d4ed8" opacity="0.4"/><line x1="318.8" y1="110.0" x2="318.8" y2="122.0" stroke="#1d4ed8" stroke-width="1"/><rect x="316.2" y="113.7" width="5.1" height="7.4" fill="#1d4ed8"/><rect x="316.2" y="152.8" width="5.1" height="5.2" fill="#1d4ed8" opacity="0.4"/><line x1="327.2" y1="97.2" x2="327.2" y2="133.0" stroke="#dc2626" stroke-width="1"/><rect x="324.7" y="104.5" width="5.1" height="13.8" fill="#dc2626"/><rect x="324.7" y="147.4" width="5.1" height="10.6" fill="#dc2626" opacity="0.4"/><line x1="335.8" y1="101.8" x2="335.8" y2="115.5" stroke="#1d4ed8" stroke-width="1"/><rect x="333.2" y="101.8" width="5.1" height="5.5" fill="#1d4ed8"/><rect x="333.2" y="152.6" width="5.1" height="5.4" fill="#1d4ed8" opacity="0.4"/><line x1="0" y1="107.3" x2="340" y2="107.3" stroke="#1d4ed8" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.8"/><text x="336" y="104.3" text-anchor="end" font-size="10" fill="#1d4ed8" font-weight="700">259,000 (-11.5%)</text></svg>
+<div style="margin-top:12px"><div style="font-size:11px;font-weight:700;color:#2563eb;margin:10px 0 4px">연간 실적</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px"><thead><tr style="background:#f1f5f9"><th style="text-align:left;padding:5px 6px">항목(억)</th><th>2025.12</th></tr></thead><tbody><tr><td style='font-weight:600;color:#475569'>매출액</td><td>-</td></tr><tr><td style='font-weight:600;color:#475569'>영업이익</td><td>14,882</td></tr><tr><td style='font-weight:600;color:#475569'>순이익</td><td>0</td></tr><tr><td style='font-weight:600;color:#475569'>이익률</td><td>-</td></tr></tbody></table></div><div style="font-size:10px;color:#94a3b8;margin-top:3px;line-height:1.5">연간 = 사업보고서 12개월</div><div style="font-size:11px;font-weight:700;color:#2563eb;margin:10px 0 4px">분기 실적 (3개월)</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px"><thead><tr style="background:#f1f5f9"><th style="text-align:left;padding:5px 6px">항목(억)</th><th>2025.03</th><th>2025.06</th><th>2025.09</th><th>2025.12</th><th>2026.03</th><th>2026.06</th></tr></thead><tbody><tr><td style='font-weight:600;color:#475569'>매출액</td><td>-</td><td>-</td><td>-</td><td>55,862</td><td style="color:#dc2626;font-weight:700">93,960</td><td style="color:#dc2626;font-weight:700">160,732</td></tr><tr><td style='font-weight:600;color:#475569'>영업이익</td><td>3,255</td><td style="color:#dc2626;font-weight:700">4,083</td><td style="color:#dc2626;font-weight:700">4,089</td><td style="color:#1d4ed8;font-weight:700">3,456</td><td style="color:#dc2626;font-weight:700">6,212</td><td style="color:#dc2626;font-weight:700">7,890</td></tr><tr><td style='font-weight:600;color:#475569'>순이익</td><td>-</td><td>-</td><td>3,224</td><td>-</td><td>-</td><td>-</td></tr><tr><td style='font-weight:600;color:#475569'>이익률</td><td>-</td><td>-</td><td>-</td><td>6.2%</td><td style="color:#475569;font-weight:700">6.6%</td><td style="color:#1d4ed8;font-weight:700">4.9%</td></tr></tbody></table></div><div style="font-size:10px;color:#94a3b8;margin-top:3px;line-height:1.5">분기 값은 모두 3개월 단독 · 원본 2025.03 DART · 2025.06 DART · 2025.09 DART · 2025.12 네이버 · 2026.03 네이버 · 2026.06 네이버</div></div>
+<div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;margin-top:10px"><div style="font-size:12px;font-weight:800;color:#ea580c;margin-bottom:7px">📊 실적 투자 해석</div><div style="font-size:12.5px;padding:4px 0;line-height:1.6">• 영업이익 (2분기 전년 동기) <span style="color:#dc2626;font-weight:700">+93%</span> — 이익 개선 추세 확인</div><div style="font-size:12.5px;color:#475569;margin-top:6px;padding-top:6px;border-top:1px solid #fef08a">2026년 2분기 영업이익은 7,889억원으로 1분기 6,212억원보다 27.0% 증가했다. 애널리스트 리포트들은 2분기 실적에 대해 사상 최대, 어닝 서프라이즈, 트레이딩과 해외주식 부문 선방으로 평가했다.</div></div>
+
+
+<div class="note info" style="margin-top:10px">
+  <div class="nt-t">📉 QoQ 분기별 흐름 (전전전기~당기)</div>
+  <div style='overflow-x:auto'><table style='width:100%;border-collapse:collapse;font-size:12.5px'><thead><tr style='background:#f1f5f9'><th style='padding:5px 6px;text-align:left'>항목(억, 3개월)</th><th style='padding:5px 6px;text-align:right;font-size:11px'>2025.09</th><th style='padding:5px 6px;text-align:right;font-size:11px'>2025.12</th><th style='padding:5px 6px;text-align:right;font-size:11px'>2026.03</th><th style='padding:5px 6px;text-align:right;font-size:11px'>2026.06</th><th style='padding:5px 6px;text-align:center'>QoQ</th></tr></thead><tbody><tr><td style='font-weight:700;font-size:12px'>매출</td><td style='text-align:right;font-size:11.5px'>-</td><td style='text-align:right;font-size:11.5px'>55,862</td><td style='text-align:right;font-size:11.5px'>93,960</td><td style='text-align:right;font-size:12px;font-weight:700'>160,732</td><td style='text-align:center;padding:4px 6px'><span style="color:#dc2626;font-size:11px">▲71%</span></td></tr><tr><td style='font-weight:700;font-size:12px'>영업이익</td><td style='text-align:right;font-size:11.5px'>4,089</td><td style='text-align:right;font-size:11.5px'>3,456</td><td style='text-align:right;font-size:11.5px'>6,212</td><td style='text-align:right;font-size:12px;font-weight:700'>7,890</td><td style='text-align:center;padding:4px 6px'><span style="color:#dc2626;font-size:11px">▲27%</span></td></tr><tr><td style='font-weight:700;font-size:12px'>순이익</td><td style='text-align:right;font-size:11.5px'>3,224</td><td style='text-align:right;font-size:11.5px'>-</td><td style='text-align:right;font-size:11.5px'>-</td><td style='text-align:right;font-size:12px;font-weight:700'>-</td><td style='text-align:center;padding:4px 6px'></td></tr></tbody></table></div><div style="font-size:11.5px;color:#334155;margin-top:6px">영업현금흐름(2026 반기 누적) <b>-71,433억</b> · 전년 같은 기간 -15,725억 (-354%)</div><div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:9px 12px;margin-top:8px;font-size:12.5px;line-height:1.7">• 영업이익 QoQ(Q2 vs Q1 2026) <b style='color:#dc2626'>+27%</b> 급증 — 이익 개선 사이클 가속<br>• 2분기 연속 영업이익 증가 — 상승 모멘텀 지속 확인</div>
+</div>
+<div class="pfoot">
+  <span>키움증권(039490) 펀더멘털 리포트</span>
+  <span>Page 3 / 7</span>
+</div>
+</section>
+<section class="page" id="pg4">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 4/7</div>
+  <h2>뉴스 · 이벤트</h2>
+</div><span class="badge" style="background:#ea580c22;border-color:#ea580c;color:#ea580c">최신</span></div>
+
+<div class="note info"><div class="nt-t">📰 최신 뉴스 (25건)</div></div>
+<div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 시사저널</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/586/0000139365" style="color:#1e293b;text-decoration:none">"나 떨고 있니"…박현주·김남구까지, '국감 무풍지대' 증권가 긴장</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 머니투데이</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/008/0005421702" style="color:#1e293b;text-decoration:none">7000 탈환한 코스피, 美 고용지표·삼전실적 변수</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 연합뉴스TV</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/422/0000912019" style="color:#1e293b;text-decoration:none">[비즈&] 하나금융, 청라에 새 둥지…금융·IT 인력 집결 外</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 매경이코노미</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/024/0000108657" style="color:#1e293b;text-decoration:none">삼전·닉스 자사주 실탄 곧 바닥…수급 빈자리는 누가 채우나</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · MBN</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/057/0001971758" style="color:#1e293b;text-decoration:none">유해진 내세운 증권사도 광고 종료…'암살자(들)' 논란 여파?</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 매일경제</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/009/0005743276" style="color:#1e293b;text-decoration:none">[단독]레버리지ETF 탓? 증시호황 속 몸집불린 대형 증권사··· 소비자...</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 시사저널</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/586/0000139347" style="color:#1e293b;text-decoration:none">'현장 경영' 전통 무너뜨린 한국투자 3세의 고속 승진…첩첩산중 승계...</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 아이뉴스24</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/031/0001063196" style="color:#1e293b;text-decoration:none">美 채권·파킹형 ETF 피신한 개미, 4분기 돌아올까</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div>
+<div class="note warn" style="margin-top:12px"><div class="nt-t">⚡ 주요 이벤트성 공시 — 투자 영향 설명</div></div>
+<div style="font-size:13px"><div style="text-align:center;padding:20px;color:#94a3b8;font-size:12px">최근 투자에 영향을 줄 주요 이벤트성 공시가 없습니다<br><span style="font-size:11px">(수주·증자·합병·자사주 등 이벤트 기준)</span></div></div>
+<div class="pfoot">
+  <span>키움증권(039490) 펀더멘털 리포트</span>
+  <span>Page 4 / 7</span>
+</div>
+</section>
+<section class="page" id="pg5">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 5/7</div>
+  <h2>애널리스트 리포트</h2>
+</div><span class="badge" style="background:#ea580c22;border-color:#ea580c;color:#ea580c">증권사</span></div>
+
+<div class="note info"><div class="nt-t">📊 애널리스트 리포트 (12건)</div></div>
+<div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #86efac;border-left:4px solid #16a34a;border-radius:8px;padding:10px 14px;margin-bottom:10px"><div style="font-size:10px;color:#166534;font-weight:700;margin-bottom:3px">📊 애널리스트 컨센서스 (10/01 기준 · 네이버)</div><div style="font-size:15px;font-weight:800;color:#15803d">목표주가 429,647원</div><div style="font-size:11px;color:#166534;margin-top:2px"> · 컨센서스 의견: <b>매수 (3.94/5)</b></div></div>
+<div style="font-size:13px"><div style="background:#f5f3ff;border:1px solid #ddd6fe;border-radius:10px;padding:12px 14px;margin-bottom:12px"><div style="font-size:12px;font-weight:800;color:#7c3aed;margin-bottom:8px">🎯 목표가 컨센서스 추이 — 리포트 13건 · 9개 증권사 누적</div><div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-end;margin-bottom:6px"><div><div style="font-size:10px;color:#64748b">목표가 변화</div><div style="font-size:17px;font-weight:900;color:#1e293b">439,111 → 439,111 → 436,333 → 429,647 → 429,647원</div></div><div><div style="font-size:10px;color:#64748b">현재가 대비 괴리율</div><div style="font-size:20px;font-weight:900;color:#dc2626">+65.9%</div></div></div><div style="font-size:11px;color:#475569"><span style="color:#1d4ed8;font-weight:800">-12,797원</span> 11회 기록 동안 목표가 -12,797원(-2.9%) — 하향 흐름입니다.</div><div style="margin-top:9px;padding-top:9px;border-top:1px dashed #ddd6fe"><div style="font-size:11px;font-weight:800;color:#7c3aed;margin-bottom:5px">🎯 목표가 적중률 — 60거래일 기준 <span style="color:#1e293b">0/2건 (0%)</span> · 판정 대기 9건</div><table style="width:100%;font-size:10.5px;border-collapse:collapse"></table><div style="font-size:10px;color:#475569;margin-top:5px">평균 제시 +53.4% vs 실제 -26.5% — 제시가 실제보다 <b style="color:#dc2626">+79.9%p</b> 낙관적. 목표가는 선행 지표가 아니라 주가를 따라가는 경향이 있으니 절대 수준보다 <b>상향·하향 방향</b>을 보세요.</div></div></div><div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:12px 14px;margin-bottom:12px"><div style="font-size:12px;font-weight:800;color:#2563eb;margin-bottom:6px">📑 최근 리포트 12건 · 증권사 8곳</div><div style="font-size:11px;color:#64748b">리포트 목표가 범위 (평균은 컨센서스 칸 참고)</div><div style="font-size:13px;font-weight:700;color:#475569">370,000~600,000원</div><div style="margin-top:8px"><div style="font-size:10px;color:#64748b;margin-bottom:3px">투자의견 분포 (리포트 11건)</div><div style="display:flex;height:10px;border-radius:5px;overflow:hidden"><div style="width:100%;background:#059669"></div><div style="width:0%;background:#f59e0b"></div><div style="width:0%;background:#dc2626"></div></div><div style="display:flex;gap:8px;font-size:10px;margin-top:2px"><span style="color:#059669">■ 매수 100%</span><span style="color:#f59e0b">■ 중립 0%</span><span style="color:#dc2626">■ 매도 0%</span></div></div></div><div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;margin-bottom:12px"><div style="font-size:12px;font-weight:800;color:#334155;margin-bottom:6px">💡 주요 투자 포인트 (리포트 제목 분석)</div><div style="font-size:12px;padding:5px 0;border-bottom:1px solid #f1f5f9"><span style="color:#059669;font-weight:700">▲</span> <b style="color:#1e293b">대신증권</b> · 목표가 370000원 — 전 부문 실적 약진함에 따라 어닝 서프라이즈 달성</div></div><div style="font-size:12px;font-weight:800;color:#64748b;margin:10px 0 5px">🔗 리포트 원문</div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-09-10 · 유안타증권 · <b style="color:#dc2626">470000원</b></div><a href="https://m.stock.naver.com/investment/research/company/96082" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">개인투자자 회전율 회복에 따라 주가 상승</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-31 · 교보증권 · <b style="color:#dc2626">405000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94924" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">2Q26 Review: 분기별 사상 최대 실적, Top picks 유지</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-31 · 하나증권 · <b style="color:#dc2626">570000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94896" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">2Q26 Re - 트레이딩과 해외주식 부문이 예상대비 선방</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-31 · 하나증권 · <b style="color:#dc2626">570000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94885" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">2026년 2분기 컨퍼런스 콜 요약</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-31 · 대신증권 · <b style="color:#dc2626">370000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94879" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">전 부문 실적 약진함에 따라 어닝 서프라이즈 달성</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-31 · 신한투자증권 · <b style="color:#dc2626">420000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94848" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">올해 주주환원을 얼마나 할지 감도 안 옴</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-31 · iM증권 · <b style="color:#dc2626">380000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94824" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">양호한 실적과 저평가, 그렇지 못한 환경</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-31 · SK증권 · <b style="color:#dc2626">500000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94809" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">2Q26 Review: 기대 이상의 2분기. 관건은 하반기</a></div></div>
+<div class="pfoot">
+  <span>키움증권(039490) 펀더멘털 리포트</span>
+  <span>Page 5 / 7</span>
+</div>
+</section>
+<section class="page" id="pg6">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 6/7</div>
+  <h2>Telegram 인사이트</h2>
+</div><span class="badge" style="background:#ea580c22;border-color:#ea580c;color:#ea580c">채널 메시지</span></div>
+
+<div class="note info"><div class="nt-t">Telegram (90일 이내, 15건) · PDF 0건</div></div>
+<div style="font-size:13px"><div style="font-size:12px;font-weight:800;color:#1e293b;margin:10px 0 6px">📢 채널 원문</div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 companyreport 2026-10-01T10:55:14</div><div style="font-size:11.5px;line-height:1.5">[시장] 증권(Overweight): 9월 Monthly Check [📌 종목 및 투자의견] 키움증권(039490) | BUY | 현재가 262,500원 | 목표주가 570,000원 삼성증권(016360) | BUY | 현재가 90,300원 | 목표주가 175,000원 NH투자증권(005940) | BUY | 현재가 26,500원 | 목표주가 44,000원 한국금융지주(071050) | BUY | 현재가 179,500원 | 목표주가 330,000원 [📊 핵심 투자포인트] - 3분기 국내증시 일평균 거래대금 52.4조원으로 전분기 대비 42% 감소했으나, 당분간 현 수준이 지속될 경우 배당매력도가 높은 종목 중심 접근이 유효 - 기타법인(삼성전자, SK하이닉스 자사주 매입)의 순매수세가 31.4조원으로 버팀목 역할을 하고 있으나 자사주 매입이 막바지에 접어들며 향후 강도 둔화 예상 - 기관 3.9조원 순매수, 외국인 22.8조원 순매도, 개인 12.4조원 순매도로 투자주체별 수급 불균형 지속 - 해외주식 거래는 2024년 상반기 이후 최저 수준(9월 339억달러)이나, 미국 채권·배당형 ETF(SGOV, SCHD) 중심의 매수세 유입 - 중장기적</div></div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 companyreport 2026-09-27T11:30:13</div><div style="font-size:11.5px;line-height:1.5">[시장] 증권(Overweight): Digital Finance Conference 주요 내용 및 시사점 [산업분석 요약] 투자의견: Overweight 발행사: 하나증권 | 발행일: 2026년 09월 28일 --- [핵심 투자포인트] - 국내 디지털자산 시장은 수요 문제가 아니라 제도권 금융의 수요 흡수 능력이 관건. 이미 1,000만명 이상의 투자자가 존재하며 해외 플랫폼을 통한 거래가 활발한 상황 - 토큰증권 시장은 기관투자자 전용 사모 MMF 등으로 단계적 확대 예정. 초기 발행규모보다 실제 거래 빈도와 유동성이 시장 성공을 판단하는 중요 지표 - 스테이블코인은 온체인 결제수단으로서 토큰증권 거래의 효율성을 높이는 핵심 인프라. 2차 유통 확대와 함께 중요도 증대 - 스테이블코인 실현을 위해 준비자산 허용 범위, 유동성, 만기구조 등 제도적 요건과 발행사 규제 필수 - 온체인 거래 확대 시 플랫폼 장애, 스마트계약 오류, 사이버 공격 등 기술적 위험 부각. 블록체인 적용 여부보다 온체인 의존도와 백업 구조, 위험 부담 주체 파악이 향후 핵심 --- [Top Picks] 키움증권(039490) | BUY |</div></div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 키움증권 임수진 엔터/레저/미디어 2026-09-17 22:31</div><div style="font-size:11.5px;line-height:1.5">[키움증권 임수진 엔터/레저/미디어] 2026-09-18(금) Daily News [엔터] DDP, K팝 메카로 거듭난다…엔터기업에 용적률 200% 부여 https://tinyurl.com/2bakh2hu 일레븐랩스, UMG 손잡았다…AI 음악 창작 플랫폼 개발 https://tinyurl.com/24k25p8b BTS &#x27;마이크 드롭&#x27; 리믹스 뮤비, 16억뷰 달성…네 번째 기록 https://tinyurl.com/26u9fc9q 세븐틴 디노, 혼자서도 잘나간다…마카오 콘서트 초고속 매진+추가 https://tinyurl.com/24cfoyjx 르세라핌(LE SSERAFIM), 싱글 2집 ‘Made My Night’ 발매 기념 팝업 연다 https://tinyurl.com/2clsw437 레드레드&#x27; 수록 코르티스 미니 2집, 누적 판매량 400만장 돌파 https://tinyurl.com/2bylw9xy 라이즈, &#x27;러브 119&#x27; 스포티파이 1억 스트리밍 돌파…통산 두 번째 https://tinyurl.com/2as47qbl 스트레이 키즈, 남미 질주…자체 브랜드 음악 축제 &#x27;스트레이시티&#x27; 메인 장식 https://tinyurl.com/22dlty</div></div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 소중한추억. 2026-09-17 11:10</div><div style="font-size:11.5px;line-height:1.5">[데이터도그(DDOG.US)] 제목: 사스포칼립스는 기우였나 작성자: 김승혁, 조호준 (키움증권 리서치센터) [견조한 실적] · FY26 Q2 매출액은 전년 동기 대비 35.6% 증가한 11.21억 달러를 기록하며 3개 분기 연속 성장세가 가속화됨. [성장성 증명] · AI 워크로드를 추가 수요로 흡수하고 있으며, 다제품 채택 및 높은 고객 유지율을 바탕으로 사스포칼립스 우려를 불식함. [리스크 요인] · 최대 고객의 사용량 감소 및 대형 고객 집중도에 따른 변동성이 존재하며, 향후 분기별 성장 궤적 확인이 필요함. [실적 및 전망] · FY26 Q2 매출액은 컨센서스를 3.9% 상회했고, Non-GAAP 영업이익률은 23%를 기록하며 전년 동기 대비 3.1%p 개선됨. 연간 매출 가이던스를 기존 대비 상향 조정했으나, Q4 성장률은 다소 둔화될 것으로 예상됨. [성장 모멘텀] · AI 에이전트가 시스템을 운영하는 과정에서 데이터 계층의 중요성이 커짐에 따라 동사의 플랫폼 수요가 구조적으로 증가하고 있음. 4개 이상의 제품을 사용하는 고객 비중이 58%로 확대되는 등 강력한 락인(Lock-in</div></div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 서화백의 AI놀이🚀 2026-09-17 11:00</div><div style="font-size:11.5px;line-height:1.5">🔻 부정 뉘앙스 리포트 · 9/17(목) 오늘 발간분 중 AI 분석 뉘앙스 -50 이하 신규 6건 1. 제일기획(030000) · 신한투자증권 · -100 · 눈높이 하향에도 배당수익률 6.5% └ 애널리스트는 &#x27;매수&#x27; 의견과 목표주가를 유지했지만, 핵심 이익 추정치를 10% 이상 대폭 하향하고 목표주가도 낮췄습니다. 보고서 본문에서는 성… 2. 금호석유화학(011780) · LS증권 · -100 · 튼튼한 기초 체력, 아쉬운 모멘텀 └ 애널리스트는 &#x27;Hold&#x27; 투자의견과 목표주가를 유지하고 있으나, 2026년 영업이익 추정치를 컨센서스 대비 하향 조정했습니다. 보고서 본문에서… 3. 트립닷컴 · 키움증권 · -100 · 운영체계 변화 영향 확인 필요 └ 이 보고서는 시장의 &#x27;매수&#x27; 컨센서스와 달리, 애널리스트의 미래 실적 추정치(26년 EPS가 25년 대비 절반 수준)를 대폭 하향 조정하며 심… 4. 미국 FOMC · 키움증권 · -90 · 9 월 FOMC Review “완화의 정도를 제거” └ 키움증권 안예하 애널리스트는 9월 FOMC 리뷰를 통해 연준의 정책금리 인상 전망을 기존 1회에서 2회로 상향 조정하며</div></div><div style="font-size:11px;color:#64748b;margin-top:4px">긍정·부정은 따로 판정하지 않습니다 — 위 원문을 직접 확인하세요</div></div>
+<div class="pfoot">
+  <span>키움증권(039490) 펀더멘털 리포트</span>
+  <span>Page 6 / 7</span>
+</div>
+</section>
+<section class="page" id="pg7">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 7/7</div>
+  <h2>투자 포인트 & 최종 전략</h2>
+</div><span class="badge" style="background:#ea580c22;border-color:#ea580c;color:#ea580c">LLM 사실 요약</span></div>
+
+<div class="note ok"><div class="nt-t">💡 투자 포인트</div></div>
+<div class="bul"><i style="background:#059669"></i><div style="font-size:13px">2026년 2분기 영업이익 7,889억원으로 1분기 6,212억원 대비 27.0% 증가했고, 애널리스트 리포트는 분기별 사상 최대 실적, 어닝 서프라이즈, 트레이딩과 해외주식 부문 선방을 언급했다.</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:13px">유안타증권 리포트는 개인투자자 회전율 회복에 따라 주가 상승을 언급했다.</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:13px">키움증권이 모바일트레이딩시스템(MTS)에 대화형 통합 AI 검색을 선보이고, 향후 업무·투자 챗봇 기능까지 고도화할 계획이라고 보도됐다.</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:13px">증권업종에 대해 하나증권이 Overweight 의견을 제시했고, 텔레그램 자료에는 키움증권에 대한 BUY 의견과 목표주가 570,000원이 기재되어 있다.</div></div>
+<div class='note warn'><div class='nt-t'>⚠️ 리스크 요인</div></div><div class="bul warn"><i></i><div style="font-size:13px">2026년 반기 누적 영업현금흐름이 -71,433억원으로 적자를 기록했다.</div></div><div class="bul warn"><i></i><div style="font-size:13px">한국소비자원 민원상담 접수 건수에서 키움증권이 93건으로 국내 대형 증권사 중 가장 많았고, 부당행위 28건, 계약불이행 20건, 서비스품질 불만 16건이었다.</div></div><div class="bul warn"><i></i><div style="font-size:13px">단일종목 레버리지 ETF 논란과 관련해 국정감사 증인 신청, 소비자 민원 급증, 정치권 공방이 이어지고 있다는 뉴스가 있다.</div></div><div class="bul warn"><i></i><div style="font-size:13px">배우 유해진을 모델로 한 광고캠페인 종료를 두고 영화 '암살자(들)' 역사왜곡 논란 여파라는 업계 분석이 제기됐다.</div></div>
+<div class="note info"><div class="nt-t">🏰 해자 · 경쟁 우위</div><p style="font-size:12.5px">키움증권은 모바일트레이딩시스템(MTS)에 대화형 AI 검색을 도입하고 향후 챗봇 기능까지 고도화할 계획이라고 보도됐다. 다만 한국소비자원 민원상담이 대형 증권사 중 가장 많았다는 자료와 레버리지 ETF 논란 등은 서비스 경쟁력에 부담이 될 수 있는 부분으로 제시됐다.</p></div>
+<div class="card rows" style="margin-bottom:11px"><div class="rw"><span class="k">추천 포트폴리오 비중</span><span class="v" style="color:#7c3aed;font-size:20px">32%</span></div></div>
+<div class="note yel" style="margin-bottom:8px"><div class="nt-t">🔔 다음 분기 체크포인트</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">2026년 3분기 영업이익과 당기순이익이 2분기 대비 어떻게 변하는지 확인</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">2026년 반기 누적 영업현금흐름 -71,433억원 이후 현금흐름이 개선되는지 확인</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">단일종목 레버리지 ETF 관련 국정감사 증인 채택과 논의 결과 확인</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">한국소비자원 민원상담 건수와 유형이 이후에도 증가하는지 확인</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">MTS AI 검색 및 챗봇 고도화의 실제 출시·이용 상황 확인</div></div>
+<div class="note info" style="margin-top:4px"><div class="nt-t">📋 단기·중기·장기 투자 전략</div></div>
+<div style="background:#ea580c11;border:1.5px solid #ea580c33;border-radius:12px;padding:12px 14px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:14px;font-weight:900;color:#ea580c">펀더멘털 종합 판정</div><div style="font-size:16px;font-weight:900">🟡 관망</div></div><div style="background:#f59e0b0a;border:1.5px solid #f59e0b33;border-radius:10px;padding:11px 13px;margin-bottom:8px"><div style="font-size:11px;color:#f59e0b;font-weight:800;margin-bottom:4px">단기 전략 (1~4주)</div><div style="font-size:13px;font-weight:700;color:#1e293b">현금 보유, 반등 시 매도 기회 탐색</div><div style="font-size:11.5px;color:#64748b;margin-top:4px">주요 이슈 발생 시 빠른 대응 권장</div></div><div style="background:#f59e0b0a;border:1.5px solid #f59e0b33;border-radius:10px;padding:11px 13px;margin-bottom:8px"><div style="font-size:11px;color:#f59e0b;font-weight:800;margin-bottom:4px">중기 전략 (1~3개월)</div><div style="font-size:13px;font-weight:700;color:#1e293b">개선 신호 확인 전까지 비중 축소</div><div style="font-size:11.5px;color:#64748b;margin-top:4px">애널리스트 컨센서스 목표주가 429,647원 (10/01 기준 네이버)</div></div><div style="background:#f59e0b0a;border:1.5px solid #f59e0b33;border-radius:10px;padding:11px 13px;margin-bottom:8px"><div style="font-size:11px;color:#f59e0b;font-weight:800;margin-bottom:4px">장기 전략 (6개월~)</div><div style="font-size:13px;font-weight:700;color:#1e293b">구조적 펀더멘털 개선 분기 단위 재확인</div><div style="font-size:11.5px;color:#64748b;margin-top:4px">분기 실적 + 애널 컨센서스 방향성 추적</div></div><div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.7"><div style="font-size:12px;font-weight:800;color:#ea580c;margin-bottom:5px">📝 종합 분석</div><span style="font-weight:900;color:#f59e0b">중립</span> — 키움증권 최근 실적 (2026년 2분기(3개월, DART)) 기준 매출 미수집, 영업이익 7,889억원. 강점: 영업이익 전년 동기 (2분기 기준) +93.2% — 이익 개선 사이클 진입. 주요 리스크: 마이너스 영업현금흐름 (2026 반기 누적) -71,433억원 — 순이익(11,150억) 흑자에도 운전자본 . 컨센서스 목표주가 429,647원(네이버) → 현 주가 대비 매력도 확인 권장. 종합 펀더멘털 점수 47점 기준 [중립] 판단.</div>
+<div class="pfoot">
+  <span>키움증권(039490) 펀더멘털 리포트</span>
+  <span>Page 7 / 7</span>
+</div>
+</section>
+<section class="page" id="pg8">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 8/7</div>
+  <h2>근거 점검</h2>
+</div><span class="badge" style="background:#ea580c22;border-color:#ea580c;color:#ea580c">데이터 교차검증</span></div>
+
+<div class="card" style="border:1.5px solid #cbd5e1">
+  <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:9px"><div style="font-size:13px;font-weight:800;color:#0f172a">📐 근거 점검</div><div style="font-size:10px;color:#94a3b8">데이터 교차검증 · 2026-10-02</div></div>
+  <div style="font-size:10.5px;color:#64748b;margin-bottom:9px;line-height:1.6">
+    앞의 판정들에 의견을 더하지 않습니다. <b>서로 엇갈리는 지점</b>과
+    <b>확인되지 않은 것</b>을 드러내 앞 페이지를 읽는 기준을 줍니다.
+  </div>
+  
+  <div style="font-size:10.5px;color:#64748b;line-height:1.65;background:#f8fafc;border-radius:8px;padding:8px 10px;margin-bottom:9px">동사는 2000년 자본시장법에 근거해 투자매매·중개업을 위해 설립되었고, 2004년 코스닥 상장 후 2009년 유가증권시장으로 이전 상장함. 국내 최초 온라인 종합증권사로 저비용 고효율 구조와 최대 온라인 고객을 바탕으로 2005년 이후 주식 위탁매매 시장점유율 1위를 유지하고 있음. 투자매매업, 중개업, 일임업, 신탁업 등 금융투자업을 영위하며, 키움저축은행, 키움투자자산운용 등 218개 종속회사를 보유하고 있음.</div>
+
+  <div style="font-size:11.5px;font-weight:800;color:#b45309;margin-bottom:5px">
+    ⚠ 충돌 2건</div>
+  <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:9px;padding:9px 11px;margin-bottom:7px"><div style="font-size:12px;font-weight:800;color:#b45309;margin-bottom:3px">컨센 목표가 +65.9% <span style="opacity:.5">↔</span> 적중률 0% (0/2)</div><div style="font-size:11px;color:#475569;line-height:1.55">평균 제시 +53.4% vs 실제 -26.5% — 괴리를 근거로 쓰기 어렵습니다</div></div><div style="background:#ecfdf5;border:1px solid #a7f3d0;border-radius:9px;padding:9px 11px;margin-bottom:7px"><div style="font-size:12px;font-weight:800;color:#047857;margin-bottom:3px">PER 4.1배(최근 4분기) <span style="opacity:.5">↔</span> 피어 중앙값 5.8배(최근 4분기)</div><div style="font-size:11px;color:#475569;line-height:1.55">피어 대비 29% 낮습니다 — 프리미엄 주장과 어긋납니다</div></div>
+
+  <div style="font-size:11.5px;font-weight:800;color:#047857;margin:11px 0 3px">
+    ✓ 검증된 것 <span style="font-weight:500;color:#94a3b8">— 숫자 · 출처 · 시점</span></div>
+  <div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">영업이익 전년 동기 (반기 기준) +93.2% — 이익 개선 </span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">93.2%</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">DART 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">PER(최근 4분기)</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">4.06배</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">네이버 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">PBR(최근 분기)</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">0.90배</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">네이버 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">배당수익률</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">4.44%</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">네이버 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">피어 중앙값 PER(최근 4분기, 4종목)</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">5.8배</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">실측 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">목표가 적중률</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">0/2 (0%)</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">60거래일 백테스트</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">외인소진율</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">29.98%</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">네이버 2026-10-02</span></div>
+
+  <div style="font-size:11.5px;font-weight:800;color:#64748b;margin:11px 0 3px">
+    ✗ 확인 못 한 것</div>
+  <div style="padding:5px 0;border-bottom:1px dashed #e2e8f0"><div style="font-size:11.5px;font-weight:700;color:#475569">✗ 주식등의대량보유상황보고서(약식) (2026-10-02)</div><div style="font-size:10.5px;color:#94a3b8;margin-top:1px">제목만 있고 본문이 없습니다 — 지분 변동 성격을 알 수 없습니다</div></div>
+
+  <div style="font-size:11.5px;font-weight:800;color:#1d4ed8;margin:11px 0 3px">
+    ▸ 감지 조건 <span style="font-weight:500;color:#94a3b8">— 전환 0/4 충족</span></div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:9px;padding:8px 10px">
+    <div style="font-size:10px;font-weight:800;color:#047857;margin-bottom:2px">전환</div>
+    <div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">20일선 회복</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">종가 &gt; 266,025</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">60일선 회복</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">종가 &gt; 284,408</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">커버리지 재개</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">analyst_history 신규 ≥ 1</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">수급 반전</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">외국인 5일 누적 순매수 &gt; 0</span></div>
+    <div style="font-size:10px;font-weight:800;color:#b91c1c;margin:7px 0 2px">악화</div>
+    <div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">52주 저점 근접</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">종가 &lt; 249,845</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">수익성 훼손</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">분기 OPM &lt; 40%</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">목표가 하향</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">목표가 전기 대비 하락</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">외국인 이탈</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">외인소진율 20일 −3%p</span></div>
+  </div>
+  <div style="font-size:9.5px;color:#94a3b8;margin-top:7px;line-height:1.6">
+    조건은 alarmstock 이 회차마다 평가합니다. 이 페이지는 데이터 종합이며
+    투자 조언이 아닙니다 — 판단과 책임은 본인에게 있습니다.
+  </div>
+</div>
+<div class="pfoot">
+  <span>키움증권(039490) 펀더멘털 리포트</span>
+  <span>Page 8 / 7</span>
+</div>
+</section>
+</div>
+</body></html>

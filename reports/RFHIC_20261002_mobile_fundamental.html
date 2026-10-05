@@ -1,0 +1,448 @@
+<!doctype html><html lang="ko"><head>
+<meta charset="utf-8"><meta property="og:type" content="website"><meta property="og:title" content="RFHIC 펀더멘털 리포트"><meta property="og:description" content="StockAgent 리포트"><meta property="og:locale" content="ko_KR"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="RFHIC 펀더멘털 리포트"><meta name="twitter:description" content="StockAgent 리포트">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RFHIC 펀더멘털 리포트</title>
+<style>
+*{box-sizing:border-box;-webkit-text-size-adjust:100%}
+body{margin:0;background:#eef2f7;color:#1e293b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif;line-height:1.6}
+.bar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e2e8f0;padding:10px 12px}
+.bar .in{max-width:560px;margin:0 auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.bar h1{font-size:15px;margin:0;font-weight:800;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.btn{font-size:12.5px;padding:7px 12px;border-radius:9px;border:1px solid #e2e8f0;background:#f8fafc;color:#334155;cursor:pointer;font-weight:700}
+.btn.pri{background:#059669;color:#fff;border-color:#059669}
+.btn:active{transform:translateY(1px)}
+.wrap{max-width:560px;margin:0 auto;padding:14px 10px 60px}
+.page{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:18px 16px;margin-bottom:16px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.phead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;border-bottom:2px solid #e2e8f0;padding-bottom:11px;margin-bottom:14px}
+.eyebrow{font-size:10.5px;font-weight:800;color:#059669;letter-spacing:.06em;margin-bottom:3px}
+.phead h2{font-size:17px;margin:0;font-weight:800;line-height:1.35}
+.badge{font-size:11px;font-weight:800;border-radius:999px;padding:4px 11px;white-space:nowrap;border:1px solid}
+.card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:13px;padding:12px 14px;margin-bottom:11px}
+.rows .rw{display:flex;justify-content:space-between;gap:10px;padding:6px 0;font-size:13px}
+.rows .k{color:#64748b} .rows .v{font-weight:800;text-align:right}
+.note{border-radius:13px;padding:13px 15px;margin-bottom:11px;font-size:13px;border:1px solid}
+.note p{margin:0 0 6px} .note p:last-child{margin:0}
+.note .nt-t{font-weight:800;font-size:12.5px;margin-bottom:7px}
+.note.plain{background:#f8fafc;border-color:#e2e8f0} .note.plain .nt-t{color:#64748b}
+.note.info{background:#eff6ff;border-color:#bfdbfe} .note.info .nt-t{color:#2563eb}
+.note.warn{background:#fef2f2;border-color:#fecaca} .note.warn .nt-t{color:#dc2626}
+.note.yel{background:#fffbeb;border-color:#fde68a} .note.yel .nt-t{color:#ea580c}
+.note.ok{background:#ecfdf5;border-color:#a7f3d0} .note.ok .nt-t{color:#059669}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:11px}
+.kv{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:10px 12px}
+.kv .k{font-size:11px;color:#64748b} .kv .v{font-size:17px;font-weight:800;margin:2px 0;color:#059669}
+.tbl{padding:4px 6px} table{width:100%;border-collapse:collapse;font-size:12.5px}
+th{color:#64748b;font-weight:600;font-size:11px;padding:9px 7px;text-align:right;border-bottom:1px solid #e2e8f0}
+th:first-child,td:first-child{text-align:left}
+td{padding:9px 7px;text-align:right;border-bottom:1px solid #f1f5f9;font-weight:600}
+tbody tr:last-child td{border-bottom:none}
+.bul{display:flex;gap:10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:11px 13px;margin-bottom:9px;font-size:13px}
+.bul.warn{background:#fef2f2;border-color:#fecaca}
+.bul i{flex:none;width:7px;height:7px;border-radius:50%;background:#059669;margin-top:8px}
+.bul.warn i{background:#dc2626}
+.chart{border:1px solid #e2e8f0;border-radius:13px;padding:6px;margin-bottom:11px;overflow:hidden}
+.chart svg{width:100%;height:auto;display:block}
+.pfoot{display:flex;justify-content:space-between;font-size:11px;color:#94a3b8;border-top:1px solid #e2e8f0;padding-top:10px;margin-top:4px}
+.mini{color:#059669;font-weight:700;text-decoration:none}
+@media print{.bar{display:none} body{background:#fff} .page{break-after:page;box-shadow:none;border:none}}
+@keyframes pulse-r{0%,100%{opacity:1}50%{opacity:.7}}
+</style></head><body>
+<div class="bar"><div class="in">
+  <h1>RFHIC <span style="color:#94a3b8;font-weight:600">218410</span>&nbsp;&nbsp;<span style="font-size:13px;background:#05966922;color:#059669;padding:3px 10px;border-radius:12px;font-weight:700">A+ 83점</span></h1>
+  <button class="btn" onclick="window.print()">인쇄/PDF</button>
+</div></div>
+<div class="wrap">
+<section class="page" id="pg1">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 1/7</div>
+  <h2>기업 개요 & 투자 포인트</h2>
+</div><span class="badge" style="background:#05966922;border-color:#059669;color:#059669">섹터·피어·전략</span></div>
+
+<div style="font-size:10.5px;color:#94a3b8;margin-bottom:8px">기준일: 2026년 10월 02일 · 섹터: 통신</div>
+<div class="kpi-row"><div class="kpi-item"><div class="kpi-label">매출액 (2026.06)</div><div class="kpi-value">515억</div></div><div class="kpi-item"><div class="kpi-label">영업이익 (2026.06)</div><div class="kpi-value">112억</div></div><div class="kpi-item"><div class="kpi-label">순이익 (2026.06)</div><div class="kpi-value">-</div></div><div class="kpi-item"><div class="kpi-label">자본총계</div><div class="kpi-value">4,518억</div></div></div>
+<div class="note plain" style="margin-bottom:10px"><div class="nt-t">🏰 비즈니스 모델 & 경쟁 우위</div><p style="font-size:12.5px;margin:0">글로벌 통신 장비 시장 재편 과정에서 삼성전자의 위상 강화와 함께 국내 무선장비 공급망 내 핵심적인 위치를 점하고 있습니다. AI 데이터센터용 차세대 광통신 부품 수요에 대응할 수 있는 기술적 기대감이 형성되어 있습니다.</p></div>
+<div class="card rows" style="margin-bottom:10px"><div style="font-size:12px;font-weight:800;color:#334155;margin-bottom:6px">🏭 섹터 유사 종목 (통신)</div><div class="rw"><span class="k">RF머트리얼즈</span><span class="v" style="font-size:11px;color:#475569">327260</span></div><div class="rw"><span class="k">케이엠더블유</span><span class="v" style="font-size:11px;color:#475569">032500</span></div><div class="rw"><span class="k">에이스테크</span><span class="v" style="font-size:11px;color:#475569">088800</span></div><div class="rw"><span class="k">쏠리드</span><span class="v" style="font-size:11px;color:#475569">050890</span></div></div>
+<div class="note ok" style="margin-top:8px"><div class="nt-t">💡 핵심 투자 포인트</div></div>
+<div class="bul"><i style="background:#059669"></i><div style="font-size:12.5px">AI 데이터센터 확대로 인한 고속 광모듈 및 레이저 등 광연결 부품의 수요 증가 기대</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:12.5px">미국 연방정부의 중국산 광트랜시버 사용 금지 법안 발의에 따른 반사이익 및 수혜 가능성</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:12.5px">삼성전자 네트워크 사업부의 글로벌 경쟁력 강화로 인한 국내 무선장비 협력사들의 동반 성장 전망</div></div>
+<div class="card rows" style="margin-top:8px"><div class="rw"><span class="k">투자의견</span><span class="v" style="color:#059669">매수</span></div></div>
+
+<div class="pfoot">
+  <span>RFHIC(218410) 펀더멘털 리포트</span>
+  <span>Page 1 / 7</span>
+</div>
+</section>
+<section class="page" id="pg2">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 2/7</div>
+  <h2>종합 개요</h2>
+</div><span class="badge" style="background:#05966922;border-color:#059669;color:#059669">펀더멘털 점수</span></div>
+
+<div style="background:#dc2626;color:#fff;border:2px solid #991b1b;border-radius:12px;padding:13px 15px;margin-bottom:12px;animation:pulse-r 1.3s ease-in-out infinite"><div style="font-size:13px;font-weight:900;margin-bottom:6px">⭐ 오늘 +3.5% 급등 — 펀더멘털 체크 필요</div><div style="font-size:11.5px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.2)"><span style="opacity:.7;font-size:10px">[2026-10-02]</span> [특징주] 광통신주, 美광통신 강세 등에 줄상승(종합)</div><div style="font-size:11.5px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.2)"><span style="opacity:.7;font-size:10px">[2026-10-02]</span> 美 훈풍·AI데이터센터 기대에 통신장비주 강세…머큐리 '上'[핫종목]</div><div style="font-size:11.5px;padding:4px 0;border-bottom:1px solid rgba(255,255,255,.2)"><span style="opacity:.7;font-size:10px">[2026-10-02]</span> RFHIC 주가, 10월 2일 애프터마켓 62,000원 3.33% 상승 - TopStarNews</div></div><div style="font-size:10.5px;color:#94a3b8;margin-bottom:4px">기준일: 2026년 10월 02일 · Telegram (90일 이내, 16건)</div>
+<div style="display:flex;align-items:baseline;gap:8px;margin-bottom:8px"><span style="font-size:24px;font-weight:900;color:#1e293b">62,200원</span><span style="font-size:13px;font-weight:700;color:#dc2626">+3.49%</span><span style="font-size:11px;color:#94a3b8">전일대비</span></div>
+<div style="display:flex;gap:6px;margin-bottom:12px"><div style="flex:1;text-align:center;padding:8px 4px;background:#6b728011;border:1.5px solid #6b728044;border-radius:10px"><div style="font-size:10px;color:#64748b;margin-bottom:2px">KOSPI 매크로</div><div style="font-size:20px;font-weight:900;color:#6b7280">B-</div><div style="font-size:11px;color:#6b7280;font-weight:700">67/100</div></div><div style="flex:1;text-align:center;padding:8px 4px;background:#2563eb11;border:1.5px solid #2563eb44;border-radius:10px"><div style="font-size:10px;color:#64748b;margin-bottom:2px">통신</div><div style="font-size:20px;font-weight:900;color:#2563eb">B+</div><div style="font-size:11px;color:#2563eb;font-weight:700">70/100</div></div><div style="flex:1;text-align:center;padding:8px 4px;background:#05966911;border:1.5px solid #05966944;border-radius:10px"><div style="font-size:10px;color:#64748b;margin-bottom:2px">종목 펀더멘털</div><div style="font-size:20px;font-weight:900;color:#059669">A+</div><div style="font-size:11px;color:#059669;font-weight:700">83/100</div></div></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px"><div><div style="font-size:10px;color:#64748b">현재주가</div><div style="font-size:18px;font-weight:900;color:#1e293b">62,200원</div></div><div><div style="font-size:10px;color:#64748b">전일대비</div><div style="font-size:15px;font-weight:700;color:#dc2626">+2,100 (+3.49%)</div></div></div><div style="background:#ecfdf5;border:1.5px solid #a7f3d0;border-radius:10px;padding:12px 14px;margin-bottom:12px"><div style="font-size:11px;color:#64748b;margin-bottom:4px">■ 매매 판정</div><div style="font-size:16px;font-weight:900;color:#059669">신규 매수 / 비중 확대</div><div style="font-size:11.5px;color:#475569;margin-top:6px;padding:6px 8px;background:#f8fafc;border-radius:6px">애널리스트 컨센서스 목표주가 101,000원 (10/01 기준 네이버)</div></div><div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:10px 12px;font-size:12.5px"><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #f1f5f9"><span style="color:#64748b">단기(1~4주)</span><span style="font-weight:700">긍정 추세 — 분할 매수 진입 고려</span></div><div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #f1f5f9"><span style="color:#64748b">중기(1~3개월)</span><span style="font-weight:700">실적 개선 확인 → 목표주가 도달 시 일부 익절</span></div><div style="display:flex;justify-content:space-between;padding:5px 0"><span style="color:#64748b">장기(6~12개월)</span><span style="font-weight:700">펀더멘털 개선 사이클 — 중장기 홀딩 유리</span></div></div>
+<div class="chart" style="margin:10px 0"><svg viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:80px;background:#1e3a5f20;border-radius:6px"><polyline points="0,28 5,43 10,44 16,36 21,49 27,55 32,38 37,51 43,62 48,58 54,54 59,46 65,54 70,53 75,67 81,75 86,80 92,60 97,58 103,45 108,35 113,43 119,45 124,30 130,36 135,31 141,30 146,33 151,39 157,42 162,41 168,49 173,51 178,49 184,48 189,44 195,50 200,49 206,54 211,48 216,51 222,46 227,45 233,48 238,42 244,38 249,44 254,45 260,41 265,36 271,31 276,12 282,14 287,19 292,18 298,25 303,19 309,19 314,15 320,10" fill="none" stroke="#dc2626" stroke-width="2"/><text x="316" y="14" text-anchor="end" font-size="13" fill="#dc2626" font-weight="bold">62,200원 (+13.3%)</text></svg></div>
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:13px;padding:12px 14px;margin-bottom:11px">
+<div style="font-size:12px;font-weight:800;color:#334155;margin-bottom:6px">📊 펀더멘털 점수 상세</div>
+<div style="padding:5px 0 8px;font-size:11.5px;color:#64748b">📍 코스닥 소형주 (자산 0.6조)</div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">이익모멘텀</span><span style="font-size:12px;font-weight:800;color:#059669">18/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#059669;width:90%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">영업이익 YoY(2분기) +35% · QoQ(Q2 vs Q1 2026, 3개월) +45% (2026년 2분기(3개월, DART) 112억원)</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">FCF창출력</span><span style="font-size:12px;font-weight:800;color:#059669">20/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#059669;width:100%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">영업현금흐름 (2026 반기 누적) 213억원 (같은 기간 매출 대비 22.5%)</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">재무구조</span><span style="font-size:12px;font-weight:800;color:#059669">20/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#059669;width:100%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">부채비율 34% (부채 1,517억 / 자본 4,518억)</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">수익성·성장</span><span style="font-size:12px;font-weight:800;color:#059669">10/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#059669;width:48%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">마진 미산출</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">해자·확장성</span><span style="font-size:12px;font-weight:800;color:#059669">16/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#059669;width:80%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">애널 리포트 12건 커버리지</div></div><div style="padding:7px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:13px;font-weight:700">정보모멘텀</span><span style="font-size:12px;font-weight:800;color:#059669">16/20</span></div><div style="background:#e2e8f0;border-radius:3px;height:5px;margin-top:3px"><div style="background:#059669;width:81%;height:5px;border-radius:3px"></div></div><div style="font-size:11.5px;color:#64748b;margin-top:3px">뉴스 11건 · 애널 12건 · Telegram 16건 · PDF 0건</div></div>
+</div>
+<div class="card rows" style="margin-top:8px">
+  <div class="rw"><span class="k">공시</span><span class="v">26건</span></div>
+  <div class="rw"><span class="k">뉴스</span><span class="v">11건</span></div>
+  <div class="rw"><span class="k">애널 리포트</span><span class="v">12건</span></div>
+</div>
+<div class="pfoot">
+  <span>RFHIC(218410) 펀더멘털 리포트</span>
+  <span>Page 2 / 7</span>
+</div>
+</section>
+<section class="page" id="pg-context">
+<div class="phead"><div>
+  <div class="eyebrow">CONTEXT · 2026-10-02 · 누적 4회 분석</div>
+  <h2>RFHIC 현황 & 전략</h2>
+</div><span class="badge" style="background:#dc262622;border-color:#dc2626;color:#dc2626">A+ 83점</span></div>
+
+<style>
+.kb-tabs{display:flex;gap:5px;margin-bottom:11px}
+.kb-tab-btn{flex:1;padding:7px 4px;border:1.5px solid #e2e8f0;border-radius:8px;background:#f8fafc;
+  font-size:11.5px;font-weight:700;cursor:pointer;color:#64748b;text-align:center}
+.kb-tab-btn.active{background:#1e293b;color:#fff;border-color:#1e293b}
+</style>
+
+<div class="kb-tabs">
+  <div class="kb-tab-btn active"  onclick="kbTab('sit',this)">현재 상황</div>
+  <div class="kb-tab-btn" onclick="kbTab('ch',this)">채널·리포트</div>
+  <div class="kb-tab-btn" onclick="kbTab('str',this)">투자 전략</div>
+</div>
+
+
+<div id="kb-tab-sit" class="kb-tab-content" style="display:block">
+  
+
+  <!-- 점수·의견 -->
+  <div style="display:flex;gap:8px;margin-bottom:10px">
+    <div style="flex:1;background:#f8fafc;border:1.5px solid #dc262644;border-radius:10px;
+         padding:10px 6px;text-align:center">
+      <div style="font-size:9.5px;color:#94a3b8;margin-bottom:3px">펀더멘털</div>
+      <div style="font-size:24px;font-weight:900;color:#dc2626">A+</div>
+      <div style="font-size:11px;color:#64748b">83점</div>
+    </div>
+    <div style="flex:2;background:#f8fafc;border:1.5px solid #05966944;border-radius:10px;padding:10px 12px">
+      <div style="font-size:9.5px;color:#94a3b8;margin-bottom:3px">투자 의견 · 누적 4회 분석</div>
+      <div style="font-size:18px;font-weight:900;color:#059669">매수</div>
+      <div style="font-size:10.5px;color:#64748b;margin-top:5px;line-height:1.5">
+        RFHIC 최근 실적 (2026년 2분기(3개월, DART)) 기준 매출 515억원, 영업이익 112억원 (이익률 21.7%). 강점: 고마진 구조 — 영업이익률 21.7% (2026년 2분기(3개월, DART)) ...
+      </div>
+    </div>
+  </div>
+
+  <!-- 의견 추이 -->
+  <div style="margin-bottom:10px">
+    <div style="font-size:11px;font-weight:700;color:#475569;margin-bottom:4px">📈 의견 추이 (최근 4회)</div>
+    <div style="display:flex;gap:4px;align-items:flex-start;margin:6px 0"><div style="text-align:center;flex:1"><div style="font-size:9px;color:#94a3b8;margin-bottom:2px">09-20</div><div style="background:#05966922;border:1.5px solid #059669;border-radius:6px;padding:3px 2px;font-size:10px;font-weight:800;color:#059669">매수</div><div style="font-size:9px;color:#64748b;margin-top:2px">84점</div></div><div style="text-align:center;flex:1"><div style="font-size:9px;color:#94a3b8;margin-bottom:2px">09-25</div><div style="background:#05966922;border:1.5px solid #059669;border-radius:6px;padding:3px 2px;font-size:10px;font-weight:800;color:#059669">매수</div><div style="font-size:9px;color:#64748b;margin-top:2px">83점</div></div><div style="text-align:center;flex:1"><div style="font-size:9px;color:#94a3b8;margin-bottom:2px">09-26</div><div style="background:#05966922;border:1.5px solid #059669;border-radius:6px;padding:3px 2px;font-size:10px;font-weight:800;color:#059669">매수</div><div style="font-size:9px;color:#64748b;margin-top:2px">83점</div></div><div style="text-align:center;flex:1"><div style="font-size:9px;color:#94a3b8;margin-bottom:2px">10-02</div><div style="background:#05966922;border:1.5px solid #059669;border-radius:6px;padding:3px 2px;font-size:10px;font-weight:800;color:#059669">매수</div><div style="font-size:9px;color:#64748b;margin-top:2px">83점</div></div></div>
+  </div>
+
+  <!-- 현재 투자 포인트 -->
+  <div style="margin-bottom:9px">
+    <div style="font-size:11px;font-weight:700;color:#059669;margin-bottom:4px">✅ 현재 핵심 강점</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#059669;margin-right:4px">✅</span>AI 데이터센터 확대로 인한 고속 광모듈 및 레이저 등 광연결 부품의 수요 증가 기대</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#059669;margin-right:4px">✅</span>미국 연방정부의 중국산 광트랜시버 사용 금지 법안 발의에 따른 반사이익 및 수혜 가능성</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#059669;margin-right:4px">✅</span>삼성전자 네트워크 사업부의 글로벌 경쟁력 강화로 인한 국내 무선장비 협력사들의 동반 성장 전망</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#059669;margin-right:4px">✅</span>2026년 2분기 기준 매출액과 영업이익이 전분기 대비 각각 19.6%, 44.6% 증가하며 실적 성장세 기록</div>
+  </div>
+
+  <!-- 현재 리스크 -->
+  <div style="margin-bottom:9px">
+    <div style="font-size:11px;font-weight:700;color:#dc2626;margin-bottom:4px">⚠️ 주요 리스크</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#dc2626;margin-right:4px">⚠️</span>삼성자산운용의 지분 3.13%p 감소 및 최대주주 일가의 지분 0.63%p 감소 등 주요 주주의 지분 매각</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#dc2626;margin-right:4px">⚠️</span>자기주식 처분 결정 공시에 따른 단기적 수급 영향 가능성</div>
+  </div>
+
+  <!-- 경쟁 해자 -->
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;padding:9px 11px;margin-bottom:9px">
+    <div style="font-size:11px;font-weight:700;color:#0f766e;margin-bottom:4px">🏰 경쟁 우위 (해자)</div>
+    <div style="font-size:11px;color:#1e293b;line-height:1.6">글로벌 통신 장비 시장 재편 과정에서 삼성전자의 위상 강화와 함께 국내 무선장비 공급망 내 핵심적인 위치를 점하고 있습니다. AI 데이터센터용 차세대 광통신 부품 수요에 대응할 수 있는 기술적 기대감이 형성되어 있습니다.</div>
+  </div>
+
+  <!-- 누적 포인트 -->
+  <div style="margin-bottom:9px">
+    <div style="font-size:11px;font-weight:700;color:#2563eb;margin-bottom:4px">📌 누적 투자 포인트</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>자기주식처분결정 공시가 있었다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>AI 데이터센터 확대로 인한 고속 광모듈 및 레이저 등 광연결 부품의 수요 증가 기대</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>미국 연방정부의 중국산 광트랜시버 사용 금지 법안 발의에 따른 반사이익 및 수혜 가능성</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>삼성전자 네트워크 사업부의 글로벌 경쟁력 강화로 인한 국내 무선장비 협력사들의 동반 성장 전망</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#2563eb;margin-right:4px">📌</span>2026년 2분기 기준 매출액과 영업이익이 전분기 대비 각각 19.6%, 44.6% 증가하며 실적 성장세 기록</div>
+  </div>
+
+  <!-- 최근 뉴스·공시 -->
+  <div style="margin-bottom:6px">
+    <div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:4px">📰 최근 뉴스</div>
+    <div style="font-size:9.5px;color:#94a3b8;padding:4px 0 2px">누적 36건 · 2026-08-05 ~ 2026-10-02</div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · TopStarNews</span><br><a href="https://news.google.com/rss/articles/CBMickFVX3lxTFBCSTFvU2hrdVd3cmoxY3N2cHk4b3BFVF9wQXg0QkhQU1RaeHViMDlGOGJZNnVaTWVUQVQ2LW5SQ3BDYzVZZ3Z4TWxCV3Jncm5WZ0lwaEFfQjBkWXNVS3cwaGlGemgxb1dOc2p5SFJYQXdxZw?oc=5" style="color:#334155;text-decoration:none">RFHIC 주가, 10월 2일 애프터마켓 62,000원 3.33% 상승 - TopStarNews</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 뉴스1</span><br><a href="https://n.news.naver.com/mnews/article/421/0009205891" style="color:#334155;text-decoration:none">美 훈풍·AI데이터센터 기대에 통신장비주 강세…머큐리 &#x27;上&#x27;[핫종목]</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 연합뉴스</span><br><a href="https://n.news.naver.com/mnews/article/001/0016354103" style="color:#334155;text-decoration:none">[특징주] 광통신주, 美광통신 강세 등에 줄상승(종합)</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-10-02 · 매일경제</span><br><a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTFBjdU9ELXczeExUQ1pvQ0FpMzREYVd2T05zcU0ydW5qQjI4eTE3R1V4NlUxN1c1dG5SVW10N2l4aklodVJHalE?oc=5" style="color:#334155;text-decoration:none">특징주, RFHIC-광통신(광케이블/광섬유 등) 테마 상승세에 2.76% ↑ - 매일경제</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-09-30 · 매일경제 마켓</span><br><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBSRmh4VjhYWkdfV2s1QzNUZ241NXUtMjFjb1hDQXNRM2NBZVF3dTRKanZMZVMwZzN6OXFtdDJqSlNHeW51dDFIbENQdTBwVkNYd2c?oc=5" style="color:#334155;text-decoration:none">특징주, RFHIC-광통신(광케이블/광섬유 등) 테마 상승세에 2.53% ↑ - 매일경제 마켓</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-09-29 · 디지털투데이</span><br><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5fYS01VDJNUmdhNHlUT1d0UXVkbjB2WWgyZFpiTk40Wmp6UDJKalpnWUd3aGNsSmhGb3IyTGJBaHpPNk91Vm55NzJYdFVCRzAyd09fbEl4R2tnZ2lXVHJlNzNtYi1STDU1UW1JSDBocWJoMjRFeWFPd3Jkbw?oc=5" style="color:#334155;text-decoration:none">RFHIC, 주주 삼성자산운용 측 주식등 보유 비율 3.13%p 감소 - 디지털투데이</a></div>
+  </div>
+  <div>
+    <div style="font-size:11px;font-weight:700;color:#64748b;margin-bottom:4px">📑 최근 공시</div>
+    <div style="font-size:9.5px;color:#94a3b8;padding:4px 0 2px">누적 30건 · 2025-10-01 ~ 2026-09-29</div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-09-29 · 삼성자산운용</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260929000533" style="color:#334155;text-decoration:none">주식등의대량보유상황보고서(약식)</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-09-28 · 조덕수</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260928000227" style="color:#334155;text-decoration:none">주식등의대량보유상황보고서(일반)</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-09-08 · MORGANSTANLEY&amp;COINTLPLC</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260908000339" style="color:#334155;text-decoration:none">주식등의대량보유상황보고서(약식)</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-08-14 · RFHIC</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814001022" style="color:#334155;text-decoration:none">반기보고서 (2026.06)</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-08-11 · RFHIC</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260811000401" style="color:#334155;text-decoration:none">주요사항보고서(자기주식처분결정)</a></div><div style="font-size:10.5px;padding:3px 0;border-bottom:1px solid #f1f5f9;color:#475569"><span style="color:#94a3b8">2026-07-21 · MORGANSTANLEY&amp;COINTLPLC</span><br><a href="https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260721001006" style="color:#334155;text-decoration:none">주식등의대량보유상황보고서(약식)</a></div>
+  </div>
+</div>
+
+<div id="kb-tab-ch" class="kb-tab-content" style="display:none">
+
+  <!-- 컨센서스 -->
+  <div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #86efac;border-left:4px solid #16a34a;border-radius:7px;padding:9px 12px;margin-bottom:10px"><div style="font-size:10px;color:#166534;font-weight:700;margin-bottom:2px">📊 컨센서스 목표가 (0개 증권사)</div><div style="font-size:14px;font-weight:800;color:#15803d">101,000원</div><div style="font-size:10px;color:#166534;margin-top:2px">투자의견: <b>매수 (4.00/5)</b></div></div>
+
+  <!-- Telegram -->
+  <div style="background:#eff6ff;border-left:3px solid #2563eb;border-radius:6px;
+       padding:8px 10px;margin-bottom:10px">
+    <div style="font-size:11px;font-weight:800;color:#1d4ed8">
+      💬 Telegram 16건 · PDF 0건
+    </div>
+  </div>
+  <div style="font-size:11px;font-weight:700;color:#475569;margin:0 0 5px">💬 채널 메시지 (12건)</div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-09-21</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[시장] **통신장비(Overweight): 삼성전자 위상 강화는 국내 무선장비업체에 대형 호재**
+
+[산업분석] 통신장비 - 삼성전자 위상 강화는 국내 무선장비업체에 대형 호재
+
+[핵심 투자배경]
+글로벌 시스템인테</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-10-01</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[시장] **통신서비스/장비(Overweight): 통신 산업 선순환 구조가 감지된다**
+
+[종목 분석]
+
+이 문서는 하나증권의 통신 산업 주간 리포트(2026.10.02)로, 특정 종목에 대한 투자의견과 목표주가가</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-09-20</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[시장] **Hana Guru Eye**
+
+제공하신 문서는 하나증권의 &quot;Hana Guru Eye&quot; 일일 시장 리뷰 및 테마 분석 자료로, 특정 종목에 대한 상세한 투자의견, 목표주가, 실적 전망 등의 정보가 담겨있지</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-09-18</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[시장] **국내 투자유망 포트폴리오**
+
+# 하나증권 단기·중장기 투자유망종목 요약
+
+[단기 투자유망종목]
+
+2026.09.21 기준으로 편입된 10개 종목의 주요 내용:
+
+**SK하이닉스 (000660.KS) |</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">서화백의 AI놀이🚀</span><span style="font-size:9.5px;color:#94a3b8">2026-09-18</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">🔥급등(+15% 이상) 감지! RFHIC
+💰 현재가: 61,500원
+📊 전일대비: +15.17% (장중: +11.82%)
+🏢 시총: 1조 6344억
+
+🖌 서화백의그림놀이
+✉️ https://t.me/easobi
+
+🖌</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">[미래에셋증권 시황] 김석환, 김주연</span><span style="font-size:9.5px;color:#94a3b8">2026-09-18</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">마켓 뷰 (9월 18일)
+▶️ Summary: 다시, AI 데이터센터
+-코스피 6,863.27(+144.5p, +2.15%), 코스닥 829.33(+7.15p, +0.90%) 
+- 외국인, 기관 매수세로 상승 출발.</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">AWAKE - 마켓 브리핑</span><span style="font-size:9.5px;color:#94a3b8">2026-09-18</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">#통신장비/6G
+[+22.9%] 우리로
+[ +8.7%] 쏠리드
+[ +8.6%] RFHIC
+[ +7.8%] 대한광통신
+[ +6.1%] 머큐리
+[ +5.9%] 코위버
+[ +5.3%] 에치에프알
+.....
+
+2026-09</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">파하의 아카이빙 노트</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">26.09.17.(목) #고가정리 #수급
+
+대금 20일 뉴페이스/경신 (대금 500억+/ 123개)
+*5천억 이상
+
+New
+(엔진) 한화엔진
+(방산) 한화시스템
+(우주) 스피어 아주IB투자 비츠로테크 에이치브이엠 센</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">주식 리서치 모음(에틴)😍</span><span style="font-size:9.5px;color:#94a3b8">2026-09-17</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">📊 **📊 RFHIC 알람 — 09/17 10:00**
+53,600  ▲+1.71%
+등급: B(63점) | 중립 관망
+
+👉 [**🌐 실시간 모바일 리포트 바로보기**](https://etin94-prog.github</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">Issue Tracker - 언급량 </span><span style="font-size:9.5px;color:#94a3b8">2026-09-16</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">🔥 **#언급량급증_종목** : **지엔씨에너지**
+(중략)
+...월 전 0.36%)
+KOSDAQ150: 5.90조원 / 2.23% (1주일 전 2.08%, 1개월 전 2.31%)
+
+(신용잔고비율 ↑) SK오션플랜트</div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">companyreport</span><span style="font-size:9.5px;color:#94a3b8">2026-09-15</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">[시장] **Hana Guru Eye**
+
+[오이솔루션] (138080.KQ) | 매수 추천 | 현재가 미기재원 | 목표주가 미기재원
+
+[핵심 투자포인트]
+- 미국에 이어 국내에서도 2027년 중 주파수 경매 추진 </div></div><div style="padding:6px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between;margin-bottom:2px"><span style="font-size:9.5px;color:#64748b">소중한추억.</span><span style="font-size:9.5px;color:#94a3b8">2026-09-18</span></div><div style="font-size:11.5px;color:#334155;line-height:1.5">**[통신 서비스/장비 산업]**
+제목: 가진 자가 점차 유리한 게임으로
+작성자: 김홍식 애널리스트 (하나증권)
+
+**[통신장비 수급 개선]**
+· 연말로 갈수록 주파수 경매 및 장비 발주 기대감으로 인해 통신장비주</div></div>
+
+  <!-- 애널리스트 리포트 -->
+  <div style="background:#f0fdf4;border-left:3px solid #059669;border-radius:6px;
+       padding:8px 10px;margin:12px 0 8px">
+    <div style="font-size:11px;font-weight:800;color:#15803d">
+      📊 애널리스트 리포트 12건
+    </div>
+  </div>
+  <div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-09-16</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">쇼티지 발생 유력, 높은 Multiple 형성될 것</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-09-02</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">곧 2차 급등할 가능성이 높습니다</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-07-28</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">다시 전고점을 향해</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-07-23</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">호재 나올 텐데 주가는 급락, 정답은 매수</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-06-09</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">시가총액으로 보면 아직도 갈 길이 멉니다</div></div><div style="padding:5px 0;border-bottom:1px solid #f1f5f9"><div style="display:flex;justify-content:space-between"><span style="font-size:10px;color:#2563eb;font-weight:700"></span><span style="font-size:9.5px;color:#94a3b8">2026-06-05</span></div><div style="font-size:12px;font-weight:600;color:#1e293b">업데이트: 주가는 쉬었지만 펀더멘털은 여전히 좋습니다</div></div>
+
+  <!-- 거래원 + 프로그램 매매 -->
+  
+  
+
+  <!-- 누적 리스크 -->
+  <div style="margin-top:12px">
+    <div style="font-size:11px;font-weight:700;color:#7c3aed;margin-bottom:4px">🔍 누적 리스크 목록</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#7c3aed;margin-right:4px">🔍</span>하나증권 리포트에 호재가 나올 텐데 주가는 급락했다는 표현이 있다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#7c3aed;margin-right:4px">🔍</span>주식등의대량보유상황보고서(약식)가 여러 번 공시됐다.</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#7c3aed;margin-right:4px">🔍</span>삼성자산운용의 지분 3.13%p 감소 및 최대주주 일가의 지분 0.63%p 감소 등 주요 주주의 지분 매각</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#7c3aed;margin-right:4px">🔍</span>자기주식 처분 결정 공시에 따른 단기적 수급 영향 가능성</div>
+  </div>
+</div>
+
+<div id="kb-tab-str" class="kb-tab-content" style="display:none">
+
+  <!-- 종합 판정 -->
+  <div style="background:#f0fdf4;border:2px solid #05966944;border-radius:11px;
+       padding:11px 14px;margin-bottom:11px;display:flex;justify-content:space-between;align-items:center">
+    <div style="font-size:12.5px;font-weight:800;color:#1e293b">종합 판정</div>
+    <div style="font-size:17px;font-weight:900;color:#059669">매수</div>
+  </div>
+
+  <div style="background:#eff6ff;border:1.5px solid #2563eb44;border-radius:9px;padding:10px 12px;margin-bottom:7px"><div style="font-size:10px;color:#2563eb;font-weight:800;margin-bottom:3px">단기 전략 (1~4주)</div><div style="font-size:12.5px;font-weight:700;color:#1e293b;line-height:1.5">RFHIC 최근 실적 (2026년 2분기(3개월, DART)) 기준 매출 515억원, 영업이익 112억원 (...</div></div>
+  <div style="background:#f5f3ff;border:1.5px solid #7c3aed44;border-radius:9px;padding:10px 12px;margin-bottom:7px"><div style="font-size:10px;color:#7c3aed;font-weight:800;margin-bottom:3px">중기 전략 (1~3개월)</div><div style="font-size:12.5px;font-weight:700;color:#1e293b;line-height:1.5">목표주가 도달 시 일부 익절 / 홀딩</div></div>
+  <div style="background:#f0fdf4;border:1.5px solid #05966944;border-radius:9px;padding:10px 12px;margin-bottom:7px"><div style="font-size:10px;color:#059669;font-weight:800;margin-bottom:3px">장기 전략 (6개월~)</div><div style="font-size:12.5px;font-weight:700;color:#1e293b;line-height:1.5">펀더멘털 개선 사이클 — 중장기 홀딩 유리</div></div>
+
+  <!-- 다음 체크포인트 -->
+  <div style="margin-top:10px;margin-bottom:10px">
+    <div style="font-size:11px;font-weight:700;color:#0891b2;margin-bottom:4px">📋 다음 체크포인트</div>
+    <div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#0891b2;margin-right:4px">📋</span>미국 내 중국산 광통신 부품 규제 법안의 최종 통과 여부 및 추가 규제 가능성</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#0891b2;margin-right:4px">📋</span>마이크론 등 글로벌 반도체 기업의 설비투자(CapEx) 확대가 실제 부품 수주로 이어지는지 확인</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#0891b2;margin-right:4px">📋</span>삼성전자 네트워크 사업부의 글로벌 시장 점유율 변화 및 추가 수주 소식</div><div style="font-size:11.5px;padding:3px 0;color:#1e293b"><span style="color:#0891b2;margin-right:4px">📋</span>영업현금흐름의 지속적인 개선 여부와 추가적인 지분 변동 공시</div>
+  </div>
+
+  <!-- 분석 이력 -->
+  <div>
+    <div style="font-size:11px;font-weight:700;color:#475569;margin-bottom:5px">📊 분석 이력 (4회)</div>
+    <div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:11px"><tr style="background:#f1f5f9"><th style="padding:4px 5px;text-align:left">날짜</th><th>의견</th><th>점수</th><th></th><th>변경 사유</th></tr><tr><td style="color:#64748b;font-size:10.5px">2026-10-02</td><td style="color:#059669;font-weight:700;font-size:11px">매수</td><td style="font-size:11px">83</td><td style="color:#f59e0b;font-size:11px"></td><td style="font-size:10px;color:#94a3b8"></td></tr><tr><td style="color:#64748b;font-size:10.5px">2026-09-26</td><td style="color:#059669;font-weight:700;font-size:11px">매수</td><td style="font-size:11px">83</td><td style="color:#f59e0b;font-size:11px"></td><td style="font-size:10px;color:#94a3b8"></td></tr><tr><td style="color:#64748b;font-size:10.5px">2026-09-25</td><td style="color:#059669;font-weight:700;font-size:11px">매수</td><td style="font-size:11px">83</td><td style="color:#f59e0b;font-size:11px"></td><td style="font-size:10px;color:#94a3b8"></td></tr><tr><td style="color:#64748b;font-size:10.5px">2026-09-20</td><td style="color:#059669;font-weight:700;font-size:11px">매수</td><td style="font-size:11px">84</td><td style="color:#f59e0b;font-size:11px"></td><td style="font-size:10px;color:#94a3b8"></td></tr></table></div>
+  </div>
+</div>
+
+<script>
+function kbTab(id,btn){
+  document.querySelectorAll('.kb-tab-content').forEach(function(el){el.style.display='none'});
+  document.querySelectorAll('.kb-tab-btn').forEach(function(b){b.classList.remove('active')});
+  document.getElementById('kb-tab-'+id).style.display='block';
+  btn.classList.add('active');
+}
+</script>
+
+<div class="pfoot">
+  <span>RFHIC(218410) 배경 지식 & 투자 전략</span>
+  <span>Context Page</span>
+</div>
+</section>
+<section class="page" id="pg3">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 3/7</div>
+  <h2>재무제표 핵심</h2>
+</div><span class="badge" style="background:#05966922;border-color:#059669;color:#059669">억원 기준</span></div>
+
+<div style="font-size:11.5px;color:#64748b;margin-bottom:4px">📈 일봉 캔들차트 (최근 40일)</div><svg viewBox="0 0 340 160" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:160px;background:#f8fafc;border-radius:8px"><line x1="4.2" y1="46.0" x2="4.2" y2="85.8" stroke="#1d4ed8" stroke-width="1"/><rect x="1.7" y="47.2" width="5.1" height="31.7" fill="#1d4ed8"/><rect x="1.7" y="141.2" width="5.1" height="16.8" fill="#1d4ed8" opacity="0.4"/><line x1="12.8" y1="80.0" x2="12.8" y2="102.2" stroke="#1d4ed8" stroke-width="1"/><rect x="10.2" y="88.6" width="5.1" height="6.9" fill="#1d4ed8"/><rect x="10.2" y="151.3" width="5.1" height="6.7" fill="#1d4ed8" opacity="0.4"/><line x1="21.2" y1="78.9" x2="21.2" y2="109.4" stroke="#1d4ed8" stroke-width="1"/><rect x="18.7" y="87.5" width="5.1" height="13.5" fill="#1d4ed8"/><rect x="18.7" y="150.9" width="5.1" height="7.1" fill="#1d4ed8" opacity="0.4"/><line x1="29.8" y1="65.0" x2="29.8" y2="91.5" stroke="#dc2626" stroke-width="1"/><rect x="27.2" y="66.8" width="5.1" height="15.6" fill="#dc2626"/><rect x="27.2" y="147.3" width="5.1" height="10.7" fill="#dc2626" opacity="0.4"/><line x1="38.2" y1="72.5" x2="38.2" y2="87.5" stroke="#1d4ed8" stroke-width="1"/><rect x="35.7" y="74.2" width="5.1" height="5.8" fill="#1d4ed8"/><rect x="35.7" y="148.5" width="5.1" height="9.5" fill="#1d4ed8" opacity="0.4"/><line x1="46.8" y1="68.5" x2="46.8" y2="85.8" stroke="#dc2626" stroke-width="1"/><rect x="44.2" y="69.1" width="5.1" height="4.6" fill="#dc2626"/><rect x="44.2" y="152.4" width="5.1" height="5.6" fill="#dc2626" opacity="0.4"/><line x1="55.2" y1="57.5" x2="55.2" y2="73.7" stroke="#1d4ed8" stroke-width="1"/><rect x="52.7" y="57.5" width="5.1" height="9.8" fill="#1d4ed8"/><rect x="52.7" y="151.6" width="5.1" height="6.4" fill="#1d4ed8" opacity="0.4"/><line x1="63.8" y1="70.8" x2="63.8" y2="84.0" stroke="#1d4ed8" stroke-width="1"/><rect x="61.2" y="70.8" width="5.1" height="2.9" fill="#1d4ed8"/><rect x="61.2" y="154.1" width="5.1" height="3.9" fill="#1d4ed8" opacity="0.4"/><line x1="72.2" y1="62.1" x2="72.2" y2="92.1" stroke="#1d4ed8" stroke-width="1"/><rect x="69.7" y="73.7" width="5.1" height="12.7" fill="#1d4ed8"/><rect x="69.7" y="153.1" width="5.1" height="4.9" fill="#1d4ed8" opacity="0.4"/><line x1="80.8" y1="77.7" x2="80.8" y2="103.6" stroke="#dc2626" stroke-width="1"/><rect x="78.2" y="94.7" width="5.1" height="8.1" fill="#dc2626"/><rect x="78.2" y="153.7" width="5.1" height="4.3" fill="#dc2626" opacity="0.4"/><line x1="89.2" y1="88.1" x2="89.2" y2="97.3" stroke="#1d4ed8" stroke-width="1"/><rect x="86.7" y="89.8" width="5.1" height="1.7" fill="#1d4ed8"/><rect x="86.7" y="154.4" width="5.1" height="3.6" fill="#1d4ed8" opacity="0.4"/><line x1="97.8" y1="98.4" x2="97.8" y2="114.3" stroke="#1d4ed8" stroke-width="1"/><rect x="95.2" y="99.0" width="5.1" height="9.5" fill="#1d4ed8"/><rect x="95.2" y="154.6" width="5.1" height="3.4" fill="#1d4ed8" opacity="0.4"/><line x1="106.2" y1="103.3" x2="106.2" y2="116.0" stroke="#1d4ed8" stroke-width="1"/><rect x="103.7" y="108.5" width="5.1" height="5.5" fill="#1d4ed8"/><rect x="103.7" y="154.8" width="5.1" height="3.2" fill="#1d4ed8" opacity="0.4"/><line x1="114.8" y1="109.7" x2="114.8" y2="133.0" stroke="#dc2626" stroke-width="1"/><rect x="112.2" y="109.7" width="5.1" height="12.4" fill="#dc2626"/><rect x="112.2" y="154.7" width="5.1" height="3.3" fill="#dc2626" opacity="0.4"/><line x1="123.2" y1="102.2" x2="123.2" y2="112.3" stroke="#dc2626" stroke-width="1"/><rect x="120.7" y="106.5" width="5.1" height="1.5" fill="#dc2626"/><rect x="120.7" y="154.6" width="5.1" height="3.4" fill="#dc2626" opacity="0.4"/><line x1="131.8" y1="94.7" x2="131.8" y2="109.4" stroke="#dc2626" stroke-width="1"/><rect x="129.2" y="99.0" width="5.1" height="2.9" fill="#dc2626"/><rect x="129.2" y="154.7" width="5.1" height="3.3" fill="#dc2626" opacity="0.4"/><line x1="140.2" y1="90.9" x2="140.2" y2="112.6" stroke="#1d4ed8" stroke-width="1"/><rect x="137.7" y="95.6" width="5.1" height="15.0" fill="#1d4ed8"/><rect x="137.7" y="154.3" width="5.1" height="3.7" fill="#1d4ed8" opacity="0.4"/><line x1="148.8" y1="107.9" x2="148.8" y2="127.2" stroke="#dc2626" stroke-width="1"/><rect x="146.2" y="110.0" width="5.1" height="9.2" fill="#dc2626"/><rect x="146.2" y="155.5" width="5.1" height="2.5" fill="#dc2626" opacity="0.4"/><line x1="157.2" y1="112.6" x2="157.2" y2="125.8" stroke="#1d4ed8" stroke-width="1"/><rect x="154.7" y="113.4" width="5.1" height="7.5" fill="#1d4ed8"/><rect x="154.7" y="154.4" width="5.1" height="3.6" fill="#1d4ed8" opacity="0.4"/><line x1="165.8" y1="96.4" x2="165.8" y2="123.5" stroke="#dc2626" stroke-width="1"/><rect x="163.2" y="106.5" width="5.1" height="12.4" fill="#dc2626"/><rect x="163.2" y="146.8" width="5.1" height="11.2" fill="#dc2626" opacity="0.4"/><line x1="174.2" y1="98.7" x2="174.2" y2="118.6" stroke="#1d4ed8" stroke-width="1"/><rect x="171.7" y="103.0" width="5.1" height="9.8" fill="#1d4ed8"/><rect x="171.7" y="153.0" width="5.1" height="5.0" fill="#1d4ed8" opacity="0.4"/><line x1="182.8" y1="100.7" x2="182.8" y2="112.6" stroke="#dc2626" stroke-width="1"/><rect x="180.2" y="101.9" width="5.1" height="6.6" fill="#dc2626"/><rect x="180.2" y="153.9" width="5.1" height="4.1" fill="#dc2626" opacity="0.4"/><line x1="191.2" y1="98.4" x2="191.2" y2="106.2" stroke="#1d4ed8" stroke-width="1"/><rect x="188.7" y="98.4" width="5.1" height="2.6" fill="#1d4ed8"/><rect x="188.7" y="153.5" width="5.1" height="4.5" fill="#1d4ed8" opacity="0.4"/><line x1="199.8" y1="93.3" x2="199.8" y2="107.1" stroke="#1d4ed8" stroke-width="1"/><rect x="197.2" y="103.3" width="5.1" height="3.7" fill="#1d4ed8"/><rect x="197.2" y="150.5" width="5.1" height="7.5" fill="#1d4ed8" opacity="0.4"/><line x1="208.2" y1="76.5" x2="208.2" y2="103.6" stroke="#dc2626" stroke-width="1"/><rect x="205.7" y="93.8" width="5.1" height="9.8" fill="#dc2626"/><rect x="205.7" y="147.1" width="5.1" height="10.9" fill="#dc2626" opacity="0.4"/><line x1="216.8" y1="84.0" x2="216.8" y2="101.0" stroke="#dc2626" stroke-width="1"/><rect x="214.2" y="84.0" width="5.1" height="13.5" fill="#dc2626"/><rect x="214.2" y="137.7" width="5.1" height="20.3" fill="#dc2626" opacity="0.4"/><line x1="225.2" y1="94.7" x2="225.2" y2="102.8" stroke="#1d4ed8" stroke-width="1"/><rect x="222.7" y="96.7" width="5.1" height="2.3" fill="#1d4ed8"/><rect x="222.7" y="151.0" width="5.1" height="7.0" fill="#1d4ed8" opacity="0.4"/><line x1="233.8" y1="86.3" x2="233.8" y2="112.3" stroke="#dc2626" stroke-width="1"/><rect x="231.2" y="100.5" width="5.1" height="8.4" fill="#dc2626"/><rect x="231.2" y="151.6" width="5.1" height="6.4" fill="#dc2626" opacity="0.4"/><line x1="242.2" y1="88.6" x2="242.2" y2="101.6" stroke="#dc2626" stroke-width="1"/><rect x="239.7" y="92.4" width="5.1" height="5.5" fill="#dc2626"/><rect x="239.7" y="154.4" width="5.1" height="3.6" fill="#dc2626" opacity="0.4"/><line x1="250.8" y1="68.5" x2="250.8" y2="85.2" stroke="#dc2626" stroke-width="1"/><rect x="248.2" y="80.0" width="5.1" height="1.5" fill="#dc2626"/><rect x="248.2" y="142.2" width="5.1" height="15.8" fill="#dc2626" opacity="0.4"/><line x1="259.2" y1="65.0" x2="259.2" y2="83.5" stroke="#dc2626" stroke-width="1"/><rect x="256.7" y="69.1" width="5.1" height="1.7" fill="#dc2626"/><rect x="256.7" y="149.1" width="5.1" height="8.9" fill="#dc2626" opacity="0.4"/><line x1="267.8" y1="17.8" x2="267.8" y2="65.0" stroke="#dc2626" stroke-width="1"/><rect x="265.2" y="27.0" width="5.1" height="36.3" fill="#dc2626"/><rect x="265.2" y="130.0" width="5.1" height="28.0" fill="#dc2626" opacity="0.4"/><line x1="276.2" y1="8.0" x2="276.2" y2="39.7" stroke="#1d4ed8" stroke-width="1"/><rect x="273.7" y="12.6" width="5.1" height="18.4" fill="#1d4ed8"/><rect x="273.7" y="140.8" width="5.1" height="17.2" fill="#1d4ed8" opacity="0.4"/><line x1="284.8" y1="29.3" x2="284.8" y2="45.4" stroke="#1d4ed8" stroke-width="1"/><rect x="282.2" y="29.3" width="5.1" height="12.7" fill="#1d4ed8"/><rect x="282.2" y="149.1" width="5.1" height="8.9" fill="#1d4ed8" opacity="0.4"/><line x1="293.2" y1="35.1" x2="293.2" y2="46.0" stroke="#1d4ed8" stroke-width="1"/><rect x="290.7" y="39.7" width="5.1" height="1.7" fill="#1d4ed8"/><rect x="290.7" y="153.3" width="5.1" height="4.7" fill="#1d4ed8" opacity="0.4"/><line x1="301.8" y1="36.8" x2="301.8" y2="57.0" stroke="#1d4ed8" stroke-width="1"/><rect x="299.2" y="42.0" width="5.1" height="13.2" fill="#1d4ed8"/><rect x="299.2" y="153.7" width="5.1" height="4.3" fill="#1d4ed8" opacity="0.4"/><line x1="310.2" y1="42.0" x2="310.2" y2="58.7" stroke="#dc2626" stroke-width="1"/><rect x="307.7" y="42.6" width="5.1" height="13.8" fill="#dc2626"/><rect x="307.7" y="153.9" width="5.1" height="4.1" fill="#dc2626" opacity="0.4"/><line x1="318.8" y1="36.2" x2="318.8" y2="44.9" stroke="#1d4ed8" stroke-width="1"/><rect x="316.2" y="38.5" width="5.1" height="5.2" fill="#1d4ed8"/><rect x="316.2" y="154.2" width="5.1" height="3.8" fill="#1d4ed8" opacity="0.4"/><line x1="327.2" y1="33.9" x2="327.2" y2="50.1" stroke="#dc2626" stroke-width="1"/><rect x="324.7" y="33.9" width="5.1" height="12.1" fill="#dc2626"/><rect x="324.7" y="153.8" width="5.1" height="4.2" fill="#dc2626" opacity="0.4"/><line x1="335.8" y1="16.1" x2="335.8" y2="28.7" stroke="#dc2626" stroke-width="1"/><rect x="333.2" y="21.8" width="5.1" height="2.9" fill="#dc2626"/><rect x="333.2" y="146.3" width="5.1" height="11.7" fill="#dc2626" opacity="0.4"/><line x1="0" y1="21.8" x2="340" y2="21.8" stroke="#dc2626" stroke-width="0.6" stroke-dasharray="3,3" opacity="0.8"/><text x="336" y="18.8" text-anchor="end" font-size="10" fill="#dc2626" font-weight="700">62,200 (+18.9%)</text></svg>
+<div style="margin-top:12px"><div style="font-size:11px;font-weight:700;color:#2563eb;margin:10px 0 4px">연간 실적</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px"><thead><tr style="background:#f1f5f9"><th style="text-align:left;padding:5px 6px">항목(억)</th><th>2024.12</th><th>2025.12</th></tr></thead><tbody><tr><td style='font-weight:600;color:#475569'>매출액</td><td>-</td><td>1,858</td></tr><tr><td style='font-weight:600;color:#475569'>영업이익</td><td>15</td><td style="color:#dc2626;font-weight:700">309</td></tr><tr><td style='font-weight:600;color:#475569'>순이익</td><td>0</td><td>-</td></tr><tr><td style='font-weight:600;color:#475569'>이익률</td><td>-</td><td>16.6%</td></tr></tbody></table></div><div style="font-size:10px;color:#94a3b8;margin-top:3px;line-height:1.5">연간 = 사업보고서 12개월</div><div style="font-size:11px;font-weight:700;color:#2563eb;margin:10px 0 4px">분기 실적 (3개월)</div><div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:12px"><thead><tr style="background:#f1f5f9"><th style="text-align:left;padding:5px 6px">항목(억)</th><th>2025.03</th><th>2025.06</th><th>2025.09</th><th>2025.12</th><th>2026.03</th><th>2026.06</th></tr></thead><tbody><tr><td style='font-weight:600;color:#475569'>매출액</td><td>-</td><td>-</td><td>-</td><td>688</td><td style="color:#1d4ed8;font-weight:700">431</td><td style="color:#dc2626;font-weight:700">515</td></tr><tr><td style='font-weight:600;color:#475569'>영업이익</td><td>37</td><td style="color:#dc2626;font-weight:700">83</td><td style="color:#1d4ed8;font-weight:700">74</td><td style="color:#dc2626;font-weight:700">115</td><td style="color:#1d4ed8;font-weight:700">77</td><td style="color:#dc2626;font-weight:700">112</td></tr><tr><td style='font-weight:600;color:#475569'>순이익</td><td>43</td><td style="color:#dc2626;font-weight:700">84</td><td style="color:#1d4ed8;font-weight:700">71</td><td>-</td><td>-</td><td>-</td></tr><tr><td style='font-weight:600;color:#475569'>이익률</td><td>-</td><td>-</td><td>-</td><td>16.7%</td><td style="color:#dc2626;font-weight:700">18.0%</td><td style="color:#dc2626;font-weight:700">21.7%</td></tr></tbody></table></div><div style="font-size:10px;color:#94a3b8;margin-top:3px;line-height:1.5">분기 값은 모두 3개월 단독 · 원본 2025.03 DART · 2025.06 DART · 2025.09 DART · 2025.12 네이버 · 2026.03 DART · 2026.06 DART</div></div>
+<div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;margin-top:10px"><div style="font-size:12px;font-weight:800;color:#ea580c;margin-bottom:7px">📊 실적 투자 해석</div><div style="font-size:12.5px;padding:4px 0;line-height:1.6">• 매출액 <b style="background:#fef9c3;padding:0 2px;border-radius:3px">515억</b></div><div style="font-size:12.5px;padding:4px 0;line-height:1.6">• 영업이익률 <b style="background:#fef9c3;padding:0 2px;border-radius:3px">22%</b> (2026년 2분기(3개월, DART))</div><div style="font-size:12.5px;padding:4px 0;line-height:1.6">• 영업이익 (2분기 전년 동기) <span style="color:#dc2626;font-weight:700">+35%</span> — 이익 개선 추세 확인</div><div style="font-size:12.5px;color:#475569;margin-top:6px;padding-top:6px;border-top:1px solid #fef08a">2026년 2분기 매출액은 515억 원, 영업이익은 112억 원을 기록하며 전분기 대비 각각 19.6%, 44.6% 증가하는 가파른 수익성 개선 흐름을 보였습니다.</div></div>
+
+
+<div class="note info" style="margin-top:10px">
+  <div class="nt-t">📉 QoQ 분기별 흐름 (전전전기~당기)</div>
+  <div style='overflow-x:auto'><table style='width:100%;border-collapse:collapse;font-size:12.5px'><thead><tr style='background:#f1f5f9'><th style='padding:5px 6px;text-align:left'>항목(억, 3개월)</th><th style='padding:5px 6px;text-align:right;font-size:11px'>2025.09</th><th style='padding:5px 6px;text-align:right;font-size:11px'>2025.12</th><th style='padding:5px 6px;text-align:right;font-size:11px'>2026.03</th><th style='padding:5px 6px;text-align:right;font-size:11px'>2026.06</th><th style='padding:5px 6px;text-align:center'>QoQ</th></tr></thead><tbody><tr><td style='font-weight:700;font-size:12px'>매출</td><td style='text-align:right;font-size:11.5px'>-</td><td style='text-align:right;font-size:11.5px'>688</td><td style='text-align:right;font-size:11.5px'>431</td><td style='text-align:right;font-size:12px;font-weight:700'>515</td><td style='text-align:center;padding:4px 6px'><span style="color:#dc2626;font-size:11px">▲20%</span></td></tr><tr><td style='font-weight:700;font-size:12px'>영업이익</td><td style='text-align:right;font-size:11.5px'>74</td><td style='text-align:right;font-size:11.5px'>115</td><td style='text-align:right;font-size:11.5px'>77</td><td style='text-align:right;font-size:12px;font-weight:700'>112</td><td style='text-align:center;padding:4px 6px'><span style="color:#dc2626;font-size:11px">▲45%</span></td></tr><tr><td style='font-weight:700;font-size:12px'>순이익</td><td style='text-align:right;font-size:11.5px'>71</td><td style='text-align:right;font-size:11.5px'>-</td><td style='text-align:right;font-size:11.5px'>-</td><td style='text-align:right;font-size:12px;font-weight:700'>-</td><td style='text-align:center;padding:4px 6px'></td></tr></tbody></table></div><div style="font-size:11.5px;color:#334155;margin-top:6px">영업현금흐름(2026 반기 누적) <b>213억</b> · 같은 기간 매출 대비 22.5% · 전년 같은 기간 133억 (+60%)</div><div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:9px 12px;margin-top:8px;font-size:12.5px;line-height:1.7">• 영업이익 QoQ(Q2 vs Q1 2026) <b style='color:#dc2626'>+45%</b> 급증 — 이익 개선 사이클 가속</div>
+</div>
+<div class="pfoot">
+  <span>RFHIC(218410) 펀더멘털 리포트</span>
+  <span>Page 3 / 7</span>
+</div>
+</section>
+<section class="page" id="pg4">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 4/7</div>
+  <h2>뉴스 · 이벤트</h2>
+</div><span class="badge" style="background:#05966922;border-color:#059669;color:#059669">최신</span></div>
+
+<div class="note info"><div class="nt-t">📰 최신 뉴스 (11건)</div></div>
+<div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 연합뉴스</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/001/0016354103" style="color:#1e293b;text-decoration:none">[특징주] 광통신주, 美광통신 강세 등에 줄상승(종합)</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 뉴스1</div><div style="font-size:13px"><a href="https://n.news.naver.com/mnews/article/421/0009205891" style="color:#1e293b;text-decoration:none">美 훈풍·AI데이터센터 기대에 통신장비주 강세…머큐리 '上'[핫종목]</a></div><div style="font-size:12px;color:#6b7684">기사 본문 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · TopStarNews</div><div style="font-size:13px"><a href="https://news.google.com/rss/articles/CBMickFVX3lxTFBCSTFvU2hrdVd3cmoxY3N2cHk4b3BFVF9wQXg0QkhQU1RaeHViMDlGOGJZNnVaTWVUQVQ2LW5SQ3BDYzVZZ3Z4TWxCV3Jncm5WZ0lwaEFfQjBkWXNVS3cwaGlGemgxb1dOc2p5SFJYQXdxZw?oc=5" style="color:#1e293b;text-decoration:none">RFHIC 주가, 10월 2일 애프터마켓 62,000원 3.33% 상승 - TopStarNews</a></div><div style="font-size:12px;color:#6b7684">제목·요약만 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-10-02 · 매일경제</div><div style="font-size:13px"><a href="https://news.google.com/rss/articles/CBMiRkFVX3lxTFBjdU9ELXczeExUQ1pvQ0FpMzREYVd2T05zcU0ydW5qQjI4eTE3R1V4NlUxN1c1dG5SVW10N2l4aklodVJHalE?oc=5" style="color:#1e293b;text-decoration:none">특징주, RFHIC-광통신(광케이블/광섬유 등) 테마 상승세에 2.76% ↑ - 매일경제</a></div><div style="font-size:12px;color:#6b7684">제목·요약만 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-09-30 · 매일경제 마켓</div><div style="font-size:13px"><a href="https://news.google.com/rss/articles/CBMiUkFVX3lxTFBSRmh4VjhYWkdfV2s1QzNUZ241NXUtMjFjb1hDQXNRM2NBZVF3dTRKanZMZVMwZzN6OXFtdDJqSlNHeW51dDFIbENQdTBwVkNYd2c?oc=5" style="color:#1e293b;text-decoration:none">특징주, RFHIC-광통신(광케이블/광섬유 등) 테마 상승세에 2.53% ↑ - 매일경제 마켓</a></div><div style="font-size:12px;color:#6b7684">제목·요약만 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-09-29 · 디지털투데이</div><div style="font-size:13px"><a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE5fYS01VDJNUmdhNHlUT1d0UXVkbjB2WWgyZFpiTk40Wmp6UDJKalpnWUd3aGNsSmhGb3IyTGJBaHpPNk91Vm55NzJYdFVCRzAyd09fbEl4R2tnZ2lXVHJlNzNtYi1STDU1UW1JSDBocWJoMjRFeWFPd3Jkbw?oc=5" style="color:#1e293b;text-decoration:none">RFHIC, 주주 삼성자산운용 측 주식등 보유 비율 3.13%p 감소 - 디지털투데이</a></div><div style="font-size:12px;color:#6b7684">제목·요약만 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-09-28 · thecommoditiesnews.com</div><div style="font-size:13px"><a href="https://news.google.com/rss/articles/CBMid0FVX3lxTFBPNE1pQnZwMUlXLU9ieHdxX0FGaEdrc3lOUnFfN0Nadkx4ZWUwSWtKYVpLellzM2xDczJ2YnlvM0NFVHBmOEdTeG1meDI0eEthNHA2eUVzSnJTSjVISE11MXRFbi1ZNm40OTAyeDVLeFM0QTVNZURn?oc=5" style="color:#1e293b;text-decoration:none">하나증"RFHIC, 단기 투자유망 종목" - thecommoditiesnews.com</a></div><div style="font-size:12px;color:#6b7684">제목·요약만 확인</div></div></div><div class="bul"><i></i><div><div style="font-size:10.5px;color:#94a3b8">2026-09-28 · 데이터투자</div><div style="font-size:13px"><a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE5ENzdSMjRLcnUtamlteHk2N3AydjkxS3Q0aERQVHlWZ0tPMmhmMzdkQkl3ZnNPLXZNLTUxb1REUk9MWlhNZ2oyaC0xa1dDOHVWanUwbXR6VkdSbVhLQWxHUWxEUkY3RVdoTTRHdXRUMDNGS3c?oc=5" style="color:#1e293b;text-decoration:none">조덕수 등, RFHIC 지분 0.63%p 줄어 33.08%로 변동 - 데이터투자</a></div><div style="font-size:12px;color:#6b7684">제목·요약만 확인</div></div></div>
+<div class="note warn" style="margin-top:12px"><div class="nt-t">⚡ 주요 이벤트성 공시 — 투자 영향 설명</div></div>
+<div style="font-size:13px"><div style="background:#fff;border:1.5px solid #64748b44;border-left:3px solid #64748b;border-radius:10px;padding:12px 14px;margin-bottom:10px"><div style="font-size:11px;font-weight:800;color:#64748b;margin-bottom:4px">📌 기타 주요 이벤트 · 2026.03.13</div><div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:6px">임원ㆍ주요주주특정증권등소유상황보고서</div><div style="font-size:12px;color:#475569;line-height:1.5">💡 기업 지배구조·자본구조 변화. 세부 내용 확인 권장.</div></div><div style="background:#fff;border:1.5px solid #64748b44;border-left:3px solid #64748b;border-radius:10px;padding:12px 14px;margin-bottom:10px"><div style="font-size:11px;font-weight:800;color:#64748b;margin-bottom:4px">📌 기타 주요 이벤트 · 2026.03.13</div><div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:6px">임원ㆍ주요주주특정증권등소유상황보고서</div><div style="font-size:12px;color:#475569;line-height:1.5">💡 기업 지배구조·자본구조 변화. 세부 내용 확인 권장.</div></div><div style="background:#fff;border:1.5px solid #64748b44;border-left:3px solid #64748b;border-radius:10px;padding:12px 14px;margin-bottom:10px"><div style="font-size:11px;font-weight:800;color:#64748b;margin-bottom:4px">📌 기타 주요 이벤트 · 2026.03.13</div><div style="font-size:13px;font-weight:700;color:#1e293b;margin-bottom:6px">임원ㆍ주요주주특정증권등소유상황보고서</div><div style="font-size:12px;color:#475569;line-height:1.5">💡 기업 지배구조·자본구조 변화. 세부 내용 확인 권장.</div></div></div>
+<div class="pfoot">
+  <span>RFHIC(218410) 펀더멘털 리포트</span>
+  <span>Page 4 / 7</span>
+</div>
+</section>
+<section class="page" id="pg5">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 5/7</div>
+  <h2>애널리스트 리포트</h2>
+</div><span class="badge" style="background:#05966922;border-color:#059669;color:#059669">증권사</span></div>
+
+<div class="note info"><div class="nt-t">📊 애널리스트 리포트 (12건)</div></div>
+<div style="background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #86efac;border-left:4px solid #16a34a;border-radius:8px;padding:10px 14px;margin-bottom:10px"><div style="font-size:10px;color:#166534;font-weight:700;margin-bottom:3px">📊 애널리스트 컨센서스 (10/01 기준 · 네이버)</div><div style="font-size:15px;font-weight:800;color:#15803d">목표주가 101,000원</div><div style="font-size:11px;color:#166534;margin-top:2px"> · 컨센서스 의견: <b>매수 (4.00/5)</b></div></div>
+<div style="font-size:13px"><div style="background:#f5f3ff;border:1px solid #ddd6fe;border-radius:10px;padding:12px 14px;margin-bottom:12px"><div style="font-size:12px;font-weight:800;color:#7c3aed;margin-bottom:8px">🎯 목표가 컨센서스 추이 — 리포트 13건 · 3개 증권사 누적</div><div style="display:flex;gap:20px;flex-wrap:wrap;align-items:flex-end;margin-bottom:6px"><div><div style="font-size:10px;color:#64748b">목표가 변화</div><div style="font-size:17px;font-weight:900;color:#1e293b">101,000 → 101,000 → 101,000 → 101,000 → 101,000원</div></div><div><div style="font-size:10px;color:#64748b">현재가 대비 괴리율</div><div style="font-size:20px;font-weight:900;color:#dc2626">+62.4%</div></div></div><div style="font-size:11px;color:#475569">10회 기록 동안 목표가 변동 없습니다.</div><div style="margin-top:9px;padding-top:9px;border-top:1px dashed #ddd6fe"><div style="font-size:11px;font-weight:800;color:#7c3aed;margin-bottom:5px">🎯 목표가 적중률 — 60거래일 기준 <span style="color:#1e293b">2/6건 (33%)</span> · 판정 대기 4건</div><table style="width:100%;font-size:10.5px;border-collapse:collapse"><tr><td style="padding:3px 0;color:#64748b">06-09</td><td style="padding:3px 6px">하나증권</td><td style="padding:3px 0;text-align:right;font-weight:700">150,000</td><td style="padding:3px 6px;text-align:right;color:#94a3b8">+93%</td><td style="padding:3px 0;text-align:right;color:#1d4ed8;font-weight:700">-40%</td><td style="padding:3px 0 3px 6px;color:#94a3b8">✕</td></tr><tr><td style="padding:3px 0;color:#64748b">04-30</td><td style="padding:3px 6px">하나증권</td><td style="padding:3px 0;text-align:right;font-weight:700">150,000</td><td style="padding:3px 6px;text-align:right;color:#94a3b8">+59%</td><td style="padding:3px 0;text-align:right;color:#1d4ed8;font-weight:700">-63%</td><td style="padding:3px 0 3px 6px;color:#94a3b8">✕</td></tr></table><div style="font-size:10px;color:#475569;margin-top:5px">평균 제시 +56.0% vs 실제 -2.9% — 제시가 실제보다 <b style="color:#dc2626">+58.9%p</b> 낙관적. 목표가는 선행 지표가 아니라 주가를 따라가는 경향이 있으니 절대 수준보다 <b>상향·하향 방향</b>을 보세요.</div></div></div><div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:12px 14px;margin-bottom:12px"><div style="font-size:12px;font-weight:800;color:#2563eb;margin-bottom:6px">📑 최근 리포트 12건 · 증권사 3곳</div><div style="font-size:11px;color:#64748b">리포트 목표가 범위 (평균은 컨센서스 칸 참고)</div><div style="font-size:13px;font-weight:700;color:#475569">80,000~150,000원</div><div style="margin-top:8px"><div style="font-size:10px;color:#64748b;margin-bottom:3px">투자의견 분포 (리포트 12건)</div><div style="display:flex;height:10px;border-radius:5px;overflow:hidden"><div style="width:75%;background:#059669"></div><div style="width:25%;background:#f59e0b"></div><div style="width:0%;background:#dc2626"></div></div><div style="display:flex;gap:8px;font-size:10px;margin-top:2px"><span style="color:#059669">■ 매수 75%</span><span style="color:#f59e0b">■ 중립 25%</span><span style="color:#dc2626">■ 매도 0%</span></div></div></div><div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;margin-bottom:12px"><div style="font-size:12px;font-weight:800;color:#334155;margin-bottom:6px">💡 주요 투자 포인트 (리포트 제목 분석)</div><div style="font-size:12px;padding:5px 0;border-bottom:1px solid #f1f5f9"><span style="color:#059669;font-weight:700">▲</span> <b style="color:#1e293b">하나증권</b> · 목표가 150000원 — 호재 나올 텐데 주가는 급락, 정답은 매수</div></div><div style="font-size:12px;font-weight:800;color:#64748b;margin:10px 0 5px">🔗 리포트 원문</div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-09-16 · 하나증권 · <b style="color:#dc2626">150000원</b></div><a href="https://m.stock.naver.com/investment/research/company/96176" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">쇼티지 발생 유력, 높은 Multiple 형성될 것</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-09-02 · 하나증권 · <b style="color:#dc2626">150000원</b></div><a href="https://m.stock.naver.com/investment/research/company/95978" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">곧 2차 급등할 가능성이 높습니다</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-28 · 신한투자증권 · <b style="color:#dc2626">81000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94596" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">다시 전고점을 향해</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-07-23 · 하나증권 · <b style="color:#dc2626">150000원</b></div><a href="https://m.stock.naver.com/investment/research/company/94372" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">호재 나올 텐데 주가는 급락, 정답은 매수</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-06-09 · 하나증권 · <b style="color:#dc2626">150000원</b></div><a href="https://m.stock.naver.com/investment/research/company/93460" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">시가총액으로 보면 아직도 갈 길이 멉니다</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-06-05 · 신한투자증권</div><a href="https://m.stock.naver.com/investment/research/company/93432" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">업데이트: 주가는 쉬었지만 펀더멘털은 여전히 좋습니다</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-04-30 · 하나증권 · <b style="color:#dc2626">150000원</b></div><a href="https://m.stock.naver.com/investment/research/company/92261" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">향후 실적/주가를 걱정할 시점은 아닌 듯합니다</a></div><div style="border-bottom:1px solid #f1f5f9;padding:7px 0"><div style="font-size:10.5px;color:#94a3b8">2026-04-28 · 신한투자증권</div><a href="https://m.stock.naver.com/investment/research/company/92055" target="_blank" style="font-size:12.5px;font-weight:600;color:#1e293b;text-decoration:none">1Q26 잠정실적: 순항중</a></div></div>
+<div class="pfoot">
+  <span>RFHIC(218410) 펀더멘털 리포트</span>
+  <span>Page 5 / 7</span>
+</div>
+</section>
+<section class="page" id="pg6">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 6/7</div>
+  <h2>Telegram 인사이트</h2>
+</div><span class="badge" style="background:#05966922;border-color:#059669;color:#059669">채널 메시지</span></div>
+
+<div class="note info"><div class="nt-t">Telegram (90일 이내, 16건) · PDF 0건</div></div>
+<div style="font-size:13px"><div style="font-size:12px;font-weight:800;color:#1e293b;margin:10px 0 6px">📢 채널 원문</div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 companyreport 2026-09-20T23:05:12</div><div style="font-size:11.5px;line-height:1.5">[시장] Hana Guru Eye 제공하신 문서는 하나증권의 &quot;Hana Guru Eye&quot; 일일 시장 리뷰 및 테마 분석 자료로, 특정 종목에 대한 상세한 투자의견, 목표주가, 실적 전망 등의 정보가 담겨있지 않습니다. [시장 현황] 코스피는 반도체주 강세로 2.66% 상승하며 6,894.23으로 마감했습니다. IT 업종이 1일 기준 4.49% 상승했으며, 금융 업종은 -10.00% 하락했습니다. [주요 테마] 1) 전력설비 - 아마존의 AI 데이터센터용 비상발전기 장기공급계약(2027~2028년 약 24억달러, 향후 최대 80억달러) 발표로 관련주 강세 관련주: 가온전선, 선도전기, LS에코에너지, 대한전선, 일진전기 등 2) 광통신 - ECOC 2026 개최(9월 21~23일)로 AI 데이터센터용 차세대 광통신 기술 부각 관련주: 대한광통신, 오이솔루션, 우리넷, RFHIC, 빛샘전자 등 3) 방산 - 북한 미사일 발사로 방공체계 관련 관심 확대 관련주: 한화에어로스페이스, LIG디팬스앤에어로스페이스, 한화시스템 등 [금주 주목 종목] - 두산(000150.KS): AI 데이터센터 확대에 따른 고부가 CCL 수요 증가로 실</div></div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 서화백의 AI놀이🚀 2026-09-18 02:28</div><div style="font-size:11.5px;line-height:1.5">🔥급등(+15% 이상) 감지! RFHIC 💰 현재가: 61,500원 📊 전일대비: +15.17% (장중: +11.82%) 🏢 시총: 1조 6344억 🖌 서화백의그림놀이 ✉️ https://t.me/easobi 🖌 서화백의AI놀이 ✉️ https://t.me/easobi_ai 🖌 액시즈의대시보드 ✉️ https://dashboard.camelresearch.com</div></div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 AWAKE - 마켓 브리핑 2026-09-18 00:15</div><div style="font-size:11.5px;line-height:1.5">#통신장비/6G [+22.9%] 우리로 [ +8.7%] 쏠리드 [ +8.6%] RFHIC [ +7.8%] 대한광통신 [ +6.1%] 머큐리 [ +5.9%] 코위버 [ +5.3%] 에치에프알 ..... 2026-09-18 09:15 🔍 [실시간 주도주 확인](https://www.awakeplus.co.kr/home/todaytop15)</div></div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 파하의 아카이빙 노트 2026-09-17 06:41</div><div style="font-size:11.5px;line-height:1.5">26.09.17.(목) #고가정리 #수급 대금 20일 뉴페이스/경신 (대금 500억+/ 123개) *5천억 이상 New (엔진) 한화엔진 (방산) 한화시스템 (우주) 스피어 아주IB투자 비츠로테크 에이치브이엠 센서뷰 (반도체/전기전자) 한양디지텍 한켐 코칩 (통신) RFHIC 경신 (통신) 성호전자 (전기전자) 두산 (이차전지) 후성 (ESS) 비나텍 (건설) 삼성E&amp;A (기타) 미투온 52주 신고가 (종가 기준, 대금 100억+) (유통) 지어소프트 수급(+1천억 이상) 프로그램 (순매수) x (순매도) SK하이닉스(1.23조) 삼성전자(0.56조) 삼성전기(0.16조) 두산(0.11조) 코스피 개인 매수 &gt; SK하이닉스(0.19조) 삼성전기(0.16조) 삼성전자우(0.1조) 매도 &gt; x ETF 매수 &gt; x 매도 &gt; x 외인 매수 &gt; x 매도 &gt; SK하이닉스(1.23조) 삼성전자(0.56조) 삼성전자우(0.15조) 두산(0.11조) 삼성전기(0.11조) 기관 매수 &gt; x 매도 &gt; SK하이닉스(0.11조) 코스닥 (0.05조) x &gt; 외인 기관 전닉 양매도, 기관은 코스피에서 이래저래 나눠 사긴 함 &gt; 금리 인상 대비해서는 선방? 엔진</div></div><div class="rlink" style="border-left:3px solid #7c3aed;padding:7px 10px;margin-bottom:6px;background:#f8fafc;border-radius:6px"><div style="font-size:10px;color:#7c3aed;margin-bottom:3px">📢 주식 리서치 모음(에틴)😍 2026-09-17 01:53</div><div style="font-size:11.5px;line-height:1.5">📊 📊 RFHIC 알람 — 09/17 10:00 53,600 ▲+1.71% 등급: B(63점) | 중립 관망 👉 [🌐 실시간 모바일 리포트 바로보기](https://etin94-prog.github.io/stock_reports/reports/RFHIC_20260917_1000_stockalarm_mobile.html) `https://etin94-prog.github.io/stock_reports/reports/RFHIC_20260917_1000_stockalarm_mobile.html`</div></div><div style="font-size:11px;color:#64748b;margin-top:4px">긍정·부정은 따로 판정하지 않습니다 — 위 원문을 직접 확인하세요</div></div>
+<div class="pfoot">
+  <span>RFHIC(218410) 펀더멘털 리포트</span>
+  <span>Page 6 / 7</span>
+</div>
+</section>
+<section class="page" id="pg7">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 7/7</div>
+  <h2>투자 포인트 & 최종 전략</h2>
+</div><span class="badge" style="background:#05966922;border-color:#059669;color:#059669">LLM 사실 요약</span></div>
+
+<div class="note ok"><div class="nt-t">💡 투자 포인트</div></div>
+<div class="bul"><i style="background:#059669"></i><div style="font-size:13px">AI 데이터센터 확대로 인한 고속 광모듈 및 레이저 등 광연결 부품의 수요 증가 기대</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:13px">미국 연방정부의 중국산 광트랜시버 사용 금지 법안 발의에 따른 반사이익 및 수혜 가능성</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:13px">삼성전자 네트워크 사업부의 글로벌 경쟁력 강화로 인한 국내 무선장비 협력사들의 동반 성장 전망</div></div><div class="bul"><i style="background:#059669"></i><div style="font-size:13px">2026년 2분기 기준 매출액과 영업이익이 전분기 대비 각각 19.6%, 44.6% 증가하며 실적 성장세 기록</div></div>
+<div class='note warn'><div class='nt-t'>⚠️ 리스크 요인</div></div><div class="bul warn"><i></i><div style="font-size:13px">삼성자산운용의 지분 3.13%p 감소 및 최대주주 일가의 지분 0.63%p 감소 등 주요 주주의 지분 매각</div></div><div class="bul warn"><i></i><div style="font-size:13px">자기주식 처분 결정 공시에 따른 단기적 수급 영향 가능성</div></div>
+<div class="note info"><div class="nt-t">🏰 해자 · 경쟁 우위</div><p style="font-size:12.5px">글로벌 통신 장비 시장 재편 과정에서 삼성전자의 위상 강화와 함께 국내 무선장비 공급망 내 핵심적인 위치를 점하고 있습니다. AI 데이터센터용 차세대 광통신 부품 수요에 대응할 수 있는 기술적 기대감이 형성되어 있습니다.</p></div>
+<div class="card rows" style="margin-bottom:11px"><div class="rw"><span class="k">추천 포트폴리오 비중</span><span class="v" style="color:#7c3aed;font-size:20px">58%</span></div></div>
+<div class="note yel" style="margin-bottom:8px"><div class="nt-t">🔔 다음 분기 체크포인트</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">미국 내 중국산 광통신 부품 규제 법안의 최종 통과 여부 및 추가 규제 가능성</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">마이크론 등 글로벌 반도체 기업의 설비투자(CapEx) 확대가 실제 부품 수주로 이어지는지 확인</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">삼성전자 네트워크 사업부의 글로벌 시장 점유율 변화 및 추가 수주 소식</div></div><div class="bul"><i style="background:#ea580c"></i><div style="font-size:12.5px">영업현금흐름의 지속적인 개선 여부와 추가적인 지분 변동 공시</div></div>
+<div class="note info" style="margin-top:4px"><div class="nt-t">📋 단기·중기·장기 투자 전략</div></div>
+<div style="background:#05966911;border:1.5px solid #05966933;border-radius:12px;padding:12px 14px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center"><div style="font-size:14px;font-weight:900;color:#059669">펀더멘털 종합 판정</div><div style="font-size:16px;font-weight:900">🟢 매수 우위</div></div><div style="background:#0596690a;border:1.5px solid #05966933;border-radius:10px;padding:11px 13px;margin-bottom:8px"><div style="font-size:11px;color:#059669;font-weight:800;margin-bottom:4px">단기 전략 (1~4주)</div><div style="font-size:13px;font-weight:700;color:#1e293b">분할 매수 진입</div><div style="font-size:11.5px;color:#64748b;margin-top:4px">실적 시즌 전후 포지션 점검</div></div><div style="background:#0596690a;border:1.5px solid #05966933;border-radius:10px;padding:11px 13px;margin-bottom:8px"><div style="font-size:11px;color:#059669;font-weight:800;margin-bottom:4px">중기 전략 (1~3개월)</div><div style="font-size:13px;font-weight:700;color:#1e293b">목표주가 도달 시 일부 익절 / 홀딩</div><div style="font-size:11.5px;color:#64748b;margin-top:4px">애널리스트 컨센서스 목표주가 101,000원 (10/01 기준 네이버)</div></div><div style="background:#0596690a;border:1.5px solid #05966933;border-radius:10px;padding:11px 13px;margin-bottom:8px"><div style="font-size:11px;color:#059669;font-weight:800;margin-bottom:4px">장기 전략 (6개월~)</div><div style="font-size:13px;font-weight:700;color:#1e293b">펀더멘털 개선 사이클 — 중장기 홀딩 유리</div><div style="font-size:11.5px;color:#64748b;margin-top:4px">분기 실적 + 애널 컨센서스 방향성 추적</div></div><div style="background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.7"><div style="font-size:12px;font-weight:800;color:#ea580c;margin-bottom:5px">📝 종합 분석</div><span style="font-weight:900;color:#059669">매수</span> — RFHIC 최근 실적 (2026년 2분기(3개월, DART)) 기준 매출 515억원, 영업이익 112억원 (이익률 21.7%). 강점: 고마진 구조 — 영업이익률 21.7% (2026년 2분기(3개월, DART)) (112억원). 컨센서스 목표주가 101,000원(네이버) → 현 주가 대비 매력도 확인 권장. 종합 펀더멘털 점수 83점 기준 [매수] 판단.</div>
+<div class="pfoot">
+  <span>RFHIC(218410) 펀더멘털 리포트</span>
+  <span>Page 7 / 7</span>
+</div>
+</section>
+<section class="page" id="pg8">
+<div class="phead"><div>
+  <div class="eyebrow">FUNDAMENTAL REPORT · PAGE 8/7</div>
+  <h2>근거 점검</h2>
+</div><span class="badge" style="background:#05966922;border-color:#059669;color:#059669">데이터 교차검증</span></div>
+
+<div class="card" style="border:1.5px solid #cbd5e1">
+  <div style="display:flex;align-items:baseline;gap:8px;margin-bottom:9px"><div style="font-size:13px;font-weight:800;color:#0f172a">📐 근거 점검</div><div style="font-size:10px;color:#94a3b8">데이터 교차검증 · 2026-10-02</div></div>
+  <div style="font-size:10.5px;color:#64748b;margin-bottom:9px;line-height:1.6">
+    앞의 판정들에 의견을 더하지 않습니다. <b>서로 엇갈리는 지점</b>과
+    <b>확인되지 않은 것</b>을 드러내 앞 페이지를 읽는 기준을 줍니다.
+  </div>
+  
+  <div style="font-size:10.5px;color:#64748b;line-height:1.65;background:#f8fafc;border-radius:8px;padding:8px 10px;margin-bottom:9px">동사는 1999년 설립된 반도체 전문기업으로, 2017년 코스닥에 상장했으며, 4개 종속회사를 보유하고 있음. 주요 제품은 GaN 트랜지스터, 전력증폭기, Microwave Generator로, 무선통신 인프라, 방위산업, RF 에너지에서 활용되고 있음. 동사는 국내 유일의 GaN 트랜지스터 대량 생산 기술로 Form Factor 제품을 개발하여 5G SA 전환 및 새로운 적용처 확대에 대응하고 있음.</div>
+
+  <div style="font-size:11.5px;font-weight:800;color:#b45309;margin-bottom:5px">
+    ⚠ 충돌 3건</div>
+  <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:9px;padding:9px 11px;margin-bottom:7px"><div style="font-size:12px;font-weight:800;color:#b45309;margin-bottom:3px">펀더멘털 83점 <span style="opacity:.5">↔</span> 차트 46점</div><div style="font-size:11px;color:#475569;line-height:1.55">37점 차 — 펀더멘털은 좋은데 차트가 따라오지 않습니다</div></div><div style="background:#fffbeb;border:1px solid #fde68a;border-radius:9px;padding:9px 11px;margin-bottom:7px"><div style="font-size:12px;font-weight:800;color:#b45309;margin-bottom:3px">컨센 목표가 +62.4% <span style="opacity:.5">↔</span> 적중률 33% (2/6)</div><div style="font-size:11px;color:#475569;line-height:1.55">평균 제시 +56.0% vs 실제 -2.9% — 괴리를 근거로 쓰기 어렵습니다</div></div><div style="background:#fffbeb;border:1px solid #fde68a;border-radius:9px;padding:9px 11px;margin-bottom:7px"><div style="font-size:12px;font-weight:800;color:#b45309;margin-bottom:3px">52주 고점 대비 -51.0% <span style="opacity:.5">↔</span> PER 49.7배(최근 4분기) 여전히</div><div style="font-size:11px;color:#475569;line-height:1.55">주가가 빠진 만큼 이익 전망도 함께 내려왔다는 뜻입니다</div></div>
+
+  <div style="font-size:11.5px;font-weight:800;color:#047857;margin:11px 0 3px">
+    ✓ 검증된 것 <span style="font-weight:500;color:#94a3b8">— 숫자 · 출처 · 시점</span></div>
+  <div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">매출액이 431억 → 515억으로 19.6% 늘고, 영업이익이</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">19.6%</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">DART 2026-09-29</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">PER(최근 4분기)</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">49.72배</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">네이버 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">PBR(최근 분기)</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">4.41배</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">네이버 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">배당수익률</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">0.64%</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">네이버 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">피어 중앙값 PER(최근 4분기, 2종목)</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">44.4배</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">실측 2026-10-02</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">목표가 적중률</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">2/6 (33%)</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">60거래일 백테스트</span></div><div style="display:flex;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px solid #f1f5f9"><span style="flex:1;font-size:11px;color:#334155">외인소진율</span><span style="font-size:11.5px;font-weight:800;color:#0f172a;white-space:nowrap">19.37%</span><span style="font-size:9.5px;color:#94a3b8;white-space:nowrap">네이버 2026-10-02</span></div>
+
+  <div style="font-size:11.5px;font-weight:800;color:#64748b;margin:11px 0 3px">
+    ✗ 확인 못 한 것</div>
+  <div style="padding:5px 0;border-bottom:1px dashed #e2e8f0"><div style="font-size:11.5px;font-weight:700;color:#475569">✗ 주식등의대량보유상황보고서(약식) (2026-09-29)</div><div style="font-size:10.5px;color:#94a3b8;margin-top:1px">제목만 있고 본문이 없습니다 — 지분 변동 성격을 알 수 없습니다</div></div>
+
+  <div style="font-size:11.5px;font-weight:800;color:#1d4ed8;margin:11px 0 3px">
+    ▸ 감지 조건 <span style="font-weight:500;color:#94a3b8">— 전환 2/4 충족</span></div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:9px;padding:8px 10px">
+    <div style="font-size:10px;font-weight:800;color:#047857;margin-bottom:2px">전환</div>
+    <div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#047857;font-size:11px">●</span><span style="flex:1;font-size:11px;color:#334155">20일선 회복</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">종가 &gt; 54,008</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#047857;font-size:11px">●</span><span style="flex:1;font-size:11px;color:#334155">60일선 회복</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">종가 &gt; 49,714</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">커버리지 재개</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">analyst_history 신규 ≥ 1</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">수급 반전</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">외국인 5일 누적 순매수 &gt; 0</span></div>
+    <div style="font-size:10px;font-weight:800;color:#b91c1c;margin:7px 0 2px">악화</div>
+    <div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">52주 저점 근접</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">종가 &lt; 26,108</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">수익성 훼손</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">분기 OPM &lt; 40%</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">목표가 하향</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">목표가 전기 대비 하락</span></div><div style="display:flex;gap:7px;align-items:baseline;padding:3px 0"><span style="color:#cbd5e1;font-size:11px">○</span><span style="flex:1;font-size:11px;color:#334155">외국인 이탈</span><span style="font-family:ui-monospace,monospace;font-size:10.5px;color:#64748b;white-space:nowrap">외인소진율 20일 −3%p</span></div>
+  </div>
+  <div style="font-size:9.5px;color:#94a3b8;margin-top:7px;line-height:1.6">
+    조건은 alarmstock 이 회차마다 평가합니다. 이 페이지는 데이터 종합이며
+    투자 조언이 아닙니다 — 판단과 책임은 본인에게 있습니다.
+  </div>
+</div>
+<div class="pfoot">
+  <span>RFHIC(218410) 펀더멘털 리포트</span>
+  <span>Page 8 / 7</span>
+</div>
+</section>
+</div>
+</body></html>

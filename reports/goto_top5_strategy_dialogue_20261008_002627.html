@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta property="og:type" content="website"><meta property="og:title" content="Goto경제 실전 투자방 — 4대 고수 끝장토론 리포트"><meta property="og:description" content="StockAgent 리포트"><meta property="og:locale" content="ko_KR"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Goto경제 실전 투자방 — 4대 고수 끝장토론 리포트"><meta name="twitter:description" content="StockAgent 리포트">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Goto경제 실전 투자방 — 4대 고수 끝장토론 리포트</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background-color: #e9ecef;
+    font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    color: #191f28;
+    line-height: 1.5;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+}
+.chat-container {
+    width: 100%;
+    max-width: 480px;
+    background: #f2f4f6;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* 헤더 */
+.chat-header {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+    color: #ffffff;
+    padding: 16px 18px;
+    position: relative;
+}
+.chat-header h1 {
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: -0.3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.chat-header p {
+    font-size: 12px;
+    color: #c7d2fe;
+    margin-top: 4px;
+}
+/* 매핑 정보 배너 */
+.mapping-banner {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e8eb;
+    padding: 12px 16px;
+    font-size: 12px;
+}
+.mapping-title {
+    font-weight: 700;
+    color: #4b5563;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.mapping-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+.mapping-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 6px 8px;
+    font-size: 11.5px;
+    line-height: 1.35;
+}
+.mapping-item b {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+.tag-habono { color: #4f46e5; }
+.tag-yeom { color: #059669; }
+.tag-vincent { color: #0284c7; }
+.tag-alsangmu { color: #334155; }
+
+/* 날짜 구분선 */
+.chat-date-divider {
+    text-align: center;
+    margin: 16px 0 12px;
+}
+.chat-date-divider span {
+    background: #e2e8f0;
+    color: #64748b;
+    font-size: 11.5px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 12px;
+}
+
+/* 대화 영역 */
+.chat-flow {
+    padding: 10px 14px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.chat-group {
+    display: flex;
+    gap: 9px;
+    align-items: flex-start;
+}
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.chat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.chat-sender {
+    font-size: 12.5px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.bubble-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 6px;
+}
+.bubble {
+    background: #ffffff;
+    color: #191f28;
+    padding: 9px 12px;
+    border-radius: 2px 14px 14px 14px;
+    font-size: 13.5px;
+    line-height: 1.5;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    max-width: 86%;
+    word-break: break-word;
+}
+.bubble-row.continuation .bubble {
+    border-radius: 14px;
+}
+.time {
+    font-size: 10.5px;
+    color: #8b95a1;
+    white-space: nowrap;
+    margin-bottom: 2px;
+}
+
+/* 첨부 카드 / 브리프 */
+.chat-card {
+    background: #ffffff;
+    border: 1px solid #e5e8eb;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin: 4px 0;
+    max-width: 95%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.card-header {
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card-body {
+    font-size: 12.5px;
+    color: #374151;
+    line-height: 1.5;
+}
+.card-body ul {
+    padding-left: 16px;
+    margin-top: 4px;
+}
+.card-body li {
+    margin-bottom: 3px;
+}
+
+/* 결론 섹션 */
+.conclusion-box {
+    background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+    border: 1.5px solid #38bdf8;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 16px 14px 20px;
+    box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+}
+.conclusion-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #0369a1;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.portfolio-alloc {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12.5px;
+}
+.alloc-item {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 10px 12px;
+    border-left: 4px solid #0284c7;
+}
+.alloc-item.core { border-left-color: #059669; }
+.alloc-item.active { border-left-color: #6366f1; }
+.alloc-item.safe { border-left-color: #f59e0b; }
+.alloc-item h4 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.alloc-item p {
+    color: #4b5563;
+    font-size: 12px;
+    line-height: 1.45;
+}
+.stock-pill {
+    display: inline-block;
+    background: #e2e8f0;
+    color: #1e293b;
+    padding: 2px 7px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 11px;
+    margin: 2px 2px 0 0;
+}
+
+/* 푸터 */
+.chat-footer {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    padding: 12px 16px;
+    font-size: 11.5px;
+    color: #64748b;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+    <!-- 헤더 -->
+    <header class="chat-header">
+        <h1>💬 Goto경제 실전 투자방</h1>
+        <p>4대 실전 고수 전략 대화 & 현 시장 최종 결론 도출 리포트</p>
+    </header>
+
+    <!-- 페르소나 매핑 배너 -->
+    <div class="mapping-banner">
+        <div class="mapping-title">📌 AS 전문가 페르소나 ⇄ 실전 고수 매핑 현황</div>
+        <div class="mapping-grid">
+            <div class="mapping-item">
+                <b class="tag-habono">🎙️ 하보노 ⇄ (주)또르</b>
+                <span>3% 익절·칼손절(-2~3%)·제주반도체/리가켐</span>
+            </div>
+            <div class="mapping-item">
+                <b class="tag-yeom">🌱 염승환 ⇄ 호우두우</b>
+                <span>가이던스 역발상·겨울 늑대 인내·리노공업/샌디스크</span>
+            </div>
+            <div class="mapping-item">
+                <b class="tag-vincent">🌍 빈센트 ⇄ 오방</b>
+                <span>글로벌 매크로·구리 신고가·삼성 독점 한양디지텍</span>
+            </div>
+            <div class="mapping-item">
+                <b class="tag-alsangmu">📊 알상무 ⇄ 인서울인</b>
+                <span>데이터 팩트·미 증시 과열 경고·테슬라 EPS 가시화</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 대화 날짜 -->
+    <div class="chat-date-divider">
+        <span>2026년 10월 8일 목요일</span>
+    </div>
+
+    <!-- 대화 본문 -->
+    <div class="chat-flow">
+
+        <!-- 1. 알상무 (인서울인) -->
+        <div class="chat-group">
+            <div class="avatar" style="background:#0f172a;">📊</div>
+            <div class="chat-content">
+                <div class="chat-sender" style="color:#0f172a;">알상무 (인서울인)</div>
+                <div class="bubble-row">
+                    <div class="bubble">다들 오늘 장 어떻게 보고 계십니까? 분위기가 심상치 않네요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">미국 가계 자산에서 주식 비중이 26.6%로 역사상 최고치 찍었고, CAPE(경기조정 PER)도 꼭대기권입니다. 외국인 미 증시 배분도 60%라 조금만 삐끗해도 실망 매물 쏟아질 수 있는 위험 구간이에요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">막연한 AI 낙관론으로 추격매수하면 바로 물립니다. 테슬라도 로보택시랑 옵티머스 5천대 발주처럼 숫자가 EPS에 찍히는 시점을 철저히 계산하고 들어가야 합니다.</div>
+                    <span class="time">오후 1:15</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. 빈센트 (오방) -->
+        <div class="chat-group">
+            <div class="avatar" style="background:#0369a1;">🌍</div>
+            <div class="chat-content">
+                <div class="chat-sender" style="color:#0369a1;">빈센트 (오방)</div>
+                <div class="bubble-row">
+                    <div class="bubble">알상무님 말씀 정확합니다. 매크로 쪽도 뇌관이 한둘이 아니에요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">미국 10년물 국채금리가 5% 위협하고 있고, 중동 분쟁 탓에 유가도 90~100달러를 오르내립니다. 그런데 더 중요한 건 <b>'구리 선물'이 사상 최고치</b>를 뚫었다는 점입니다.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">AI 데이터센터 전력망 비상사태 때문이죠. 지금 장은 단순 테마주 쫓아다니면 계좌 녹습니다. 차라리 삼성전자 메모리 모듈 외주 90%를 독점하고 있는 <b>한양디지텍</b>이나, 전력망·구리 수혜주인 <b>풍산, LS</b>처럼 물리적 병목을 쥐고 있는 독점사를 잡아야 합니다.</div>
+                    <span class="time">오후 1:18</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. 염승환 (호우두우) -->
+        <div class="chat-group">
+            <div class="avatar" style="background:#059669;">🌱</div>
+            <div class="chat-content">
+                <div class="chat-sender" style="color:#059669;">염승환 (호우두우)</div>
+                <div class="bubble-row">
+                    <div class="bubble">빈센트님, 한양디지텍과 전력망 포인트 아주 좋네요. 저도 한마디 보태자면요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">저는 <b>'실적으로 증명하지 못하는 종목'</b>은 아예 쳐다보지도 않습니다. 실적주는 분기에 한 번만 가이던스 확인하면 되니까요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">시장에 악재 뉴스가 터져서 주가가 폭락할 때가 가장 큰 기회입니다. 회사가 제시한 가이던스를 차분히 맞춰가고 있다면 떨어진 자리가 바로 바닥이에요.</div>
+                </div>
+                <!-- 첨부 카드 -->
+                <div class="chat-card">
+                    <div class="card-header">📋 염승환(호우두우)의 실적 가치 픽</div>
+                    <div class="card-body">
+                        • <b>샌디스크 (SNDK)</b>: 급락 구간 매수 → 1차 익절 후 재매수분까지 연속 수익 달성<br>
+                        • <b>리노공업 (058470)</b>: OPM 40% 이상 유지하는 독점 소켓 강자, 조정 시마다 분할 매수<br>
+                        • <b>원칙</b>: 한겨울 늑대처럼 웅크리고 가치 인정받을 때까지 인내, 금리 인상기엔 현금 30% 챙겨두고 유가로 헷징!
+                    </div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">한겨울 늑대처럼 웅크리고 기다리면 시장이 알아서 제 가치를 찾아줍니다. 조급해할 필요 전혀 없어요.</div>
+                    <span class="time">오후 1:24</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. 하보노 ((주)또르) -->
+        <div class="chat-group">
+            <div class="avatar" style="background:#4f46e5;">🎙️</div>
+            <div class="chat-content">
+                <div class="chat-sender" style="color:#4f46e5;">하보노 ((주)또르)</div>
+                <div class="bubble-row">
+                    <div class="bubble">형님들 말씀도 다 피가 되고 살이 되는데, 실전 트레이딩에선 또 다른 차원이 있습니다! ㅋㅋㅋ</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">저도 기업분석이 차트보다 무조건 우위라는 건 200% 동의합니다. 엉뚱한 개잡주 매매하면 안 돼요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">하지만 시장이 이렇게 흔들릴 땐 <b>'손절 -2%~-3%' 칼같이 지키는 기계적 손익비</b>가 생명입니다! 감정 넣으면 망해요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">전 1~2천만 원 시드로 하루 5회 이하 딱 정해서 일 3% 목표로만 회전 돌립니다. 저번에 물렸던 <b>제주반도체</b>도 바닥 패턴 확인하고 홀딩해서 깔끔하게 수익 내고 나왔잖아요!</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">지금은 바이오 쪽 <b>리가켐바이오</b>(ADC)랑 <b>큐리옥스바이오시스템즈</b>(공정 표준화)처럼 기술이전이나 장비 독점력 있는 종목들로 시세 탄력 붙을 때 먹고 빠지는 중입니다. 물린 계좌는 이렇게 새로운 주도주로 손익 상쇄 치면서 정리해야 살아요!</div>
+                    <span class="time">오후 1:30</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. 알상무 (인서울인) 리액션 -->
+        <div class="chat-group">
+            <div class="avatar" style="background:#0f172a;">📊</div>
+            <div class="chat-content">
+                <div class="chat-sender" style="color:#0f172a;">알상무 (인서울인)</div>
+                <div class="bubble-row">
+                    <div class="bubble">하보노님 말씀도 일리가 있네요. 특히 물린 종목을 무지성 물타기 안 하고 신규 주도주 수익으로 상쇄 리밸런싱 치는 건 정석입니다.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">결국 우리 넷 이야기를 종합해보면 지금 장세의 답이 딱 하나로 모아집니다.</div>
+                    <span class="time">오후 1:32</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. 빈센트 (오방) 정리 -->
+        <div class="chat-group">
+            <div class="avatar" style="background:#0369a1;">🌍</div>
+            <div class="chat-content">
+                <div class="chat-sender" style="color:#0369a1;">빈센트 (오방)</div>
+                <div class="bubble-row">
+                    <div class="bubble">맞습니다! 코스피는 삼성전자·하이닉스가 지수만 버티고 개별주는 소외되는 양극화 장세니까요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">지수 레버리지 같은 도박은 당장 치우고, 우리 4명의 원칙을 결합한 <b>'삼각 포트폴리오'</b>로 대응하는 게 최선입니다.</div>
+                    <span class="time">오후 1:35</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 최종 결론 박스 -->
+    <div class="conclusion-box">
+        <div class="conclusion-title">
+            🎯 4대 고수 합의 — 2026 현 시장 실전 투자 결론
+        </div>
+        <div class="portfolio-alloc">
+            <div class="alloc-item safe">
+                <h4>🛡️ 안전판: 현금 비중 20~30% 의무 보유</h4>
+                <p>미 10년물 국채 5% 돌파 및 유가 변동성 대비. 시장 급락 시 저가 분할매수를 위한 총알 확보 (알상무·염승환 원칙).</p>
+            </div>
+            <div class="alloc-item core">
+                <h4>🏰 핵심 포트 (50%): 가이던스 충족 & 공급망 독점주</h4>
+                <p>악재 뉴스 급락 시마다 늑대처럼 웅크리고 눌림목 분할 매수. 분기 실적 및 독점적 수주 확인.</p>
+                <div>
+                    <span class="stock-pill">한양디지텍</span>
+                    <span class="stock-pill">리노공업</span>
+                    <span class="stock-pill">샌디스크(SNDK)</span>
+                    <span class="stock-pill">HD현대일렉트릭</span>
+                    <span class="stock-pill">테슬라(TSLA)</span>
+                    <span class="stock-pill">오라클(ORCL)</span>
+                </div>
+            </div>
+            <div class="alloc-item active">
+                <h4>⚔️ 공격 포트 (20%): 칼손절(-2~3%) 시세 탄력 스윙</h4>
+                <p>하루 3% 목표, 엄격한 손익비 준수. 바이오 파이프라인 및 온디바이스 순환매 공략으로 계좌 손익 상쇄 (하보노 원칙).</p>
+                <div>
+                    <span class="stock-pill">제주반도체</span>
+                    <span class="stock-pill">리가켐바이오</span>
+                    <span class="stock-pill">큐리옥스바이오</span>
+                    <span class="stock-pill">알테오젠</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="chat-footer">
+        StockAgent AS 투자방 4대 실전 고수 심층 분석 기반 AI 리포트 · 무단 전재 금지
+    </footer>
+</div>
+
+</body>
+</html>

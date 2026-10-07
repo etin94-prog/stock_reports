@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta property="og:type" content="website"><meta property="og:title" content="Goto경제 실전 투자방 4대 고수 카톡 토론"><meta property="og:description" content="StockAgent 리포트"><meta property="og:locale" content="ko_KR"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Goto경제 실전 투자방 4대 고수 카톡 토론"><meta name="twitter:description" content="StockAgent 리포트">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Goto경제 실전 투자방 4대 고수 카톡 토론</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    background-color: #d1d5db;
+    font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    color: #191f28;
+    line-height: 1.45;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.chat-container {
+    width: 100%;
+    max-width: 440px;
+    background: #b2c7da; /* Real KakaoTalk blue-gray background */
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(0,0,0,0.18);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* 카톡 상단 바 */
+.chat-header {
+    background: #9bbbd4;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.chat-header-info h1 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.chat-header-info p {
+    font-size: 11.5px;
+    color: #475569;
+    margin-top: 2px;
+}
+.chat-header-count {
+    background: rgba(0,0,0,0.12);
+    color: #1e293b;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 10px;
+}
+
+/* 날짜 뱃지 */
+.date-divider {
+    text-align: center;
+    margin: 14px 0 8px;
+}
+.date-divider span {
+    background: rgba(0,0,0,0.18);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 12px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+/* 대화 리스트 */
+.chat-body {
+    padding: 8px 12px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 메시지 묶음 */
+.msg-group {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+}
+.avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+.msg-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.sender-name {
+    font-size: 12px;
+    font-weight: 700;
+    color: #334155;
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.badge-role {
+    font-size: 10px;
+    font-weight: 500;
+    color: #64748b;
+}
+
+/* 말풍선 */
+.bubble-row {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+.bubble {
+    background: #ffffff;
+    color: #111827;
+    padding: 8px 11px;
+    border-radius: 2px 14px 14px 14px;
+    font-size: 13px;
+    line-height: 1.45;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+    max-width: 84%;
+    word-break: break-word;
+}
+.bubble-row.continuation .bubble {
+    border-radius: 14px;
+}
+.time {
+    font-size: 9.5px;
+    color: #64748b;
+    white-space: nowrap;
+    margin-bottom: 2px;
+}
+
+/* 짤/요약 카드 */
+.mini-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 9px 11px;
+    font-size: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin: 2px 0;
+    max-width: 90%;
+}
+.mini-card b {
+    color: #1e3a8a;
+    display: block;
+    margin-bottom: 3px;
+    font-size: 12.5px;
+}
+
+/* 최종 결론 보드 */
+.summary-board {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px;
+    margin: 12px 0 6px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    border: 2px solid #3b82f6;
+}
+.board-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #1d4ed8;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.board-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    font-size: 12px;
+}
+.board-item {
+    background: #f8fafc;
+    border-left: 3.5px solid #3b82f6;
+    padding: 6px 9px;
+    border-radius: 4px;
+}
+.board-item.green { border-left-color: #10b981; }
+.board-item.purple { border-left-color: #8b5cf6; }
+.board-item.amber { border-left-color: #f59e0b; }
+.board-item strong {
+    display: block;
+    font-size: 12px;
+    color: #0f172a;
+    margin-bottom: 2px;
+}
+.board-item span {
+    color: #475569;
+    font-size: 11.5px;
+}
+.pill {
+    display: inline-block;
+    background: #e2e8f0;
+    color: #1e293b;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 2px 2px 0 0;
+}
+
+/* 푸터 */
+.chat-footer {
+    background: #9bbbd4;
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    color: #475569;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+    <!-- 헤더 -->
+    <div class="chat-header">
+        <div class="chat-header-info">
+            <h1>💬 Goto경제 실전 투자방</h1>
+            <p>인서울인 · 오방 · 호우두우 · (주)또르</p>
+        </div>
+        <div class="chat-header-count">4명 참여</div>
+    </div>
+
+    <!-- 날짜 -->
+    <div class="date-divider">
+        <span>2026년 10월 8일 목요일</span>
+    </div>
+
+    <!-- 본문 채팅 -->
+    <div class="chat-body">
+
+        <!-- 1. 인서울인 시작 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#1e293b; color:#fff;">📊</div>
+            <div class="msg-content">
+                <div class="sender-name">인서울인 <span class="badge-role">인천</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">아 오늘 장 진짜 살벌하네요 ㄷㄷ</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">삼전 닉스만 올려놓고 나머지 종목 1800개가 퍼렇게 질림;;</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">미국 가계 주식 비중이 26.6%로 역대 최고 찍고 CAPE 지수도 꼭대기인데, 다들 뇌동매매 조심하세요. 삐끗하면 실망 매물 쏟아집니다.</div>
+                    <span class="time">오후 1:42</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. 오방 반응 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#0284c7; color:#fff;">🌍</div>
+            <div class="msg-content">
+                <div class="sender-name">오방 <span class="badge-role">우면도곡</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">ㄹㅇ입니다 지금 미국 10년물 5% 뚫네마네 하고 유가도 90달러 위에서 노는데 지수가 버티는 게 용함</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">근데 형님들 방금 구리 선물 사상최고치 친 거 보셨음? 📈</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">AI 데이터센터 전력망 터져나가서 그런 건데, 엉뚱한 테마주 타지 말고 삼성전자 메모리 모듈 외주 90% 독점하는 <b>한양디지텍</b>이나 <b>풍산, LS</b> 같은 물리적 병목 쥔 독점주나 봐야 됨</div>
+                    <span class="time">오후 1:44</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. (주)또르 참전 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#4f46e5; color:#fff;">🎙️</div>
+            <div class="msg-content">
+                <div class="sender-name">(주)또르 <span class="badge-role">경기</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">ㅋㅋㅋ 오방님 한양디지텍 체크완료!</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">아 근데 개잡주 들고 물려서 기도 매매하는 분들 보면 진짜 답답함...</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">저처럼 <b>손절 -2%~-3%</b> 칼같이 잡고 감정 싹 빼야 계좌 삽니다. 안 가면 바로 컷! ✂️</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">전 하루 5번 이하만 딱 치고 일 3% 먹튀가 목표예요. 저번에 물렸던 <b>제주반도체</b>도 바닥 잡고 튀어오를 때 익절 싹 쳤잖아요 ㅋㅋㅋ</div>
+                    <span class="time">오후 1:47</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. 호우두우 등판 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#059669; color:#fff;">🌱</div>
+            <div class="msg-content">
+                <div class="sender-name">호우두우 <span class="badge-role">도곡</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">흐흐 또르님 손절 감각은 진짜 인정입니다.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">근데 저는 정반대예요. 실적으로 말 못 하는 잡주는 아예 안 봅니다. 실적주는 분기에 딱 한 번만 보면 되거든요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">오히려 뉴스에서 악재 터져서 공포로 주가 폭락할 때 가이던스만 멀쩡하면? 그게 최고의 바닥 매수 찬스예요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">저 저번에 <b>샌디스크(SNDK)</b> 폭락할 때 줍고 1차 익절한 다음, 재매수한 것도 지금 또 빨간불 수익권 들어왔어요 ㅎㅎ</div>
+                    <span class="time">오후 1:50</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. 인서울인 티키타카 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#1e293b; color:#fff;">📊</div>
+            <div class="msg-content">
+                <div class="sender-name">인서울인 <span class="badge-role">인천</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">와 호우두우님 샌디스크 타점 귀신이시네 ㄷㄷ 국장은 뭐 보고 계세요?</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. 호우두우 답변 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#059669; color:#fff;">🌱</div>
+            <div class="msg-content">
+                <div class="sender-name">호우두우 <span class="badge-role">도곡</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">국장은 <b>리노공업</b>이죠. 영업이익률 40% 넘게 찍는 독점 소켓 회사인데 장 분위기 땜에 밀린다?</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">한겨울 늑대처럼 웅크리고 바닥에서 줍줍해서 기다리면 시장이 알아서 제 가치 찾아줍니다. 대신 금리 튈 땐 현금 30% 챙겨두고 유가로 헷징 걸어두고요.</div>
+                    <span class="time">오후 1:52</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. (주)또르의 리밸런싱 꿀팁 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#4f46e5; color:#fff;">🎙️</div>
+            <div class="msg-content">
+                <div class="sender-name">(주)또르 <span class="badge-role">경기</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">크 늑대 멘탈 ㅋㅋㅋ 멋지십니다!</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">근데 만약 -40% 물린 종목 있잖아요? 거기에 억지로 물타지 마세요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">지금 <b>리가켐바이오</b>(ADC)나 <b>큐리옥스바이오</b>(공정 표준화)처럼 끼 있고 기관 수급 도는 주도주 잡아서 3~5%씩 먹은 수익금으로, 그 물린 종목을 조금씩 쳐내면서 <b>손익 상쇄 리밸런싱</b> 해야 계좌가 살아납니다!</div>
+                    <span class="time">오후 1:55</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. 인서울인 정리 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#1e293b; color:#fff;">📊</div>
+            <div class="msg-content">
+                <div class="sender-name">인서울인 <span class="badge-role">인천</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">오... 또르님 상쇄 리밸런싱 기법 진짜 실전 꿀팁이네요.</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">미국주식도 똑같아요. 테슬라 옵티머스 부품 5천대 발주처럼 로보택시랑 EPS 찍히는 숫자 확인하고 분할로 들어가야지 뇌동매매는 절대 금물입니다.</div>
+                    <span class="time">오후 1:57</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. 오방 결론 유도 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#0284c7; color:#fff;">🌍</div>
+            <div class="msg-content">
+                <div class="sender-name">오방 <span class="badge-role">우면도곡</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">오케이 각 나오네요! 우리 넷 전략 합치면 이번 개판 장세 정답 딱 나옵니다 ㅋㅋㅋ</div>
+                </div>
+                <div class="bubble-row continuation">
+                    <div class="bubble">레버리지 도박 치우고 딱 이렇게 3분할로 가시죠! 👇</div>
+                    <span class="time">오후 1:59</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 최종 요약 보드 -->
+        <div class="summary-board">
+            <div class="board-title">🎯 4대 고수 합의: 2026 현 장세 필승 포트폴리오</div>
+            <div class="board-list">
+                <div class="board-item amber">
+                    <strong>🛡️ 안전판 (현금 30%) — 인서울인 & 호우두우</strong>
+                    <span>미 국채 5%·고유가 충격 방어용. 패닉셀 나올 때 줍줍할 총알 필수!</span>
+                </div>
+                <div class="board-item green">
+                    <strong>🏰 핵심 포트 (50%) — 호우두우 & 오방 (가이던스 독점주)</strong>
+                    <span>악재 급락 시 늑대처럼 웅크리고 눌림목 분할매수. 실적과 독점력으로 증명된 종목만!</span>
+                    <div style="margin-top:3px;">
+                        <span class="pill">한양디지텍</span>
+                        <span class="pill">리노공업</span>
+                        <span class="pill">샌디스크</span>
+                        <span class="pill">HD현대일렉</span>
+                        <span class="pill">테슬라</span>
+                        <span class="pill">오라클</span>
+                    </div>
+                </div>
+                <div class="board-item purple">
+                    <strong>⚔️ 공격 포트 (20%) — (주)또르 (칼손절 -2~3% 탄력 스윙)</strong>
+                    <span>하루 3% 익절 목표, 엄격한 칼손절! 수급 붙은 바이오·온디바이스로 계좌 손익 상쇄!</span>
+                    <div style="margin-top:3px;">
+                        <span class="pill">제주반도체</span>
+                        <span class="pill">리가켐바이오</span>
+                        <span class="pill">큐리옥스바이오</span>
+                        <span class="pill">알테오젠</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. 마무리 리액션 -->
+        <div class="msg-group">
+            <div class="avatar" style="background:#4f46e5; color:#fff;">🎙️</div>
+            <div class="msg-content">
+                <div class="sender-name">(주)또르 <span class="badge-role">경기</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">깔끔하네요 ㅋㅋㅋ 캡쳐 떠서 모니터 옆에 붙여놓습니다! 🔥</div>
+                    <span class="time">오후 2:01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="msg-group">
+            <div class="avatar" style="background:#059669; color:#fff;">🌱</div>
+            <div class="msg-content">
+                <div class="sender-name">호우두우 <span class="badge-role">도곡</span></div>
+                <div class="bubble-row">
+                    <div class="bubble">성투합시다 다들 흐흐 ☕</div>
+                    <span class="time">오후 2:02</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 푸터 -->
+    <div class="chat-footer">
+        Goto경제 실전 고수 토론 요약 · 카카오톡 대화형 AI 리포트
+    </div>
+</div>
+
+</body>
+</html>

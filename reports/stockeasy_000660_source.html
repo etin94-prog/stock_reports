@@ -1,0 +1,23 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SK하이닉스 · StockEasy 원문</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f2f5f8;color:#172d46;font:16px/1.7 -apple-system,BlinkMacSystemFont,"Malgun Gothic",sans-serif}
+main{max-width:1200px;margin:auto;padding:20px 16px 60px}h1{font-size:28px;line-height:1.4}a{color:#185b96;overflow-wrap:anywhere}
+nav,.controls{display:flex;flex-wrap:wrap;gap:8px}nav a,.controls a,button{display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;border:1px solid #cbd5e1;border-radius:10px;background:white;color:#172d46;text-decoration:none;font:inherit;cursor:pointer}
+a:focus-visible,button:focus-visible,.viewer:focus-visible{outline:3px solid #2563a6;outline-offset:3px}
+.notice{padding:18px;background:#fff8eb;border-left:4px solid #b45309;border-radius:6px}.viewer{width:100%;overflow:auto;max-height:80vh;margin-top:16px;border:1px solid #cbd5e1;background:#fff;overscroll-behavior:contain}
+.viewer img{display:block;width:100%;max-width:none;height:auto}.small{font-size:13px;color:#526176}button[aria-pressed="true"]{background:#172d46;color:white}footer{overflow-wrap:anywhere}
+</style></head><body><main>
+<nav aria-label="원문 이동"><a href="my_dashboard.html">PC·My 대시보드</a><a href="bear_watch.html">하락장 관찰판</a><a href="bear_research_000660.html">StockAgent 분석·원문 대조 결과</a><a href="stockeasy_000660_reader.html">글·차트 읽기용 정리</a></nav>
+<h1>SK하이닉스 · StockEasy 원문</h1>
+<p>사용자가 제공한 답변 화면 · 첨부 확인 2026-11-08 · 이미지 원문</p>
+<p class="notice">이 화면은 외부 답변을 그대로 읽기 위한 보관본입니다. 수치의 단위·기준일·가정이 검증됐다는 뜻은 아닙니다. 정정·채택·보류한 내용은 <a href="bear_research_000660.html">StockAgent 분석</a>에서 구분해 확인하세요.</p>
+<div class="controls" aria-label="이미지 크기"><button data-scale="100" aria-pressed="true">화면 맞춤</button><button data-scale="200" aria-pressed="false">2배 확대</button><button data-scale="300" aria-pressed="false">3배 확대</button><a href="stockeasy_000660_source.jpg">이미지 크게 열기</a><a href="stockeasy_000660_source.jpg" download>원문 JPG 저장</a></div>
+<p id="zoom-status" role="status">화면 맞춤. 글자가 작으면 확대하고 이미지 영역 안에서 좌우·위아래로 이동하세요.</p>
+<div class="viewer" tabindex="0" role="region" aria-label="StockEasy 원문 이미지 · 확대 후 스크롤 가능"><img id="source-image" src="stockeasy_000660_source.jpg" width="1593" height="16384" alt="SK하이닉스 StockEasy 답변 전체 화면. 이미지 문서이므로 본문 텍스트 검색은 지원하지 않습니다."></div>
+<footer class="small"><p>이미지 문서이므로 본문 텍스트 검색·화면낭독은 지원하지 않습니다. 읽기용 정리와 원문 대조 결과는 위 StockAgent 분석 링크를 이용하세요.</p><p>첨부 원본 SHA256: 3ef0671217c948689619e74f1b7d8c48b89ed03c80e9e0097f62676b2843b685</p></footer>
+<script>document.querySelectorAll('[data-scale]').forEach(function(button){button.addEventListener('click',function(){
+document.getElementById('source-image').style.width=button.dataset.scale+'%';
+document.querySelectorAll('[data-scale]').forEach(function(other){other.setAttribute('aria-pressed',String(other===button));});
+document.getElementById('zoom-status').textContent=button.textContent+' 적용. 이미지 영역 안에서 스크롤해 읽으세요.';
+});});</script></main></body></html>
